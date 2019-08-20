@@ -78,14 +78,14 @@
   Link: </styles-3ae1e6b6e64083b869fd.js>; rel=preload; as=script
   Link: </1-555dcff30d49353f436a.js>; rel=preload; as=script
   Link: </component---src-templates-not-found-template-js-5b76eaed181439decaeb.js>; rel=preload; as=script
-/pages/contacts/
+/pages/about/
   Link: </webpack-runtime-a23b5b8d94b014af75d0.js>; rel=preload; as=script
   Link: </styles-3ae1e6b6e64083b869fd.js>; rel=preload; as=script
   Link: </app-d730597219d5dbe8d1f9.js>; rel=preload; as=script
   Link: </styles-3ae1e6b6e64083b869fd.js>; rel=preload; as=script
   Link: </1-555dcff30d49353f436a.js>; rel=preload; as=script
   Link: </component---src-templates-page-template-js-61b7a18095a7ec26cf51.js>; rel=preload; as=script
-/pages/about/
+/pages/contacts/
   Link: </webpack-runtime-a23b5b8d94b014af75d0.js>; rel=preload; as=script
   Link: </styles-3ae1e6b6e64083b869fd.js>; rel=preload; as=script
   Link: </app-d730597219d5dbe8d1f9.js>; rel=preload; as=script
@@ -172,7 +172,7 @@
   Link: </1-555dcff30d49353f436a.js>; rel=preload; as=script
   Link: </2-9da65bbaa5aeb83094b6.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-719df4b93df11de2d077.js>; rel=preload; as=script
-/posts/react/component-styling-sass-scss/error-fixed/
+/posts/react3/
   Link: </webpack-runtime-a23b5b8d94b014af75d0.js>; rel=preload; as=script
   Link: </styles-3ae1e6b6e64083b869fd.js>; rel=preload; as=script
   Link: </app-d730597219d5dbe8d1f9.js>; rel=preload; as=script
@@ -180,7 +180,7 @@
   Link: </1-555dcff30d49353f436a.js>; rel=preload; as=script
   Link: </2-9da65bbaa5aeb83094b6.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-719df4b93df11de2d077.js>; rel=preload; as=script
-/posts/react3/
+/posts/react/component-styling-sass-scss/error-fixed/
   Link: </webpack-runtime-a23b5b8d94b014af75d0.js>; rel=preload; as=script
   Link: </styles-3ae1e6b6e64083b869fd.js>; rel=preload; as=script
   Link: </app-d730597219d5dbe8d1f9.js>; rel=preload; as=script
