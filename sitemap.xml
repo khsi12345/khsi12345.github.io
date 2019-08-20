@@ -4,14 +4,13 @@
 <url> <loc>https://khsi12345.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/perfecting-the-art-of-perfection/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/git-push/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/tweet-clone-DOM/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/git-push/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/tweet-clone/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/tweet-clone-event/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/webGame/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/tweet-clone-textarea-event/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/react/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/webGame/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/react2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/react/component-styling-sass-scss/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/react3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -20,8 +19,6 @@
 <url> <loc>https://khsi12345.github.io/tag/array-method</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/dom</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/dom-접근-방법</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/tag/handwriting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/tag/learning-to-write</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/class</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/eslint</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -42,9 +39,7 @@
 <url> <loc>https://khsi12345.github.io/category/design-inspiration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/category/design-inspiration/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/category/design-inspiration/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/category/design-inspiration/page/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/page/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

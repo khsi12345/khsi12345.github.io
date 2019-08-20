@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 20 Aug 2019 10:25:40 GMT</lastBuildDate><item><title><![CDATA[SASS SCSS 삽질]]></title><description><![CDATA[sass / scss 공부 및 적용]]></description><link>https://khsi12345.github.io//posts/react/component-styling-sass-scss/error-fixed/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/component-styling-sass-scss/error-fixed/</guid><pubDate>Tue, 20 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;react-miniter에 sass / scss 적용하려고 node-sass를 설치했다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 20 Aug 2019 10:30:28 GMT</lastBuildDate><item><title><![CDATA[SASS SCSS 삽질]]></title><description><![CDATA[sass / scss 공부 및 적용]]></description><link>https://khsi12345.github.io//posts/react/component-styling-sass-scss/error-fixed/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/component-styling-sass-scss/error-fixed/</guid><pubDate>Tue, 20 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;react-miniter에 sass / scss 적용하려고 node-sass를 설치했다.&lt;br&gt;
 그리곤 VScode에서 @mixin @includes 문법을 사용하고는 로컬 라이브 서버로&lt;br&gt;
 제대로 적용이 되었는지 확인했다.&lt;br&gt;
 내 기대와는 다르게 에러가 발생했고 개발자 도구 콘솔에서 확인해보니&lt;br&gt;
@@ -226,43 +226,7 @@ import는 다른 컴포넌트를 해당 컴포넌트에서 사용할 수 있게 
 해당 컴포넌트에서 유지해야 할 데이터가 아니라면 props(부모로 부터 받는 데이터)를 받아 사용한다.&lt;br&gt;
 react에서는 DOM에 직접적으로 접근하지 않는다.&lt;br&gt;
 ex)document.getSelector() / DOM.addEventlistener() / DOM의 프로퍼티 접근 등등&lt;br&gt;
-react에서는 style을 인라인 방식으로 주지 않고 항상 별도의 style 파일에서 정의하고 selector을 이용해서 style을 적용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[webGame 진행하면서]]></title><description><![CDATA[웹 게임을 진행하면서 쓰는 글.]]></description><link>https://khsi12345.github.io//posts/webGame/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/webGame/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Enemy {
-    constructor(eP) {
-        console.log(eP)
-        this.enemyPosition = eP;
-        this.enemycreate;
-    }
-
-    enemyCreate()  {
-
-    }
-    }
-    enemyUnderMove() {
-
-    }
-
-let enemys = new Enemy(enemyPositionY);
-
-window.addEventListener(&amp;#39;load&amp;#39;, e =&amp;gt; {
-     enemys.enemyCreate()
-     enemys.enemyUnderMove()
-     ***setInterval(enemys.enemyCreate.bind(enemys),1000)***
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;문제의 코드!!&lt;br&gt;
-이벤트 안에서 setInterval 함수를 사용했다.&lt;br&gt;
-그리고 Enemy 클래스의 인스턴스를 만들고 인스턴스로 클래스의 메서드를 호출했다.&lt;br&gt;
-정상적으로 작동하는지 확인하기 위해 console.log()로 의심이 되는 데이터들을 찍어보았다.&lt;br&gt;
-그 결과는 NaN이 출력이 된다.&lt;/p&gt;
-&lt;p&gt;무슨 문제가 발생한것인지 해결하기 위해 내 코드를 계속 보고 수정도 해보고 했지만 해결하지 못하고 있던 와중..&lt;br&gt;
-돌리고 있는 로직은 계산 부분이고 계산은 enemyCreate 함수 안에 작성되어있다.&lt;br&gt;
-근데 이 돌리고 있는 부분이 문제가 발생한거로 인지를 하고 enemyCreate 함수가 호출되는 지점을 확인했다.&lt;/p&gt;
-&lt;p&gt;setInterval 함수 안에서 호출되었고, Enemy 클래스 생성자를 호출해 새로운 인스턴스를 생성한 enemys로 enemyCreate 함수를 호출했다.&lt;/p&gt;
-&lt;p&gt;왠지 이 부분이 문제인듯 하다.&lt;br&gt;
-구글에서 setInterval을 MDN에서 보니 this의 문제점이 보였다.&lt;br&gt;
-setInterval은 setInterval에 전달되는 함수는 호출된 함수에 대한 this 키워드가 전역(window)으로 자동 설정된다고 한다.&lt;br&gt;
-즉, 내 코드에서는 this가 enemys(Enemy 클래스의 인스턴스, 즉 Enemy 클래스에서의 this는 enemys를 가리킨다.)다 라고 한것이지만,&lt;br&gt;
-무시되고 this가 전역(window)으로 강제 된것이다.&lt;br&gt;
-이 문제의 해결방법은 함수를 ES6의 Errow Function으로 하거나, enemys.enemyCreate.bind(enemys)처럼 this를 바인딩 시켜주는 방법이 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;react&quot;&gt;&lt;a href=&quot;#react&quot; aria-label=&quot;react permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REACT&lt;/h1&gt;
+react에서는 style을 인라인 방식으로 주지 않고 항상 별도의 style 파일에서 정의하고 selector을 이용해서 style을 적용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;react&quot;&gt;&lt;a href=&quot;#react&quot; aria-label=&quot;react permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REACT&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/media/lifecycle.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;라이프 사이클 순서&lt;/p&gt;
 &lt;ol&gt;
@@ -375,32 +339,43 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
-&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
-&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
-&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
-&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
-&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
-&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
-&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
-&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
-&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
-&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
-&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
-&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
-&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
-&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+} --&gt;</content:encoded></item><item><title><![CDATA[webGame 진행하면서]]></title><description><![CDATA[웹 게임을 진행하면서 쓰는 글.]]></description><link>https://khsi12345.github.io//posts/webGame/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/webGame/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Enemy {
+    constructor(eP) {
+        console.log(eP)
+        this.enemyPosition = eP;
+        this.enemycreate;
+    }
+
+    enemyCreate()  {
+
+    }
+    }
+    enemyUnderMove() {
+
+    }
+
+let enemys = new Enemy(enemyPositionY);
+
+window.addEventListener(&amp;#39;load&amp;#39;, e =&amp;gt; {
+     enemys.enemyCreate()
+     enemys.enemyUnderMove()
+     ***setInterval(enemys.enemyCreate.bind(enemys),1000)***
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;문제의 코드!!&lt;br&gt;
+이벤트 안에서 setInterval 함수를 사용했다.&lt;br&gt;
+그리고 Enemy 클래스의 인스턴스를 만들고 인스턴스로 클래스의 메서드를 호출했다.&lt;br&gt;
+정상적으로 작동하는지 확인하기 위해 console.log()로 의심이 되는 데이터들을 찍어보았다.&lt;br&gt;
+그 결과는 NaN이 출력이 된다.&lt;/p&gt;
+&lt;p&gt;무슨 문제가 발생한것인지 해결하기 위해 내 코드를 계속 보고 수정도 해보고 했지만 해결하지 못하고 있던 와중..&lt;br&gt;
+돌리고 있는 로직은 계산 부분이고 계산은 enemyCreate 함수 안에 작성되어있다.&lt;br&gt;
+근데 이 돌리고 있는 부분이 문제가 발생한거로 인지를 하고 enemyCreate 함수가 호출되는 지점을 확인했다.&lt;/p&gt;
+&lt;p&gt;setInterval 함수 안에서 호출되었고, Enemy 클래스 생성자를 호출해 새로운 인스턴스를 생성한 enemys로 enemyCreate 함수를 호출했다.&lt;/p&gt;
+&lt;p&gt;왠지 이 부분이 문제인듯 하다.&lt;br&gt;
+구글에서 setInterval을 MDN에서 보니 this의 문제점이 보였다.&lt;br&gt;
+setInterval은 setInterval에 전달되는 함수는 호출된 함수에 대한 this 키워드가 전역(window)으로 자동 설정된다고 한다.&lt;br&gt;
+즉, 내 코드에서는 this가 enemys(Enemy 클래스의 인스턴스, 즉 Enemy 클래스에서의 this는 enemys를 가리킨다.)다 라고 한것이지만,&lt;br&gt;
+무시되고 this가 전역(window)으로 강제 된것이다.&lt;br&gt;
+이 문제의 해결방법은 함수를 ES6의 Errow Function으로 하거나, enemys.enemyCreate.bind(enemys)처럼 this를 바인딩 시켜주는 방법이 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
 ​
 html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
@@ -433,7 +408,32 @@ document.getElementsByClassName(‘class의 값’)&lt;br&gt;
 ​
 getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
 ​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
+&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
+&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
+&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
+&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
+&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
+&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
+&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
+&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
+&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
+&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
+&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
+&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
+&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
 &lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
 &lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
 &lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
@@ -587,50 +587,4 @@ event.preventDefault();
 &lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
 &lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
-&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Perfecting the Art of Perfection]]></title><description><![CDATA[Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum.]]></description><link>https://khsi12345.github.io//posts/perfecting-the-art-of-perfection/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/perfecting-the-art-of-perfection/</guid><pubDate>Thu, 01 Sep 2016 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0249a8579cfb4088acaf23fcac068444/98235/image-2.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAaa8hyWBEP/EABoQAAIDAQEAAAAAAAAAAAAAAAECAAMSBBP/2gAIAQEAAQUCPOXmbM+hSK5BbqszP//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAHRAAAAYDAQAAAAAAAAAAAAAAAAECEBESISJxof/aAAgBAQAGPwKbkNIVwVWWWr63/8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITFh8P/aAAgBAQABPyHduKW4HKoEp4zfE7OkG8yXCyU//9oADAMBAAIAAwAAABAAD//EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQMBAT8QE7av/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxB3CT//xAAcEAEAAgMBAQEAAAAAAAAAAAABABEhQVFxYaH/2gAIAQEAAT8Q1tFIaHmY6qk11VGkZj6wwX+QQjfXfeygHuMAHzkVauVyruf/2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-        &lt;source
-          srcset=&quot;/static/0249a8579cfb4088acaf23fcac068444/01472/image-2.webp 240w,
-/static/0249a8579cfb4088acaf23fcac068444/222bd/image-2.webp 480w,
-/static/0249a8579cfb4088acaf23fcac068444/620b9/image-2.webp 960w,
-/static/0249a8579cfb4088acaf23fcac068444/28063/image-2.webp 1440w,
-/static/0249a8579cfb4088acaf23fcac068444/44134/image-2.webp 1800w&quot;
-          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-          type=&quot;image/webp&quot;
-        /&gt;
-        &lt;source
-          srcset=&quot;/static/0249a8579cfb4088acaf23fcac068444/3bc27/image-2.jpg 240w,
-/static/0249a8579cfb4088acaf23fcac068444/98431/image-2.jpg 480w,
-/static/0249a8579cfb4088acaf23fcac068444/b3ee8/image-2.jpg 960w,
-/static/0249a8579cfb4088acaf23fcac068444/b97fe/image-2.jpg 1440w,
-/static/0249a8579cfb4088acaf23fcac068444/98235/image-2.jpg 1800w&quot;
-          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-          type=&quot;image/jpeg&quot;
-        /&gt;
-        &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/0249a8579cfb4088acaf23fcac068444/b3ee8/image-2.jpg&quot;
-          alt=&quot;Nulla faucibus vestibulum eros in tempus. Vestibulum tempor imperdiet velit nec dapibus&quot;
-          title=&quot;Nulla faucibus vestibulum eros in tempus. Vestibulum tempor imperdiet velit nec dapibus&quot;
-          loading=&quot;lazy&quot;
-        /&gt;
-      &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
-&lt;p&gt;Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item></channel></rss>
