@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 25 Aug 2019 10:24:39 GMT</lastBuildDate><item><title><![CDATA[Component and PureComponent]]></title><description><![CDATA[Component와 PureComponent에 대한 글]]></description><link>https://khsi12345.github.io//posts/Component(&amp;PureComponent)/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/Component(&amp;PureComponent)/</guid><pubDate>Fri, 23 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;props를 input으로 받고 React Element를 반환하는 함수.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 28 Aug 2019 01:36:31 GMT</lastBuildDate><item><title><![CDATA[1차 프로젝트 3일차]]></title><description><![CDATA[1차 프로젝트 1~3일 동안의 모든 것]]></description><link>https://khsi12345.github.io//posts/first_project/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/first_project/</guid><pubDate>Wed, 28 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;1차 프로젝트로 망고플레이트 웹을 클론을 시작했다.&lt;/p&gt;
+&lt;p&gt;1일차에는 팀원들끼리 Planning Meetting을 시작했다.&lt;br&gt;
+나는 망고플레이트 웹에서 메인페이지의 메인 부분과 상세 페이지를 맡았다.&lt;br&gt;
+기존에 목업으로 만들어 논 데이터를 가지고 트렐로에 각자 맡아서 구현해야 할 페이지와 기능을 나눠 카드로 작성했다.&lt;br&gt;
+그리고 2주 동안 이뤄질 프로젝트여서 이번 1주 동안 진행할 페이지와 기능 구현을 sprint에 지정해놓고 프로젝트를 시작했다.&lt;/p&gt;
+&lt;p&gt;메인 페이지의 메인 부분을 맡았지만 메인 페이지(전체)를 구현한다고 생각하고 만들기 시작했다.&lt;br&gt;
+먼저 Header부분을 HTML로 구조를 잡고 CSS로 스타일을 입혔다.&lt;/p&gt;
+&lt;p&gt;이 과정에서 HTML을 작성할 때 Sementic HTML로 제대로 만들어보자! 하고 공부했던 지식과 구글링으로 조금씩 조금씩 완성도를 높혀갔다.&lt;br&gt;
+CSS를 입히지 않은 상태라 1990년대 후반? 2000년대 초? 야후 같은 느낌이다.&lt;br&gt;
+HTML로 잡은 구조를 뷰에서 이쁘게 보이게 만드려고 위치 조정을 했다.&lt;br&gt;
+로고와 검색창 메뉴 리스트를 한 라인에 보이게하고 이미지, 텍스트, 여백 등등을 조정했다.&lt;/p&gt;
+&lt;p&gt;위치 조정에서는 여러가지 속성이 있지만 flex를 사용했고, 각 요소 간의 여백도 flex를 적용하면 사용할 수 있는 속성을 사용했다.&lt;br&gt;
+스크롤을 내려서 페이지를 밑으로 이동할 때 헤더가 고정으로 보이게 하기 위해 fix도 해줬다.&lt;/p&gt;
+&lt;p&gt;이미지를 뷰에 띄우려고 javascript 하던 것처럼 경로를 src에 값으로 줬는데 이미지를 못찾으면 보이는 엄청 조그만 종이가 뜬다.(뭐야? 안뜨네? 하고 바로 구글링..)&lt;br&gt;
+내가 찾은 방법은 이미지 파일을 프로젝트 디렉토리에 넣어 이미지 파일이 존재하고 있는 경로를 import해서 src의 값으로 주는것.(잘 되네~)&lt;/p&gt;
+&lt;p&gt;이때까지만 해도 상당히 무난하게 진행하고 있었다.&lt;br&gt;
+메인 페이지의 메인 부분!! 이미지 들을 일정한 사이즈와 일정한 간격 그리고 열(column)로 길게 보이게 하는게 문제였다…&lt;br&gt;
+일정한 사이즈 일정한 간격은 flex와 고정vw를 이용해서 잘 맞추었는데 열(column)로 길게 보이게 하려고 했더니 이미가 계속 짤리는 문제가 발생했다.&lt;/p&gt;
+&lt;p&gt;문제가 발생하자 말자.. 이거 뭐야? 왜 이래? 왜 이런거지?? … 문제 발생할 리 없는데.. 등등 별에 별 생각이 들었다.&lt;br&gt;
+마인드 리셋하고 바로 문제 해결 시작.&lt;br&gt;
+이미지가 짤리는 문제라서 HTML에서 구조 조정(이미지와 관련된 태그들 조정) 가장 먼저 개수를 줄여봤다.&lt;br&gt;
+2 column으로 2줄 나올 때는 이미지가 안짤리고 3줄 나올 때는 이미지가 짤린다.&lt;/p&gt;
+&lt;p&gt;이미지가 문제있는 것을 아닐테고.. height(높이) 관련된 속성과 값을 확인 및 수정, 추가, 복구 계속 반복했다.&lt;br&gt;
+height(높이) 문제로 짤릴거라 생각한 이유에서다.&lt;/p&gt;
+&lt;p&gt;위 확인 및 수정, 추가, 복구를 반복하다 보니 이미지를 자식으로 가지고 있는 부모 태그에 height(높이) 관련 속성 그리고 값을 주면 이미지가 짤리고 주지 않으면 짤리지는 않는다.&lt;br&gt;
+하지만 주지 않으면 이미지가 짤리지는 않지만 이미지의 사이즈가 내가 원하지 않는 방향으로 이뤄지기 때문에 이건 해결 방법이 아니었다.&lt;br&gt;
+그럼 일단 이미지를 자식으로 가지고 있는 부모 태그에 속성과 값을 주지 않고 다른 태그들에 height(높이) 관련 속성과 값을 주면서 문제 해결을 시도했다.&lt;br&gt;
+딱히 내가 원하는 결과가 나오지 않는다.&lt;/p&gt;
+&lt;p&gt;정말 이 문제를 해결하기 위해 물리적인 시간도 시간이지만 내가 사용했던 CSS 속성과 값들을 확인 및 수정, 추가, 복구를 반복하는 과정 그리고 구글링…&lt;/p&gt;
+&lt;p&gt;이때 잊고 있었던 width…(!!!!!!!!!!!!)&lt;br&gt;
+heigh(높이)는 고정으로 줘도 되지만 주지 않는다면 width에 비례 또는 자식 컨텐츠에 높이 만큼의 값을 가진다는 것을…&lt;/p&gt;
+&lt;p&gt;다시 생각했다.&lt;br&gt;
+이미지를 자식으로 가지고 있는 부모 태그에 height(높이) 관련 속성, 값을 주면 문제가 발생하니까..&lt;br&gt;
+주지말고 width를 확인해보자 라고.&lt;/p&gt;
+&lt;p&gt;그리고 width의 값을 수정하면서 이미지도 안짤리고 최대한 내가 원하는 사이즈가 결과로 나왔다.&lt;/p&gt;
+&lt;p&gt;정말… 메인 페이지를 만들면서 가장 정체되고 물리적 시간이 많이 투자된 CSS&lt;br&gt;
+(글 작성을 하다보니 과정과 내용이 많이 생략되고 압축되었는데 엄청난 문제였다 ㅜㅜ)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Component and PureComponent]]></title><description><![CDATA[Component와 PureComponent에 대한 글]]></description><link>https://khsi12345.github.io//posts/Component(&amp;PureComponent)/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/Component(&amp;PureComponent)/</guid><pubDate>Fri, 23 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;props를 input으로 받고 React Element를 반환하는 함수.&lt;br&gt;
 함수 안에 함수를 사용할 수 있듯 Component 안에서 Component를 사용(조합)할 수 있고&lt;br&gt;
 함수를 독립된 스코프(js파일)에서 사용할 수 있듯 Component도 독립적으로 사용하거나 쪼갤 수 있다.&lt;/p&gt;
 &lt;p&gt;잘 설계된?? Component는 View에 렌더 될 로직과 데이터와 관련된 로직을 각각 분리하는 것이다.&lt;/p&gt;
@@ -311,7 +347,43 @@ import는 다른 컴포넌트를 해당 컴포넌트에서 사용할 수 있게 
 해당 컴포넌트에서 유지해야 할 데이터가 아니라면 props(부모로 부터 받는 데이터)를 받아 사용한다.&lt;br&gt;
 react에서는 DOM에 직접적으로 접근하지 않는다.&lt;br&gt;
 ex)document.getSelector() / DOM.addEventlistener() / DOM의 프로퍼티 접근 등등&lt;br&gt;
-react에서는 style을 인라인 방식으로 주지 않고 항상 별도의 style 파일에서 정의하고 selector을 이용해서 style을 적용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;react&quot;&gt;&lt;a href=&quot;#react&quot; aria-label=&quot;react permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REACT&lt;/h1&gt;
+react에서는 style을 인라인 방식으로 주지 않고 항상 별도의 style 파일에서 정의하고 selector을 이용해서 style을 적용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[webGame 진행하면서]]></title><description><![CDATA[웹 게임을 진행하면서 쓰는 글.]]></description><link>https://khsi12345.github.io//posts/webGame/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/webGame/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Enemy {
+    constructor(eP) {
+        console.log(eP)
+        this.enemyPosition = eP;
+        this.enemycreate;
+    }
+
+    enemyCreate()  {
+
+    }
+    }
+    enemyUnderMove() {
+
+    }
+
+let enemys = new Enemy(enemyPositionY);
+
+window.addEventListener(&amp;#39;load&amp;#39;, e =&amp;gt; {
+     enemys.enemyCreate()
+     enemys.enemyUnderMove()
+     ***setInterval(enemys.enemyCreate.bind(enemys),1000)***
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;문제의 코드!!&lt;br&gt;
+이벤트 안에서 setInterval 함수를 사용했다.&lt;br&gt;
+그리고 Enemy 클래스의 인스턴스를 만들고 인스턴스로 클래스의 메서드를 호출했다.&lt;br&gt;
+정상적으로 작동하는지 확인하기 위해 console.log()로 의심이 되는 데이터들을 찍어보았다.&lt;br&gt;
+그 결과는 NaN이 출력이 된다.&lt;/p&gt;
+&lt;p&gt;무슨 문제가 발생한것인지 해결하기 위해 내 코드를 계속 보고 수정도 해보고 했지만 해결하지 못하고 있던 와중..&lt;br&gt;
+돌리고 있는 로직은 계산 부분이고 계산은 enemyCreate 함수 안에 작성되어있다.&lt;br&gt;
+근데 이 돌리고 있는 부분이 문제가 발생한거로 인지를 하고 enemyCreate 함수가 호출되는 지점을 확인했다.&lt;/p&gt;
+&lt;p&gt;setInterval 함수 안에서 호출되었고, Enemy 클래스 생성자를 호출해 새로운 인스턴스를 생성한 enemys로 enemyCreate 함수를 호출했다.&lt;/p&gt;
+&lt;p&gt;왠지 이 부분이 문제인듯 하다.&lt;br&gt;
+구글에서 setInterval을 MDN에서 보니 this의 문제점이 보였다.&lt;br&gt;
+setInterval은 setInterval에 전달되는 함수는 호출된 함수에 대한 this 키워드가 전역(window)으로 자동 설정된다고 한다.&lt;br&gt;
+즉, 내 코드에서는 this가 enemys(Enemy 클래스의 인스턴스, 즉 Enemy 클래스에서의 this는 enemys를 가리킨다.)다 라고 한것이지만,&lt;br&gt;
+무시되고 this가 전역(window)으로 강제 된것이다.&lt;br&gt;
+이 문제의 해결방법은 함수를 ES6의 Errow Function으로 하거나, enemys.enemyCreate.bind(enemys)처럼 this를 바인딩 시켜주는 방법이 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;react&quot;&gt;&lt;a href=&quot;#react&quot; aria-label=&quot;react permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REACT&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/media/lifecycle.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;라이프 사이클 순서&lt;/p&gt;
 &lt;ol&gt;
@@ -425,43 +497,121 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[webGame 진행하면서]]></title><description><![CDATA[웹 게임을 진행하면서 쓰는 글.]]></description><link>https://khsi12345.github.io//posts/webGame/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/webGame/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Enemy {
-    constructor(eP) {
-        console.log(eP)
-        this.enemyPosition = eP;
-        this.enemycreate;
-    }
-
-    enemyCreate()  {
-
-    }
-    }
-    enemyUnderMove() {
-
-    }
-
-let enemys = new Enemy(enemyPositionY);
-
-window.addEventListener(&amp;#39;load&amp;#39;, e =&amp;gt; {
-     enemys.enemyCreate()
-     enemys.enemyUnderMove()
-     ***setInterval(enemys.enemyCreate.bind(enemys),1000)***
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;문제의 코드!!&lt;br&gt;
-이벤트 안에서 setInterval 함수를 사용했다.&lt;br&gt;
-그리고 Enemy 클래스의 인스턴스를 만들고 인스턴스로 클래스의 메서드를 호출했다.&lt;br&gt;
-정상적으로 작동하는지 확인하기 위해 console.log()로 의심이 되는 데이터들을 찍어보았다.&lt;br&gt;
-그 결과는 NaN이 출력이 된다.&lt;/p&gt;
-&lt;p&gt;무슨 문제가 발생한것인지 해결하기 위해 내 코드를 계속 보고 수정도 해보고 했지만 해결하지 못하고 있던 와중..&lt;br&gt;
-돌리고 있는 로직은 계산 부분이고 계산은 enemyCreate 함수 안에 작성되어있다.&lt;br&gt;
-근데 이 돌리고 있는 부분이 문제가 발생한거로 인지를 하고 enemyCreate 함수가 호출되는 지점을 확인했다.&lt;/p&gt;
-&lt;p&gt;setInterval 함수 안에서 호출되었고, Enemy 클래스 생성자를 호출해 새로운 인스턴스를 생성한 enemys로 enemyCreate 함수를 호출했다.&lt;/p&gt;
-&lt;p&gt;왠지 이 부분이 문제인듯 하다.&lt;br&gt;
-구글에서 setInterval을 MDN에서 보니 this의 문제점이 보였다.&lt;br&gt;
-setInterval은 setInterval에 전달되는 함수는 호출된 함수에 대한 this 키워드가 전역(window)으로 자동 설정된다고 한다.&lt;br&gt;
-즉, 내 코드에서는 this가 enemys(Enemy 클래스의 인스턴스, 즉 Enemy 클래스에서의 this는 enemys를 가리킨다.)다 라고 한것이지만,&lt;br&gt;
-무시되고 this가 전역(window)으로 강제 된것이다.&lt;br&gt;
-이 문제의 해결방법은 함수를 ES6의 Errow Function으로 하거나, enemys.enemyCreate.bind(enemys)처럼 this를 바인딩 시켜주는 방법이 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+} --&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
+&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
+&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
+&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
+&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
+&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
+&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
+&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
+&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
+&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
+&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
+&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
+&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
+&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
+&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
+&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
+&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
+&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
+&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
+&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
+&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
+&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
+&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
+&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
+&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
+&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
+&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
+&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
+&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+&lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
+&lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
+&lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
+&lt;p&gt;Phon Nuber 또는 Email을 입력하면 빨간색 텍스트가 없어지게 만들고&lt;/p&gt;
+&lt;p&gt;reset 하면 다시 빨간 색 텍스트가 보이게 만들자.&lt;/p&gt;
+&lt;p&gt;해당 입력창(DOM)에 아무 입력을 하지 않으면&lt;/p&gt;
+&lt;p&gt;밑에 text가 기본으로 보인다.&lt;/p&gt;
+&lt;p&gt;입력을 하면 밑에 text가 보이지 않게 만들자.&lt;/p&gt;
+&lt;p&gt;해당 입력창(DOM)에 입력을 하면 &lt;br&gt;
+DOM에 setAttribute()를 사용해서&lt;br&gt;
+입력창 밑에 tex가 보이지 않게 css 속성을 추가해줬다.&lt;/p&gt;
+&lt;p&gt;입력창을 다시 reset하면 밑 text가 다시 보인다.&lt;/p&gt;
+&lt;p&gt;-------------------------------------------------------------------&lt;/p&gt;
+&lt;p&gt;입력창 2개에 입력을 하면 Log in 버튼 배경색을 변경해서&lt;br&gt;
+활성화되는 것처럼 보이게 만들자.&lt;/p&gt;
+&lt;p&gt;Log in 버튼 기본 배경색은 회색으로 설정되어 있는 상태고&lt;/p&gt;
+&lt;p&gt;입력창 2개에 입력을 하면 DOM에 setAttribute()를 사용해서&lt;/p&gt;
+&lt;p&gt;배경색을 변경해줬다.&lt;/p&gt;
+&lt;p&gt;입력창 1개를 입력하지 않으면&lt;/p&gt;
+&lt;p&gt;Log in 버튼 배경색은 기본으로 회색 그대로이고&lt;/p&gt;
+&lt;p&gt;입력창 2개를 다 입력했다가 1개를 reset 시키면&lt;/p&gt;
+&lt;p&gt;2개 입력했을 때 버튼 배경색이 바뀌었다가&lt;br&gt;
+1개를 reset 시키면 다시 기본 배경색으로 바뀐다.&lt;/p&gt;
+&lt;p&gt;이벤트는 2개의 DOM에 걸어줬는데 DOM에 접근한 개수는 총 4개다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;이벤트를 걸어주기 위해서만 DOM에 접근하는 것은 아니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DOM에 접근하는 이유는 해당 DOM을 컨트롤하기 위해서다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;코드 로직은 이벤트가 발생했을 때 실행시킬 코드를 함수를 만들어 작성하고&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;함수를 이벤트 리스너에게 넘겨주었다.(콜백 함수)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;회원가입 페이지&lt;/p&gt;
+&lt;p&gt;DOM에 접근을 해서 입력창과 버튼을&lt;/p&gt;
+&lt;p&gt;컨트롤하겠다.&lt;/p&gt;
+&lt;p&gt;모든 입력창에 입력을 해야 Sign up 버튼이&lt;/p&gt;
+&lt;p&gt;색이 변경되면서 활성화되는 것처럼 보이는데&lt;/p&gt;
+&lt;p&gt;로직을 작성하려고 보니 이벤트 리스너와&lt;/p&gt;
+&lt;p&gt;이벤트가 발생했을 때 실행시킬 코드가&lt;/p&gt;
+&lt;p&gt;상당히 중복될 가능성이 있어 보인다.&lt;/p&gt;
+&lt;p&gt;모든 입력창 DOM에 class를 동일하게 주고 &lt;br&gt;
+(&lt;strong&gt;class는 유니크하지 않아요!!&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;getElementsByClassName으로 접근했다.&lt;/p&gt;
+&lt;p&gt;하지만 이 녀석은 &lt;strong&gt;DOM 객체를 반환하지 않고&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DOM 객체들을 묶어 유사 배열 형태로 반환&lt;/strong&gt;한다.&lt;/p&gt;
+&lt;p&gt;DOM 객체로 받으려면&lt;/p&gt;
+&lt;p&gt;getElementsByClassName().[index]로 콕 집어줘야 한다.&lt;/p&gt;
+&lt;p&gt;(index라고 그대로 쓰면 안 됩니다. 배열 또는 배열 형태가 가지고 있는 index 값을 줘야 해요~)&lt;/p&gt;
+&lt;p&gt;DOM 객체가 필요하지만 getElementsByClassName().[index]로 쓰면&lt;/p&gt;
+&lt;p&gt;결국 querySelector()로 각각의 해당 요소에 접근하는 방법과 같아진다.&lt;/p&gt;
+&lt;p&gt;나에게 필요한 건 getElementsByClassName()으로&lt;/p&gt;
+&lt;p&gt;유사 배열 형태로 이뤄진 DOM 객체들이다.&lt;/p&gt;
+&lt;p&gt;그리고 반복문을 돌려서 효율적으로 작성하려 한다.&lt;/p&gt;
+&lt;p&gt;어라????? 반복문을 돌리려 forEach를 사용했는데 에러가 발생한다!!&lt;/p&gt;
+&lt;p&gt;무슨 문제가 있나 보다… MDN 및 구글링~&lt;/p&gt;
+&lt;p&gt;오호라~ 좀 번외이긴 하지만 JS에서는 배열도 Object(객체)다. (typeof으로 검사해보면 object로 떠요~)&lt;/p&gt;
+&lt;p&gt;그래서 데이터가 배열인지 아닌지 확인하려면 Array.isArray() 메서드를 사용해서 확인해야 한다.&lt;/p&gt;
+&lt;p&gt;확인해보니 false라 뜬다. (배열이 아니구나… 근데 배열이 아닌데 배열처럼 묶여있네?? 이런 걸 유사 배열이라 하네)&lt;/p&gt;
+&lt;p&gt;유사 배열은 배열이 아니고, 배열처럼 index는 가진다.(배열이 아니라서 배열의 메서드들을 사용할 수 없다.)&lt;/p&gt;
+&lt;p&gt;그래서 유사 배열을 배열로 만들려고 한다.&lt;/p&gt;
+&lt;p&gt;Array.prototype.slice.call()을 사용해서 말이다.&lt;/p&gt;
+&lt;p&gt;Array(배열)가 가지고 있는 slice 메서드를 call이라는 녀석으로 호출했다. (slice는 받은 데이터를 복사해서 원본 데이터와 전혀 다른 새로운 데이터를 반환한다.)&lt;/p&gt;
+&lt;p&gt;그리고 () 안에 유사배열을 넘겨줬다.&lt;/p&gt;
+&lt;p&gt;이제 배열로 만들어줬으니 반복문을 돌려도 에러가 발생하지 않는다.&lt;/p&gt;
+&lt;p&gt;반복문으로 각각의 DOM 객체를 불러올 수 있게 됐다.&lt;/p&gt;
+&lt;p&gt;각각의 DOM 객체를 불러와 이벤트 리스너를 걸어주고 이벤트가 발생했을 때 실행시킬 코드를 작성했다.&lt;/p&gt;
+&lt;p&gt;이렇게 코드를 작성하니 &lt;strong&gt;중복이 없다.&lt;/strong&gt;(개발자는 중복이 귀찮고 싫잖아요? 인정하셔야 돼요!! )&lt;/p&gt;
+&lt;p&gt;로그인 페이지에서는 컨트롤할 DOM이 적으니 1~2개 중복은 괜찮지만 확장되면서 중복이 되면 유지 보수하기 힘들 것 같다.(매우)&lt;/p&gt;
+&lt;p&gt;그래서 회원가입 페이지에서는 최대한 중복을 제외하는 로직으로 코드를 작성했다.&lt;/p&gt;
+&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
 ​
 html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
@@ -559,118 +709,4 @@ event.preventDefault();
 &lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
 &lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
-&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
-&lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
-&lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
-&lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
-&lt;p&gt;Phon Nuber 또는 Email을 입력하면 빨간색 텍스트가 없어지게 만들고&lt;/p&gt;
-&lt;p&gt;reset 하면 다시 빨간 색 텍스트가 보이게 만들자.&lt;/p&gt;
-&lt;p&gt;해당 입력창(DOM)에 아무 입력을 하지 않으면&lt;/p&gt;
-&lt;p&gt;밑에 text가 기본으로 보인다.&lt;/p&gt;
-&lt;p&gt;입력을 하면 밑에 text가 보이지 않게 만들자.&lt;/p&gt;
-&lt;p&gt;해당 입력창(DOM)에 입력을 하면 &lt;br&gt;
-DOM에 setAttribute()를 사용해서&lt;br&gt;
-입력창 밑에 tex가 보이지 않게 css 속성을 추가해줬다.&lt;/p&gt;
-&lt;p&gt;입력창을 다시 reset하면 밑 text가 다시 보인다.&lt;/p&gt;
-&lt;p&gt;-------------------------------------------------------------------&lt;/p&gt;
-&lt;p&gt;입력창 2개에 입력을 하면 Log in 버튼 배경색을 변경해서&lt;br&gt;
-활성화되는 것처럼 보이게 만들자.&lt;/p&gt;
-&lt;p&gt;Log in 버튼 기본 배경색은 회색으로 설정되어 있는 상태고&lt;/p&gt;
-&lt;p&gt;입력창 2개에 입력을 하면 DOM에 setAttribute()를 사용해서&lt;/p&gt;
-&lt;p&gt;배경색을 변경해줬다.&lt;/p&gt;
-&lt;p&gt;입력창 1개를 입력하지 않으면&lt;/p&gt;
-&lt;p&gt;Log in 버튼 배경색은 기본으로 회색 그대로이고&lt;/p&gt;
-&lt;p&gt;입력창 2개를 다 입력했다가 1개를 reset 시키면&lt;/p&gt;
-&lt;p&gt;2개 입력했을 때 버튼 배경색이 바뀌었다가&lt;br&gt;
-1개를 reset 시키면 다시 기본 배경색으로 바뀐다.&lt;/p&gt;
-&lt;p&gt;이벤트는 2개의 DOM에 걸어줬는데 DOM에 접근한 개수는 총 4개다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;이벤트를 걸어주기 위해서만 DOM에 접근하는 것은 아니다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;DOM에 접근하는 이유는 해당 DOM을 컨트롤하기 위해서다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;코드 로직은 이벤트가 발생했을 때 실행시킬 코드를 함수를 만들어 작성하고&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;함수를 이벤트 리스너에게 넘겨주었다.(콜백 함수)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;회원가입 페이지&lt;/p&gt;
-&lt;p&gt;DOM에 접근을 해서 입력창과 버튼을&lt;/p&gt;
-&lt;p&gt;컨트롤하겠다.&lt;/p&gt;
-&lt;p&gt;모든 입력창에 입력을 해야 Sign up 버튼이&lt;/p&gt;
-&lt;p&gt;색이 변경되면서 활성화되는 것처럼 보이는데&lt;/p&gt;
-&lt;p&gt;로직을 작성하려고 보니 이벤트 리스너와&lt;/p&gt;
-&lt;p&gt;이벤트가 발생했을 때 실행시킬 코드가&lt;/p&gt;
-&lt;p&gt;상당히 중복될 가능성이 있어 보인다.&lt;/p&gt;
-&lt;p&gt;모든 입력창 DOM에 class를 동일하게 주고 &lt;br&gt;
-(&lt;strong&gt;class는 유니크하지 않아요!!&lt;/strong&gt;)&lt;/p&gt;
-&lt;p&gt;getElementsByClassName으로 접근했다.&lt;/p&gt;
-&lt;p&gt;하지만 이 녀석은 &lt;strong&gt;DOM 객체를 반환하지 않고&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;DOM 객체들을 묶어 유사 배열 형태로 반환&lt;/strong&gt;한다.&lt;/p&gt;
-&lt;p&gt;DOM 객체로 받으려면&lt;/p&gt;
-&lt;p&gt;getElementsByClassName().[index]로 콕 집어줘야 한다.&lt;/p&gt;
-&lt;p&gt;(index라고 그대로 쓰면 안 됩니다. 배열 또는 배열 형태가 가지고 있는 index 값을 줘야 해요~)&lt;/p&gt;
-&lt;p&gt;DOM 객체가 필요하지만 getElementsByClassName().[index]로 쓰면&lt;/p&gt;
-&lt;p&gt;결국 querySelector()로 각각의 해당 요소에 접근하는 방법과 같아진다.&lt;/p&gt;
-&lt;p&gt;나에게 필요한 건 getElementsByClassName()으로&lt;/p&gt;
-&lt;p&gt;유사 배열 형태로 이뤄진 DOM 객체들이다.&lt;/p&gt;
-&lt;p&gt;그리고 반복문을 돌려서 효율적으로 작성하려 한다.&lt;/p&gt;
-&lt;p&gt;어라????? 반복문을 돌리려 forEach를 사용했는데 에러가 발생한다!!&lt;/p&gt;
-&lt;p&gt;무슨 문제가 있나 보다… MDN 및 구글링~&lt;/p&gt;
-&lt;p&gt;오호라~ 좀 번외이긴 하지만 JS에서는 배열도 Object(객체)다. (typeof으로 검사해보면 object로 떠요~)&lt;/p&gt;
-&lt;p&gt;그래서 데이터가 배열인지 아닌지 확인하려면 Array.isArray() 메서드를 사용해서 확인해야 한다.&lt;/p&gt;
-&lt;p&gt;확인해보니 false라 뜬다. (배열이 아니구나… 근데 배열이 아닌데 배열처럼 묶여있네?? 이런 걸 유사 배열이라 하네)&lt;/p&gt;
-&lt;p&gt;유사 배열은 배열이 아니고, 배열처럼 index는 가진다.(배열이 아니라서 배열의 메서드들을 사용할 수 없다.)&lt;/p&gt;
-&lt;p&gt;그래서 유사 배열을 배열로 만들려고 한다.&lt;/p&gt;
-&lt;p&gt;Array.prototype.slice.call()을 사용해서 말이다.&lt;/p&gt;
-&lt;p&gt;Array(배열)가 가지고 있는 slice 메서드를 call이라는 녀석으로 호출했다. (slice는 받은 데이터를 복사해서 원본 데이터와 전혀 다른 새로운 데이터를 반환한다.)&lt;/p&gt;
-&lt;p&gt;그리고 () 안에 유사배열을 넘겨줬다.&lt;/p&gt;
-&lt;p&gt;이제 배열로 만들어줬으니 반복문을 돌려도 에러가 발생하지 않는다.&lt;/p&gt;
-&lt;p&gt;반복문으로 각각의 DOM 객체를 불러올 수 있게 됐다.&lt;/p&gt;
-&lt;p&gt;각각의 DOM 객체를 불러와 이벤트 리스너를 걸어주고 이벤트가 발생했을 때 실행시킬 코드를 작성했다.&lt;/p&gt;
-&lt;p&gt;이렇게 코드를 작성하니 &lt;strong&gt;중복이 없다.&lt;/strong&gt;(개발자는 중복이 귀찮고 싫잖아요? 인정하셔야 돼요!! )&lt;/p&gt;
-&lt;p&gt;로그인 페이지에서는 컨트롤할 DOM이 적으니 1~2개 중복은 괜찮지만 확장되면서 중복이 되면 유지 보수하기 힘들 것 같다.(매우)&lt;/p&gt;
-&lt;p&gt;그래서 회원가입 페이지에서는 최대한 중복을 제외하는 로직으로 코드를 작성했다.&lt;/p&gt;
-&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
-&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
-&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
-&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
-&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
-&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
-&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
-&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
-&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
-&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
-&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
-&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
-&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
-&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
-&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
-&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
-&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
-&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
-&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
-&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
-&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
-&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
-&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
-&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
-&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
-&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
-&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
-&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
-&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
-&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
-&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item></channel></rss>
