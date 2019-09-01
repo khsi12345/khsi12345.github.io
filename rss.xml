@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 01 Sep 2019 10:52:49 GMT</lastBuildDate><item><title><![CDATA[1차 프로젝트 7일차]]></title><description><![CDATA[1차 프로젝트 4~7일 동안의 모든 것]]></description><link>https://khsi12345.github.io//posts/first_project/2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/first_project/2</guid><pubDate>Sun, 01 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;3일차까지 구현했던 HTML과 CSS를 리뉴얼하고 다양한 환경에서도 문제없이 뷰가&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 01 Sep 2019 12:14:18 GMT</lastBuildDate><item><title><![CDATA[1차 프로젝트 7일차]]></title><description><![CDATA[1차 프로젝트 4~7일 동안의 모든 것]]></description><link>https://khsi12345.github.io//posts/first_project/2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/first_project/2</guid><pubDate>Sun, 01 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;3일차까지 구현했던 HTML과 CSS를 리뉴얼하고 다양한 환경에서도 문제없이 뷰가&lt;br&gt;
 잘 나오게하기 위해서 반응형을 구현하기 시작했다.&lt;br&gt;
 반응형이 적용될 기준을 잡아야 했고 그 기준은 태블릿(아이패드), 모바일(아이폰 6,7,8plus)로 잡았다.&lt;/p&gt;
 &lt;p&gt;풀 화면일때 header 부분&lt;/p&gt;
@@ -238,7 +238,72 @@ X 아이콘을 클릭하면 원래 화면이 보인다.&lt;br&gt;
 고정적으로 차지하고 있던 width 값들을 수정하고 나니 가로 스크롤 바가 사라졌다.&lt;/p&gt;
 &lt;p&gt;해결하고 나서는 왜 문제발생에 대해서 디버깅할때 디버깅 대상을 한정시켰을까? 였다.&lt;br&gt;
 그리고 해결이 안되는데도 계속 의심되는 대상만 파고 또 팠을까? 였다.&lt;/p&gt;
-&lt;p&gt;다음에는 디버깅할때 의심되는 대상을 1순위로 디버깅하고 해결이 안되면 더 넓게 보고 디버깅을 해야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[인증 & 인가]]></title><description><![CDATA[인증&인가에 대한 글 ]]></description><link>https://khsi12345.github.io//posts/authentication_authorization/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/authentication_authorization/</guid><pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;인증인가&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EC%A6%9D%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;인증인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인증&amp;#x26;인가&lt;/h2&gt;
+&lt;p&gt;다음에는 디버깅할때 의심되는 대상을 1순위로 디버깅하고 해결이 안되면 더 넓게 보고 디버깅을 해야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[프론트와 백의 통신]]></title><description><![CDATA[프론트와 백의 통신에 대한 글 ]]></description><link>https://khsi12345.github.io//posts/front-and-back-comunicate/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/front-and-back-comunicate/</guid><pubDate>Sat, 31 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;프론트와 백 모두 하나의 목표를 달성하기 위해 함께 작동한다.&lt;/p&gt;
+&lt;p&gt;사용자가 브라우저를 웹 사이트 URL 중 하나에 연결하면&lt;br&gt;
+브라우저가 서버에 하나 이상의 요청을 보내고 브라우저가 서버로부터 응답을 받기 위해 대기한다.&lt;br&gt;
+모든 응답은 사이트의 일부를 렌더링하는 데 사용된다.&lt;/p&gt;
+&lt;p&gt;사용자는 브라우저가 페이지를 렌더링하기를 기다린다.&lt;br&gt;
+사용자는 페이지와 상호 작용한다.(더 많은 요청을 보내거나 더 많은 데이터를 얻고 새로운 정보를 표시)&lt;/p&gt;
+&lt;p&gt;이 모든것은 요청을 보내고 응답을 받음으로 가능하게 한다.&lt;/p&gt;
+&lt;p&gt;용어 정리&lt;/p&gt;
+&lt;h5 id=&quot;서버&quot;&gt;&lt;a href=&quot;#%EC%84%9C%EB%B2%84&quot; aria-label=&quot;서버 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;서버&lt;/h5&gt;
+&lt;p&gt;브라우저 요청이 도착하는 주상적인 “사물”.&lt;br&gt;
+백엔드 요청은 서버에 도착하여 결국 백엔드 코드로 전달된다.&lt;/p&gt;
+&lt;h5 id=&quot;백엔드&quot;&gt;&lt;a href=&quot;#%EB%B0%B1%EC%97%94%EB%93%9C&quot; aria-label=&quot;백엔드 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;백엔드&lt;/h5&gt;
+&lt;p&gt;웹 앱에서 사용자에게 직접 보이지 않는 부분.&lt;br&gt;
+요청을 받고 사용자의 브라우저로 다시 전송되는 데이터를 준비한다.&lt;br&gt;
+서버에서 실행되도록 작성되었으며 사용자 컴퓨터에서 실행되지 않는다.&lt;/p&gt;
+&lt;h5 id=&quot;프론트엔드&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C&quot; aria-label=&quot;프론트엔드 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프론트엔드&lt;/h5&gt;
+&lt;p&gt;웹 브라우저에서 사용자 브라우저가 직접 사용하도록하는 부분.&lt;br&gt;
+브라우저 내에서 실행되는 코드 또는 페이지를 렌더링하는 동안 해석되는 마크 업이다.(javascript 포함)&lt;/p&gt;
+&lt;h5 id=&quot;브라우저&quot;&gt;&lt;a href=&quot;#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80&quot; aria-label=&quot;브라우저 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;브라우저&lt;/h5&gt;
+&lt;p&gt;사용자의 장치에서 실행되는 응용 프로그램.&lt;br&gt;
+HTTP 요청을 보내고 응답을 받고, 받은 데이터를 처리 한 후 이를 사용하여 볼 수 있는 페이지를 렌더링한다.&lt;br&gt;
+사용자 측의 모든 통신은 브라우저를 통해 이루어진다.&lt;/p&gt;
+&lt;p&gt;브라우저는 백엔드와 언제 통신할까?&lt;br&gt;
+백엔드에 브라우저에서 보낸 HTTP 요청이 도작할때.&lt;br&gt;
+요청에는 HTTP 헤더 또는 본문에 데이터가 포함될 수 있다.&lt;br&gt;
+새로운 데이터를 요청하거나 사용자가 만든 데이터를 백엔드로 전송하는 것이 목적일 수 있다.&lt;br&gt;
+HTTP 요청은 사용자 브라우저 내부에 구성되어 전송되고, 각 요청에 대한 응답이 있으며 이러한 응답은&lt;br&gt;
+백엔드에 다시 도착하고 사용자의 브라우저에 다시 도착한다.&lt;/p&gt;
+&lt;p&gt;서로 무엇을 보내고 받는가?&lt;br&gt;
+백엔드는 HTML 형식으로 응답, JSON 형식의 데이터, 상태 코드와 헤더&lt;br&gt;
+프론트엔드는 본문이 없는 간단한 HTTP 요청, JSON 형식의 데이터&lt;/p&gt;
+&lt;h3 id=&quot;통신-시나리오&quot;&gt;&lt;a href=&quot;#%ED%86%B5%EC%8B%A0-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4&quot; aria-label=&quot;통신 시나리오 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;통신 시나리오&lt;/h3&gt;
+&lt;p&gt;정적 컨텐츠&lt;br&gt;
+브라우저가 &lt;a href=&quot;http://www.google.com%EC%9D%84&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://www.google.com을&lt;/a&gt; 요청하면 백엔드의 웹 서버에서 처리한다.&lt;br&gt;
+요청은 해당 리소스에 대한 GET이며 백엔드는 파일 내용을 포함하는 응답으로 응답한다.&lt;br&gt;
+웹 서버는 이 작업을 통해 매우 빠르며 웹 응용 프로그램은 다소 어색하다.&lt;/p&gt;
+&lt;p&gt;django&lt;br&gt;
+브라우저 쪽에서는 정적 컨텐츠를 요청하는것과 같다.&lt;br&gt;
+브라우저는 백엔드의 어느 부분이 요청을 처리할짖 신경 쓰지 않고 응답을 원한다.&lt;br&gt;
+요청이 서버에 도착하고 웹 서버로 전달되고 웹 서버는 요청을 앱 서버로 전달한다.&lt;br&gt;
+웹 서버는 단순히 구성된 작업을 수행한다.&lt;br&gt;
+django는 요청을 받아 처리하고 데이터베이스에서 일부 데이터를 찾아 응답을 보낸다.&lt;br&gt;
+HTML은 응답으로 패키지되고 HTTP 본문 내부에 포함한다.&lt;br&gt;
+브라우저는 응답을 받고 HTML에서 DOM을 렌더링한다.&lt;/p&gt;
+&lt;p&gt;JS와 상호작용&lt;br&gt;
+브라우저가 페이지를 렌더링하고 JS 코드를 실행한다.&lt;br&gt;
+버튼을 누를 때 요소를 동적으로 숨기거나 표시하거나 백엔드 와 통신을 수행할 수 있다.&lt;br&gt;
+JS 코드는 백엔드로 더 많은 요청을 보내도록 요청할 수 있다.
+최신 데이터를 요청할 수 있으며 JS 코드는 페이지를 완전히 다시 로드하지 않고 도착한 후에 처리한다.&lt;br&gt;
+JS 코드에 의해 트리거되는 HTTP 요청은 일반적으로 백그라운드에서 이루어진다.&lt;br&gt;
+이전과 동일한 페이지가 있지만 페이지를 다시 로드하지 않고도 브라우저 이벤트를 트리거 할 수 있다.&lt;br&gt;
+따라서 UX 흐름을 방해하지 않으면서 화면이 깜빡이지 않고 새 데이터가 매끄럽게 표시되므로 지속적인 사용자 경험이 가능한다.&lt;/p&gt;
+&lt;p&gt;SPA&lt;br&gt;
+단일 페이지 아키텍처를 사용하면 정적 페이지에 많은 JS가 로드된다.&lt;br&gt;
+초기 요청에는 백엔드 코드가 사용되지 않는다.&lt;br&gt;
+HTML과 JS가 브라우저에 도착하면 JS가 실행되고 서버에 DATA를 요청하기 시작한다.&lt;br&gt;
+일반적으로 JSON 응답 형식이다.&lt;br&gt;
+정적 페이지 내의 JS코드는 백엔드에서 데이터를 로드하고 DOM은 빈 페이지부터 시작하여 해당 데이터를 기반으로&lt;br&gt;
+동적 빌드되고 사용자에게 표시된다.&lt;/p&gt;
+&lt;p&gt;서버측 렌더링&lt;br&gt;
+SPA 경우 브라우저는 처음에 일부 JS가 링크된 빈 페이지를 수신했다.&lt;br&gt;
+결과적으로 이것은 검색 엔진이 싫어한다.&lt;br&gt;
+초기 HTML, JS는 서버에 로드되어 HTML로 사전 렌더링 되었지만 프론트엔드 기술을 사용했다.&lt;br&gt;
+본질적으로 백엔드에는 한동안 브라우저인 것처럼 가장하는 부분이 있다.&lt;br&gt;
+프론트엔드 코드의 JS 부분을 실행하여 백엔드 코드를 요청하고 HTML 사이트를 빌드한다.&lt;br&gt;
+SPA 아키텍처를 원하지만 여전히 검색 엔진과 가까우려면 서버측 렌더링 작업을 수행해야한다.(SEO 이슈)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[인증 & 인가]]></title><description><![CDATA[인증&인가에 대한 글 ]]></description><link>https://khsi12345.github.io//posts/authentication_authorization/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/authentication_authorization/</guid><pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;인증인가&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EC%A6%9D%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;인증인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인증&amp;#x26;인가&lt;/h2&gt;
 &lt;p&gt;인증과 인가는 API에서 가장 자주 구현되는 기능 중 하나.&lt;br&gt;
 private한 api는 물론이고 public한 api도 기본적인 인증과 인가를 요구한다.&lt;/p&gt;
 &lt;h4 id=&quot;인증&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EC%A6%9D&quot; aria-label=&quot;인증 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인증&lt;/h4&gt;
@@ -453,66 +518,7 @@ B라는 scss 파일에서 A라는 scss 파일에 존재하고 있는 mixin을&lt
 5.npm init&lt;br&gt;
 (해당 디렉토리 npm 초기화, package.json 파일 생성)&lt;br&gt;
 6.리액트 라우터 설치 &gt; yarn add react-router-dom / npm install react-router-dom —save&lt;br&gt;
-7.리액트에 eslint와 prettier 적용하기 &lt;a href=&quot;https://velog.io/@velopert/eslint-and-prettier-in-react&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://velog.io/@velopert/eslint-and-prettier-in-react&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing2]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react3/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react3/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react에서-event-data를-사용해보며&quot;&gt;&lt;a href=&quot;#react%EC%97%90%EC%84%9C-event-data%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0&quot; aria-label=&quot;react에서 event data를 사용해보며 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;react에서 event, data를 사용해보며&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInputEmail = (e) =&amp;gt; {
-    this.setState({
-      email: e.target.value,
-    });
-  };
-
-  handleInputPw = (e) =&amp;gt; {
-    this.setState({
-      pw: e.target.value,
-    });
-  };
-
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    placeholder=&amp;quot;Phone, email, or username&amp;quot;
-    className=&amp;quot;inputEmail&amp;quot;
-    onChange={this.handleInputEmail}
-    /&amp;gt;
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    placeholder=&amp;quot;Password&amp;quot;
-    className=&amp;quot;inputPw&amp;quot;
-    onChange={this.handleInputPw}
-    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 이벤트 핸들러가 같은 동작을 할 경우 처음엔 각각의 input 요소&lt;br&gt;
-그리고 state인 email과 pw로 인해 1개의 이벤트 핸들러에서는 email state를,&lt;br&gt;
-다른 1개의 이벤트 핸들러에서는 pw state를 다뤘다.&lt;br&gt;
-하지만 갱신해줘야하는 데이터(입력요소의 값)를 받을 대상이 다를 뿐이지 결국에는&lt;br&gt;
-데이터를 가지고 갱신하는 일은 같은 것이다.&lt;/p&gt;
-&lt;p&gt;위 코드를 이렇게 수정할 수 있겠다.&lt;br&gt;
-2개의 이벤트 핸들러를 1개로 줄이고 각각의 input 요소에서 사용할 수 있게한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInput = (e) =&amp;gt; {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  };
-
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    name=&amp;quot;email&amp;quot;
-    placeholder=&amp;quot;Phone, email, or username&amp;quot;
-    className=&amp;quot;inputEmail&amp;quot;
-    onChange={this.handleInput}
-    /&amp;gt;
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    name=&amp;quot;pw
-    placeholder=&amp;quot;Password&amp;quot;
-    className=&amp;quot;inputPw&amp;quot;
-    onChange={this.handleInput}
-    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;어떻게 이런게 가능한 것일까??&lt;br&gt;
-이벤트 핸들러는 이벤트 객체를 받을 수 있는데 그 이벤트 객체는 이벤트를 일으킨&lt;br&gt;
-요소다.&lt;br&gt;
-즉 해당 요소에서 이벤트가 발생하면 &lt;code class=&quot;language-text&quot;&gt;[e.target.name]&lt;/code&gt;은 name을 email 또는&lt;br&gt;
-pw 구분한다.&lt;br&gt;
-name이 email인 요소면 &lt;code class=&quot;language-text&quot;&gt;email: e.target.value&lt;/code&gt;가 되는것이고&lt;br&gt;
-name이 pw인 요소면 &lt;code class=&quot;language-text&quot;&gt;pw:e.gartget.value&lt;/code&gt;가 되는것이다.&lt;/p&gt;
-&lt;p&gt;중복을 줄일 수 있는 정말 좋은 방법이다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React component styling(SASS / SCSS)]]></title><description><![CDATA[sass / scss 공부 및 적용]]></description><link>https://khsi12345.github.io//posts/react/component-styling-sass-scss/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/component-styling-sass-scss/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react-component-styling-중-sassscss&quot;&gt;&lt;a href=&quot;#react-component-styling-%EC%A4%91-sassscss&quot; aria-label=&quot;react component styling 중 sassscss permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React Component Styling 중 Sass(Scss)&lt;/h2&gt;
+7.리액트에 eslint와 prettier 적용하기 &lt;a href=&quot;https://velog.io/@velopert/eslint-and-prettier-in-react&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://velog.io/@velopert/eslint-and-prettier-in-react&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React component styling(SASS / SCSS)]]></title><description><![CDATA[sass / scss 공부 및 적용]]></description><link>https://khsi12345.github.io//posts/react/component-styling-sass-scss/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/component-styling-sass-scss/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react-component-styling-중-sassscss&quot;&gt;&lt;a href=&quot;#react-component-styling-%EC%A4%91-sassscss&quot; aria-label=&quot;react component styling 중 sassscss permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React Component Styling 중 Sass(Scss)&lt;/h2&gt;
 &lt;p&gt;sass(scss)는 Syntactically Awesome Style Sheets의 약자로 문법적으로 어~섬한 스타일 시트다.&lt;br&gt;
 sass(scss)는 복잡한 작업을 쉽게 해주고 코드의 재활용성과 가독성을 up시켜주며 유지보수를 쉽게 해준다.&lt;br&gt;
 CSS pre-processor로 CSS 전처리기이다.&lt;br&gt;
@@ -610,7 +616,66 @@ css처럼 {}로 선택자의 유효범위를 구분하며 ;도 사용한다.&lt;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;변수&lt;br&gt;
 사용하고자 하는 변수명 앞에 $ 키워드 사용&lt;/p&gt;
-&lt;p&gt;내용 추가 및 보완 예정&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react2/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react2/</guid><pubDate>Sat, 17 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;miniter에 react를 적용하게 됐다.&lt;/p&gt;
+&lt;p&gt;내용 추가 및 보완 예정&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing2]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react3/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react3/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react에서-event-data를-사용해보며&quot;&gt;&lt;a href=&quot;#react%EC%97%90%EC%84%9C-event-data%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0&quot; aria-label=&quot;react에서 event data를 사용해보며 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;react에서 event, data를 사용해보며&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInputEmail = (e) =&amp;gt; {
+    this.setState({
+      email: e.target.value,
+    });
+  };
+
+  handleInputPw = (e) =&amp;gt; {
+    this.setState({
+      pw: e.target.value,
+    });
+  };
+
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    placeholder=&amp;quot;Phone, email, or username&amp;quot;
+    className=&amp;quot;inputEmail&amp;quot;
+    onChange={this.handleInputEmail}
+    /&amp;gt;
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    placeholder=&amp;quot;Password&amp;quot;
+    className=&amp;quot;inputPw&amp;quot;
+    onChange={this.handleInputPw}
+    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 이벤트 핸들러가 같은 동작을 할 경우 처음엔 각각의 input 요소&lt;br&gt;
+그리고 state인 email과 pw로 인해 1개의 이벤트 핸들러에서는 email state를,&lt;br&gt;
+다른 1개의 이벤트 핸들러에서는 pw state를 다뤘다.&lt;br&gt;
+하지만 갱신해줘야하는 데이터(입력요소의 값)를 받을 대상이 다를 뿐이지 결국에는&lt;br&gt;
+데이터를 가지고 갱신하는 일은 같은 것이다.&lt;/p&gt;
+&lt;p&gt;위 코드를 이렇게 수정할 수 있겠다.&lt;br&gt;
+2개의 이벤트 핸들러를 1개로 줄이고 각각의 input 요소에서 사용할 수 있게한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInput = (e) =&amp;gt; {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    name=&amp;quot;email&amp;quot;
+    placeholder=&amp;quot;Phone, email, or username&amp;quot;
+    className=&amp;quot;inputEmail&amp;quot;
+    onChange={this.handleInput}
+    /&amp;gt;
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    name=&amp;quot;pw
+    placeholder=&amp;quot;Password&amp;quot;
+    className=&amp;quot;inputPw&amp;quot;
+    onChange={this.handleInput}
+    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;어떻게 이런게 가능한 것일까??&lt;br&gt;
+이벤트 핸들러는 이벤트 객체를 받을 수 있는데 그 이벤트 객체는 이벤트를 일으킨&lt;br&gt;
+요소다.&lt;br&gt;
+즉 해당 요소에서 이벤트가 발생하면 &lt;code class=&quot;language-text&quot;&gt;[e.target.name]&lt;/code&gt;은 name을 email 또는&lt;br&gt;
+pw 구분한다.&lt;br&gt;
+name이 email인 요소면 &lt;code class=&quot;language-text&quot;&gt;email: e.target.value&lt;/code&gt;가 되는것이고&lt;br&gt;
+name이 pw인 요소면 &lt;code class=&quot;language-text&quot;&gt;pw:e.gartget.value&lt;/code&gt;가 되는것이다.&lt;/p&gt;
+&lt;p&gt;중복을 줄일 수 있는 정말 좋은 방법이다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react2/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react2/</guid><pubDate>Sat, 17 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;miniter에 react를 적용하게 됐다.&lt;/p&gt;
 &lt;h3 id=&quot;cracrate-react-app으로-react-환경을-구성했다&quot;&gt;&lt;a href=&quot;#cracrate-react-app%EC%9C%BC%EB%A1%9C-react-%ED%99%98%EA%B2%BD%EC%9D%84-%EA%B5%AC%EC%84%B1%ED%96%88%EB%8B%A4&quot; aria-label=&quot;cracrate react app으로 react 환경을 구성했다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CRA(crate-react-app)으로 react 환경을 구성했다.&lt;/h3&gt;
 &lt;h3 id=&quot;앞으로-혼자-개발-할-것이-아니기-때문에-eslint와-prettier로-코딩-환경을-구성했다&quot;&gt;&lt;a href=&quot;#%EC%95%9E%EC%9C%BC%EB%A1%9C-%ED%98%BC%EC%9E%90-%EA%B0%9C%EB%B0%9C-%ED%95%A0-%EA%B2%83%EC%9D%B4-%EC%95%84%EB%8B%88%EA%B8%B0-%EB%95%8C%EB%AC%B8%EC%97%90-eslint%EC%99%80-prettier%EB%A1%9C-%EC%BD%94%EB%94%A9-%ED%99%98%EA%B2%BD%EC%9D%84-%EA%B5%AC%EC%84%B1%ED%96%88%EB%8B%A4&quot; aria-label=&quot;앞으로 혼자 개발 할 것이 아니기 때문에 eslint와 prettier로 코딩 환경을 구성했다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;앞으로 혼자 개발 할 것이 아니기 때문에 eslint와 prettier로 코딩 환경을 구성했다.&lt;/h3&gt;
 &lt;h4 id=&quot;eslint란&quot;&gt;&lt;a href=&quot;#eslint%EB%9E%80&quot; aria-label=&quot;eslint란 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;eslint란??&lt;/h4&gt;
@@ -789,30 +854,7 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
-&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
-&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
-&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
-&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
-&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
-&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
-&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
-&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
-&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
-&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
-&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
-&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
-&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
-&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
-&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
-&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
 ​
 html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
@@ -845,7 +887,95 @@ document.getElementsByClassName(‘class의 값’)&lt;br&gt;
 ​
 getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
 ​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
+&lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
+&lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;2.textarea dom에 접근할 수 있게 됐으니 이벤트를 걸어줄 수 있게 됐다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;event option&amp;#39;, function(e) {
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이벤트가 발생할 때까지 감시하고 있어줄 addEventListener!&lt;/p&gt;
+&lt;p&gt;이벤트가 발생할때 까지 감시하고 있기는 하는데~~ 어떤 이벤트인지 알아야 하니까 1번째 인자로 이벤트 옵션을 설정해준다.&lt;/p&gt;
+&lt;p&gt;(이벤트가 발생될 때까지 감시하고 있다가 설정해준 이벤트가 발생하면 감지하고 실행한다.)&lt;/p&gt;
+&lt;p&gt;이벤트가 발생했을 때 2번째 인자로 주어지는 로직을 실행한다.(비동기)&lt;/p&gt;
+&lt;p&gt;3.textarea는 입력창이니까 사용자가 키보드를 사용할 거야, 그럼 키보드 관련 이벤트를 걸어줘야겠지?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;,function(e) {
+
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;키보드 옵션이 keyup, keydown, keypress 있는데 keyup을 설정해줬다.&lt;/p&gt;
+&lt;p&gt;keyup은 키보드를 눌렀다 땠을 때의 이벤트&lt;/p&gt;
+&lt;p&gt;4. 이제 이벤트가 발생했고, 2번째 인자로 실행될 로직을 만들어보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;, function(e) {
+
+// console.log(e)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;함수의 인자로 해당 dom 객체에서 발생한 이벤트 객체를 받아 올 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 로직은 입력한 글자의 수를 뷰에 표현&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
+
+const contents = e.target.value;
+
+//이벤트 옵션이 keyup 일 때
+
+// console.log(contents.slice(0, maxContentsOfTextArea))
+
+// e.target.value = contents.slice(0, maxContentsOfTextArea);
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 로직은 입력한 글자의 수가 최대 글자의 수와 같아져도 textarea에 계속 입력할 수 있다.(최대 글자 수를 오버해서 입력이 되는 문제 발생…)&lt;/p&gt;
+&lt;p&gt;그래서 입력한 글자의 수가 최대 글자의 수와 같아지거나, 길어질 때 최대 글자 수까지만 view에 표현하기 위한 로직이다.&lt;/p&gt;
+&lt;p&gt;위 초록색 로직으로 작성한 이유는 keyup 이벤트 때문이다.&lt;/p&gt;
+&lt;p&gt;(이미 키를 눌렀다 떼서 이벤트가 발생한 시점으로 event.preventDefault()가 먹히지 않는다.)&lt;/p&gt;
+&lt;p&gt;})&lt;/p&gt;
+&lt;p&gt;다르게도 로직을 작성해봤다. (아래 로직)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keydown&amp;#39;, function(e) {
+
+// console.log(e)
+
+if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;
+
+if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
+
+//이벤트 옵션이 keydown 일 때
+
+if(e.keyCode!== 8) {
+
+event.preventDefault();
+
+}
+
+}
+
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;keyup 이벤트 옵션을 keydown으로 변경해주었다.&lt;/p&gt;
+&lt;p&gt;keydown은 키를 누를 때 이벤트가 발생해서 event.preventDefault()가 먹힌다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
+&lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
+&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
+&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
+&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
+&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
+&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
+&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
+&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
+&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
+&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
+&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
+&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
+&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
+&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
+&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
+&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
+&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
@@ -936,69 +1066,4 @@ DOM에 setAttribute()를 사용해서&lt;br&gt;
 &lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
-&lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
-&lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;2.textarea dom에 접근할 수 있게 됐으니 이벤트를 걸어줄 수 있게 됐다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;event option&amp;#39;, function(e) {
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이벤트가 발생할 때까지 감시하고 있어줄 addEventListener!&lt;/p&gt;
-&lt;p&gt;이벤트가 발생할때 까지 감시하고 있기는 하는데~~ 어떤 이벤트인지 알아야 하니까 1번째 인자로 이벤트 옵션을 설정해준다.&lt;/p&gt;
-&lt;p&gt;(이벤트가 발생될 때까지 감시하고 있다가 설정해준 이벤트가 발생하면 감지하고 실행한다.)&lt;/p&gt;
-&lt;p&gt;이벤트가 발생했을 때 2번째 인자로 주어지는 로직을 실행한다.(비동기)&lt;/p&gt;
-&lt;p&gt;3.textarea는 입력창이니까 사용자가 키보드를 사용할 거야, 그럼 키보드 관련 이벤트를 걸어줘야겠지?&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;,function(e) {
-
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;키보드 옵션이 keyup, keydown, keypress 있는데 keyup을 설정해줬다.&lt;/p&gt;
-&lt;p&gt;keyup은 키보드를 눌렀다 땠을 때의 이벤트&lt;/p&gt;
-&lt;p&gt;4. 이제 이벤트가 발생했고, 2번째 인자로 실행될 로직을 만들어보자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;, function(e) {
-
-// console.log(e)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;함수의 인자로 해당 dom 객체에서 발생한 이벤트 객체를 받아 올 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 로직은 입력한 글자의 수를 뷰에 표현&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
-
-const contents = e.target.value;
-
-//이벤트 옵션이 keyup 일 때
-
-// console.log(contents.slice(0, maxContentsOfTextArea))
-
-// e.target.value = contents.slice(0, maxContentsOfTextArea);
-
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 로직은 입력한 글자의 수가 최대 글자의 수와 같아져도 textarea에 계속 입력할 수 있다.(최대 글자 수를 오버해서 입력이 되는 문제 발생…)&lt;/p&gt;
-&lt;p&gt;그래서 입력한 글자의 수가 최대 글자의 수와 같아지거나, 길어질 때 최대 글자 수까지만 view에 표현하기 위한 로직이다.&lt;/p&gt;
-&lt;p&gt;위 초록색 로직으로 작성한 이유는 keyup 이벤트 때문이다.&lt;/p&gt;
-&lt;p&gt;(이미 키를 눌렀다 떼서 이벤트가 발생한 시점으로 event.preventDefault()가 먹히지 않는다.)&lt;/p&gt;
-&lt;p&gt;})&lt;/p&gt;
-&lt;p&gt;다르게도 로직을 작성해봤다. (아래 로직)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keydown&amp;#39;, function(e) {
-
-// console.log(e)
-
-if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;
-
-if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
-
-//이벤트 옵션이 keydown 일 때
-
-if(e.keyCode!== 8) {
-
-event.preventDefault();
-
-}
-
-}
-
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;keyup 이벤트 옵션을 keydown으로 변경해주었다.&lt;/p&gt;
-&lt;p&gt;keydown은 키를 누를 때 이벤트가 발생해서 event.preventDefault()가 먹힌다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
-&lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
-&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item></channel></rss>
