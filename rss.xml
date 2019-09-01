@@ -1,22 +1,262 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 31 Aug 2019 11:54:31 GMT</lastBuildDate><item><title><![CDATA[인증 & 인가]]></title><description><![CDATA[인증&인가에 대한 글 ]]></description><link>https://khsi12345.github.io//posts/authentication_authorization/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/authentication_authorization/</guid><pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;인증인가&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EC%A6%9D%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;인증인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인증&amp;#x26;인가&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 01 Sep 2019 10:52:49 GMT</lastBuildDate><item><title><![CDATA[1차 프로젝트 7일차]]></title><description><![CDATA[1차 프로젝트 4~7일 동안의 모든 것]]></description><link>https://khsi12345.github.io//posts/first_project/2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/first_project/2</guid><pubDate>Sun, 01 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;3일차까지 구현했던 HTML과 CSS를 리뉴얼하고 다양한 환경에서도 문제없이 뷰가&lt;br&gt;
+잘 나오게하기 위해서 반응형을 구현하기 시작했다.&lt;br&gt;
+반응형이 적용될 기준을 잡아야 했고 그 기준은 태블릿(아이패드), 모바일(아이폰 6,7,8plus)로 잡았다.&lt;/p&gt;
+&lt;p&gt;풀 화면일때 header 부분&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e082c6420e586b4e513fdac5169fe985/80c15/header1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 3.6556603773584904%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAABABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3wQH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABPyF//9oADAMBAAIAAwAAABDzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABcQAAMBAAAAAAAAAAAAAAAAAAABMRD/2gAIAQEAAT8QUQ5n/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/e082c6420e586b4e513fdac5169fe985/01472/header1.webp 240w,
+/static/e082c6420e586b4e513fdac5169fe985/222bd/header1.webp 480w,
+/static/e082c6420e586b4e513fdac5169fe985/620b9/header1.webp 960w,
+/static/e082c6420e586b4e513fdac5169fe985/28063/header1.webp 1440w,
+/static/e082c6420e586b4e513fdac5169fe985/96053/header1.webp 1696w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/e082c6420e586b4e513fdac5169fe985/3bc27/header1.jpg 240w,
+/static/e082c6420e586b4e513fdac5169fe985/98431/header1.jpg 480w,
+/static/e082c6420e586b4e513fdac5169fe985/b3ee8/header1.jpg 960w,
+/static/e082c6420e586b4e513fdac5169fe985/b97fe/header1.jpg 1440w,
+/static/e082c6420e586b4e513fdac5169fe985/80c15/header1.jpg 1696w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/e082c6420e586b4e513fdac5169fe985/b3ee8/header1.jpg&quot;
+          alt=&quot;header1IMG&quot;
+          title=&quot;header1IMG&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;반응형 적용된 header 부분
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 501px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/284fd02aca91df2f401065c8387dbc83/458f6/header2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.776447105788424%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAACABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd6QqB//xAAWEAADAAAAAAAAAAAAAAAAAAACEDH/2gAIAQEAAQUCRX//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAADAAAAAAAAAAAAAAAAAAABEDH/2gAIAQEAAT8hNZ//2gAMAwEAAgADAAAAEHPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGBABAQEBAQAAAAAAAAAAAAAAAQAxESH/2gAIAQEAAT8Qb1GSTyuX/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/284fd02aca91df2f401065c8387dbc83/01472/header2.webp 240w,
+/static/284fd02aca91df2f401065c8387dbc83/222bd/header2.webp 480w,
+/static/284fd02aca91df2f401065c8387dbc83/59316/header2.webp 501w&quot;
+          sizes=&quot;(max-width: 501px) 100vw, 501px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/284fd02aca91df2f401065c8387dbc83/3bc27/header2.jpg 240w,
+/static/284fd02aca91df2f401065c8387dbc83/98431/header2.jpg 480w,
+/static/284fd02aca91df2f401065c8387dbc83/458f6/header2.jpg 501w&quot;
+          sizes=&quot;(max-width: 501px) 100vw, 501px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/284fd02aca91df2f401065c8387dbc83/458f6/header2.jpg&quot;
+          alt=&quot;header2IMG&quot;
+          title=&quot;header2IMG&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;풀 화면일때 main 부분&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6e8d60759a80123ec49e58c623abd93c/a4d78/main1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.73041894353369%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAHQg9QV4Bn/xAAZEAACAwEAAAAAAAAAAAAAAAABAgMSMgD/2gAIAQEAAQUCnkq9iQuZQC/Ln//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABBB/9oACAECAQE/Aaf/xAAcEAADAAEFAAAAAAAAAAAAAAAAARECEBITMVH/2gAIAQEABj8CS3QxfJL6KnWiP//EABwQAAMBAAIDAAAAAAAAAAAAAAERIQAxQVFhof/aAAgBAQABPyG2IayUEAjU5uwVcEMDOxhwvAnrfNv/2gAMAwEAAgADAAAAED8P/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/EBwn/8QAFhEAAwAAAAAAAAAAAAAAAAAAEBEh/9oACAECAQE/EFQ//8QAGhABAQADAQEAAAAAAAAAAAAAAREAIVExQf/aAAgBAQABPxByhNgO99MLtisEr8m895pV1xJaJoPcSQYXHVfOY1VVUbc//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/6e8d60759a80123ec49e58c623abd93c/01472/main1.webp 240w,
+/static/6e8d60759a80123ec49e58c623abd93c/222bd/main1.webp 480w,
+/static/6e8d60759a80123ec49e58c623abd93c/620b9/main1.webp 960w,
+/static/6e8d60759a80123ec49e58c623abd93c/28063/main1.webp 1440w,
+/static/6e8d60759a80123ec49e58c623abd93c/e300c/main1.webp 1647w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/6e8d60759a80123ec49e58c623abd93c/3bc27/main1.jpg 240w,
+/static/6e8d60759a80123ec49e58c623abd93c/98431/main1.jpg 480w,
+/static/6e8d60759a80123ec49e58c623abd93c/b3ee8/main1.jpg 960w,
+/static/6e8d60759a80123ec49e58c623abd93c/b97fe/main1.jpg 1440w,
+/static/6e8d60759a80123ec49e58c623abd93c/a4d78/main1.jpg 1647w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/6e8d60759a80123ec49e58c623abd93c/b3ee8/main1.jpg&quot;
+          alt=&quot;main1IMG&quot;
+          title=&quot;main1IMG&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;반응형 적용된 madin 부분&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 471px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9d6e4e10fb7bdcb0394f6c3ca6955865/f94be/main2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 166.02972399150744%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAhABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAECBAMF/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQMCAP/aAAwDAQACEAMQAAAB3RnmFIWL1pNXPdyUz5+wOxBP/8QAHRAAAgICAwEAAAAAAAAAAAAAAgMAAQQREjFCE//aAAgBAQABBQK2nBNt0WQ0bYJ2XV8dy2lBNm1NEhtbuXxaUvH3PXk+/wD/xAAXEQADAQAAAAAAAAAAAAAAAAABECEg/9oACAEDAQE/AYVMf//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhAhEf/aAAgBAgEBPwFuSZpp2//EACQQAAEDAwEJAAAAAAAAAAAAAAABAiERcYEyEBIxQVFhkaGx/9oACAEBAAY/Ao+EqiYKR4IltiiMdeho9HElYKq/n1K7qLkmE7GkyOvs/8QAHxAAAgICAgMBAAAAAAAAAAAAAAERMSFRQYEQYZGx/9oACAEBAAE/Icy4yZdcBldyWgqWHciYOwRzSrbMxw7hxCH+j2MEJ8GMA9wupWp8/RnCK4/J4f/aAAwDAQACAAMAAAAQVOzw+/8A/8QAGREBAQADAQAAAAAAAAAAAAAAAQAQITFB/9oACAEDAQE/ECNHhghHJv/EABkRAAMBAQEAAAAAAAAAAAAAAAABETEhYf/aAAgBAgEBPxCC6xUrWNWLwPRYf//EACIQAQACAQIGAwAAAAAAAAAAAAEAESExUUFhcYGhsZHh8P/aAAgBAQABPxC3S0WkFPdqDFLxX7qY7qlXYMpg7GMbmo+GLAO+AsFNatUtZXgDQ0vf6gq0LoVXV5co5m4FBDEJZRYYLF4iaxRt12lRtZwdCJCpQBYYPmeU9z9nKavQ9T//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/9d6e4e10fb7bdcb0394f6c3ca6955865/01472/main2.webp 240w,
+/static/9d6e4e10fb7bdcb0394f6c3ca6955865/0c9df/main2.webp 471w&quot;
+          sizes=&quot;(max-width: 471px) 100vw, 471px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/9d6e4e10fb7bdcb0394f6c3ca6955865/3bc27/main2.jpg 240w,
+/static/9d6e4e10fb7bdcb0394f6c3ca6955865/f94be/main2.jpg 471w&quot;
+          sizes=&quot;(max-width: 471px) 100vw, 471px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/9d6e4e10fb7bdcb0394f6c3ca6955865/f94be/main2.jpg&quot;
+          alt=&quot;main2IMG&quot;
+          title=&quot;main2IMG&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;헤더 부분에서는 반응형을 적용했을때 로고부분을 안보이게하고 메뉴들도 햄버거&lt;br&gt;
+아이콘으로 대체했다.&lt;br&gt;
+메인 부분에서는 반응형을 적용했을때 이미지가 1열로 밑으로 쭉 나열되게 했다.&lt;br&gt;
+(css grid 사용)&lt;/p&gt;
+&lt;p&gt;햄버거 아이콘을 클릭하면 메뉴들이 보인다.&lt;br&gt;
+X 아이콘을 클릭하면 원래 화면이 보인다.&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 484px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6c5e1a85319739685ab2c237503754a3/9dfcf/showmenu.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 194.21487603305786%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAnABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAWAQEBAQAAAAAAAAAAAAAAAAAABAX/2gAMAwEAAhADEAAAAbCDRAAAAA//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AV//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AV//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/An//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAE/IX//2gAMAwEAAgADAAAAENsggggv/8QAFhEAAwAAAAAAAAAAAAAAAAAAABEg/9oACAEDAQE/EBT/AP/EABYRAAMAAAAAAAAAAAAAAAAAAAARIP/aAAgBAgEBPxAc/wD/xAAcEAACAQUBAAAAAAAAAAAAAAABEQAQITAxYaH/2gAIAQEAAT8QffYXbcZoS8f/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/6c5e1a85319739685ab2c237503754a3/01472/showmenu.webp 240w,
+/static/6c5e1a85319739685ab2c237503754a3/222bd/showmenu.webp 480w,
+/static/6c5e1a85319739685ab2c237503754a3/dc156/showmenu.webp 484w&quot;
+          sizes=&quot;(max-width: 484px) 100vw, 484px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/6c5e1a85319739685ab2c237503754a3/3bc27/showmenu.jpg 240w,
+/static/6c5e1a85319739685ab2c237503754a3/98431/showmenu.jpg 480w,
+/static/6c5e1a85319739685ab2c237503754a3/9dfcf/showmenu.jpg 484w&quot;
+          sizes=&quot;(max-width: 484px) 100vw, 484px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/6c5e1a85319739685ab2c237503754a3/9dfcf/showmenu.jpg&quot;
+          alt=&quot;showmenuIMG&quot;
+          title=&quot;showmenuIMG&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;햄버거 아이콘을 클릭하면 메뉴가 보이고 X 아이콘을 클릭하면 원래 화면이 보이는&lt;br&gt;
+기능은 해당 아이콘을 클릭했을 때 이벤트가 발생되고 이 이벤트를 이용해서&lt;br&gt;
+실제 어떻게 어떻게 기능을 구현해야하는 로직을 작성했다.&lt;/p&gt;
+&lt;p&gt;===============================================================
+반응형 작업을 하면서 이상한 문제가 있었는데 브라우저 사이즈를 줄이다 보면&lt;br&gt;
+모든 컨텐츠들이 화면안에 잘 나오는데 가로 스크롤 바가 생기는거였다.&lt;br&gt;
+가로 스크롤 바를 움직이면 브라우저 화면 오른쪽에 여백이 있었다.&lt;/p&gt;
+&lt;p&gt;이 문제를 해결하기 위해서 문제가 의심되는 컨텐츠들을 확인했다.&lt;br&gt;
+의심되는 컨텐츠들의 css 속성 margin, padding, width 등등을 하나씩 봤다.&lt;br&gt;
+값을 지워버리기도하고, 수정도 해보고 디법깅을 계속하는데 의심되는 컨첸츠들을&lt;br&gt;
+다 확인해봤는데 문제가 해결되지 않았다.&lt;/p&gt;
+&lt;p&gt;처음 의심된 컨텐츠는 main(이미지 포함)부분 이었고 다음은 header 부분이었다.&lt;br&gt;
+이 2 부분이 내가 반응형을 적용했기 때문이다.&lt;/p&gt;
+&lt;p&gt;디버깅하는데 24시간 이상을 잡아먹고 든 생각..&lt;br&gt;
+이 2 부분이 문제가 아니라면 대체 어디가 문제인거야?? 하는 찰나..&lt;br&gt;
+맨 밑에 부분이 footer가 눈에 들어왔다.&lt;/p&gt;
+&lt;p&gt;브라우저에서 바로 확인 해보니까 footer에 컨텐츠가 고정적으로 width를 차지하고&lt;br&gt;
+있어서 가로 스크롤 바가 생겼던거였다.&lt;br&gt;
+고정적으로 차지하고 있던 width 값들을 수정하고 나니 가로 스크롤 바가 사라졌다.&lt;/p&gt;
+&lt;p&gt;해결하고 나서는 왜 문제발생에 대해서 디버깅할때 디버깅 대상을 한정시켰을까? 였다.&lt;br&gt;
+그리고 해결이 안되는데도 계속 의심되는 대상만 파고 또 팠을까? 였다.&lt;/p&gt;
+&lt;p&gt;다음에는 디버깅할때 의심되는 대상을 1순위로 디버깅하고 해결이 안되면 더 넓게 보고 디버깅을 해야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[인증 & 인가]]></title><description><![CDATA[인증&인가에 대한 글 ]]></description><link>https://khsi12345.github.io//posts/authentication_authorization/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/authentication_authorization/</guid><pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;인증인가&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EC%A6%9D%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;인증인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인증&amp;#x26;인가&lt;/h2&gt;
 &lt;p&gt;인증과 인가는 API에서 가장 자주 구현되는 기능 중 하나.&lt;br&gt;
-private한 api는 물론이고 public한 api도 기본적인 인증과 인가를 요구한다.  &lt;/p&gt;
+private한 api는 물론이고 public한 api도 기본적인 인증과 인가를 요구한다.&lt;/p&gt;
 &lt;h4 id=&quot;인증&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EC%A6%9D&quot; aria-label=&quot;인증 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인증&lt;/h4&gt;
 &lt;p&gt;인증은 유저를 식별하고 확인하는 절차다.&lt;br&gt;
-프론트엔드에서 인증하는 기능 중 대표적인것은 로그인이나 회원가입 할 때 유저의 정보를 확인하는 것이다.  &lt;/p&gt;
+프론트엔드에서 인증하는 기능 중 대표적인것은 로그인이나 회원가입 할 때 유저의 정보를 확인하는 것이다.&lt;/p&gt;
 &lt;h4 id=&quot;인가&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인가&lt;/h4&gt;
-&lt;p&gt;유저가 요청하는 것을 실행할 수 있는 권한이 있는 유저인가 없는 유저인가를 확인하는 절차.  &lt;/p&gt;
+&lt;p&gt;유저가 요청하는 것을 실행할 수 있는 권한이 있는 유저인가 없는 유저인가를 확인하는 절차.&lt;/p&gt;
 &lt;h4 id=&quot;jwtjson-web-tokens&quot;&gt;&lt;a href=&quot;#jwtjson-web-tokens&quot; aria-label=&quot;jwtjson web tokens permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JWT(JSON Web Tokens)&lt;/h4&gt;
 &lt;p&gt;먼저 JWT에 대해 작성하기 전에 HTTP의 특징을 짚고 나서 JWT를 작성하고자 한다.&lt;br&gt;
 HTTP로 클라이언트와 서버가 12시에 통신하고나서 12시 2분에 다시 통신하할때 12시에 통신한것과 12시 2분에 통신하는것은 각각 독립적(이전의 상태를 알 수 없다.)&lt;br&gt;
 쉽게 풀어보자면 12시에 로그인을 했는데 로그인 한 상태에서 12시 2분에 클라이언트가 서버에 요청을 하면서 HTTP로 통신이 이뤄지지만&lt;br&gt;
-12시 2분에 요청한 정보가 12시에 로그인을 한(했던)  유저인지 아닌지 알 수 없다.&lt;br&gt;
+12시 2분에 요청한 정보가 12시에 로그인을 한(했던) 유저인지 아닌지 알 수 없다.&lt;br&gt;
 그렇다면 12에 로그인 했던 유저라고(로그인 했던 유저라는 정보) 서버에게 알려주기 위해 request에 담아 전송해줘야 한다.(요청할때마다)&lt;br&gt;
 이러한 비효율적인 부분을 보완하고자 서버에게 동일한 정보를 토큰형태로 받아서 쿠키, 로컬스토리지 등 저장소에 저장해뒀다가&lt;br&gt;
-서버에 요청할 때 저장한 곳에서 토큰을 꺼내어 request에 담아 보낸다.  &lt;/p&gt;
+서버에 요청할 때 저장한 곳에서 토큰을 꺼내어 request에 담아 보낸다.&lt;/p&gt;
 &lt;p&gt;위 글에서 밑 부분이 바로 JWT다.&lt;br&gt;
 동일한 정보, 상태를 서버에게 보낼 때 정보, 상태를 담고 있는 토큰을 request에 담아 보낸다.&lt;br&gt;
-이 토큰은 최초에 서버가 클라이언트에게 생성한 후 보내준다.  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[데이터 베이스(DB)]]></title><description><![CDATA[데이터 베이스에 대한 글 ]]></description><link>https://khsi12345.github.io//posts/data_base/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/data_base/</guid><pubDate>Thu, 29 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;데이터-베이스&quot;&gt;&lt;a href=&quot;#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4&quot; aria-label=&quot;데이터 베이스 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;데이터 베이스&lt;/h3&gt;
+이 토큰은 최초에 서버가 클라이언트에게 생성한 후 보내준다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[데이터 베이스(DB)]]></title><description><![CDATA[데이터 베이스에 대한 글 ]]></description><link>https://khsi12345.github.io//posts/data_base/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/data_base/</guid><pubDate>Thu, 29 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;데이터-베이스&quot;&gt;&lt;a href=&quot;#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4&quot; aria-label=&quot;데이터 베이스 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;데이터 베이스&lt;/h3&gt;
 &lt;p&gt;애플리케이션에서는 데이터가 메모리 상에서 존재한다.&lt;br&gt;
 메모리 상에서 존재하는 데이터는 휘발성으로 보존이 되지 않는다.(애플리케이션이 종료되면 같이 사라진다.)&lt;br&gt;
 그래서 데이터를 저장, 보존 하기 위해서 데이터 베이스를 사용한다.&lt;br&gt;
@@ -95,7 +335,16 @@ heigh(높이)는 고정으로 줘도 되지만 주지 않는다면 width에 비�
 자식 Component에서는 변경되는 것이 없더라도 부모 Component가 렌더되면 같이 렌더된다.&lt;br&gt;
 즉 뷰에 표시할 데이터? 요소?가 변경된것이 없는데도 불필요하게 렌더되는것이다.&lt;/p&gt;
 &lt;p&gt;이를 방지하기 위해서는 shouldComponentUpdate() lifecycle 메서드를 사용해서 변경된 것이 있을때만 렌더될게 할 수 있고&lt;br&gt;
-또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
+또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
+&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
+&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
+&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;user-agent:*&quot;&gt;&lt;pre class=&quot;language-user-agent:*&quot;&gt;&lt;code class=&quot;language-user-agent:*&quot;&gt;   Allow: /
+   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
 &lt;p&gt;HyperText Markup Language.&lt;br&gt;
 Text를 Markup 하는 언어.&lt;br&gt;
 HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
@@ -113,16 +362,7 @@ HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;span&amp;gt; &amp;lt;a&amp;gt; &amp;lt;h1,2,3,4,5&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 있다.(이 외에도 더 있어요~ )&lt;/p&gt;
 &lt;p&gt;의미가 있는 태그들을 사용하는 궁극적인 목표는
-브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
-&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
-&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
-&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;user-agent:*&quot;&gt;&lt;pre class=&quot;language-user-agent:*&quot;&gt;&lt;code class=&quot;language-user-agent:*&quot;&gt;   Allow: /
-   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
+브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
 &lt;p&gt;HyperText Transfer Protocol&lt;br&gt;
 HTML 문서를 교환하기 위해 만들어진 protocol(규약, 통신)&lt;br&gt;
 즉, 웹에서 네트워크로 서버끼리 통신을 할때 어떠한 규칙(형식)으로 서로 통신을 할건지 규정해놓은 것&lt;br&gt;
@@ -572,7 +812,40 @@ render() {
 &lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
 &lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
 &lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+​
+html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​
+document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
+​
+querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
+​
+그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
+.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
+​
+querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
+​
+getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementById(‘id의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​
+getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementsByClassName(‘class의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​&lt;/p&gt;
+&lt;body&gt;
+    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
+​
+getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
+​
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
@@ -638,40 +911,7 @@ DOM에 setAttribute()를 사용해서&lt;br&gt;
 &lt;p&gt;이렇게 코드를 작성하니 &lt;strong&gt;중복이 없다.&lt;/strong&gt;(개발자는 중복이 귀찮고 싫잖아요? 인정하셔야 돼요!! )&lt;/p&gt;
 &lt;p&gt;로그인 페이지에서는 컨트롤할 DOM이 적으니 1~2개 중복은 괜찮지만 확장되면서 중복이 되면 유지 보수하기 힘들 것 같다.(매우)&lt;/p&gt;
 &lt;p&gt;그래서 회원가입 페이지에서는 최대한 중복을 제외하는 로직으로 코드를 작성했다.&lt;/p&gt;
-&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
-​
-html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
-&lt;p&gt;​
-document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
-​
-querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
-​
-그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
-.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
-​
-querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
-​
-getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementById(‘id의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​
-getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementsByClassName(‘class의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​&lt;/p&gt;
-&lt;body&gt;
-    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
-​
-getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
-​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
 &lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
 &lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
 &lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
