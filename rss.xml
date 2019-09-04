@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 03 Sep 2019 13:25:29 GMT</lastBuildDate><item><title><![CDATA[1차 프로젝트 9일차]]></title><description><![CDATA[1차 프로젝트 9일 동안의 모든 것]]></description><link>https://khsi12345.github.io//posts/first_project/4</link><guid isPermaLink="false">https://khsi12345.github.io//posts/first_project/4</guid><pubDate>Wed, 04 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘은 기존에 메인 페이지에 이미지를 로컬에서 고정적으로 렌더했던것을&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 04 Sep 2019 15:03:27 GMT</lastBuildDate><item><title><![CDATA[Promise]]></title><description><![CDATA[promise에 대한 글]]></description><link>https://khsi12345.github.io//posts/promise</link><guid isPermaLink="false">https://khsi12345.github.io//posts/promise</guid><pubDate>Thu, 05 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;promise프로미스&quot;&gt;&lt;a href=&quot;#promise%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4&quot; aria-label=&quot;promise프로미스 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Promise(프로미스)&lt;/h2&gt;
+&lt;p&gt;javascript는 비동기 처리를 위한 하나의 패턴으로 콜백 함수를 사용한다.&lt;br&gt;
+하지만 이 전통적인 콜백 패턴은 가동석이 나쁘고 비동기 처리중 발생한 에러의&lt;br&gt;
+예외 처리가 곤란하며 여러 개의 비동기 처리 로직을 한꺼번에 처리하는 것도 한계가&lt;br&gt;
+뚜렷하다.&lt;br&gt;
+비동기 처리를 위해 콜백 패턴을 사용하면 처리 순서를 보장하기 위해&lt;br&gt;
+여러 개의 콜백 함수가 중첩되어 복잡도가 높아지는 콜백 헬이 발생하는&lt;br&gt;
+단점도 있다.&lt;/p&gt;
+&lt;p&gt;▼▼콜백 헬이 발생하는 사례▼▼&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;step1(function(value1) {
+  step2(value1, function(value2) {
+    step3(value2, function(value3) {
+      step4(value3, function(value4) {
+        step5(value4, function(value5) {
+            // value5를 사용하는 처리
+        });
+      });
+    });
+  });
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;콜백 헬이 발생하는 이유는 비동기 처리는 실행 완료를 기다리지 않고&lt;br&gt;
+다음 로직을 실행한다.&lt;br&gt;
+따라서 비동기 함수 내에서 처리 결과를 반환하면 기대한 대로 동작하지 않는다.&lt;/p&gt;
+&lt;p&gt;이 문제점을 보완한 Promise가 ES6에서 도입됬다.&lt;/p&gt;
+&lt;p&gt;Promise는 Promise 생성자 함수를 통해 인스턴스화한다.&lt;br&gt;
+Promise 생성자 함수는 비동기 작업을 수행 할 콜백 함수를 인자로 전달받는데&lt;br&gt;
+이 콜백 함수는 resolve와 reject 함수를 인자로 전달받는다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Promise 객체의 생성
+const promise = new Promise((resolve, reject) =&amp;gt; {
+  // 비동기 작업을 수행한다.
+
+  if (/* 비동기 작업 수행 성공 */) {
+    resolve(&amp;#39;result&amp;#39;);
+  }
+  else { /* 비동기 작업 수행 실패 */
+    reject(&amp;#39;failure reason&amp;#39;);
+  }
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Promise는 비동기 처리가 성공(fulfilled)했는지 실패(rejected)했는지 등의&lt;br&gt;
+상태 정보를 갖는다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;상태&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;의미&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;구현&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;pending&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;비동기 처리가 아직 수행되지&lt;br&gt;않은 상태&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;resolve 또는 reject 함수가 아직 &lt;br&gt;호출되지 않은 상태&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;fulfilled&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;비동기 처리가 수행된 상태(성공)&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;resolve 함수가 호출된 상태&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;rejected&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;비동기 처리가 수행된 상태(실패)&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;reject 함수가 호출된 상태&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;settled&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;비동기 처리가 수행된 상태&lt;br&gt;(성공 또는 실패)&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;resolve 또는 reject 함수가 호출된 상태&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const promiseAjax = (method, url, payload) =&amp;gt; {
+  return new Promise((resolve, reject) =&amp;gt; {
+    const xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader(&amp;#39;Content-type&amp;#39;, &amp;#39;application/json&amp;#39;);
+    xhr.send(JSON.stringify(payload));
+
+    xhr.onreadystatechange = function () {
+      // 서버 응답 완료가 아니면 무시
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+
+      if (xhr.status &amp;gt;= 200 &amp;amp;&amp;amp; xhr.status &amp;lt; 400) {
+        // resolve 메소드를 호출하면서 처리 결과를 전달
+        resolve(xhr.response); // Success!
+      } else {
+        // reject 메소드를 호출하면서 에러 메시지를 전달
+        reject(new Error(xhr.status)); // Failed...
+      }
+    };
+  });
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Promise 후속 처리 메서드&lt;br&gt;
+Promise로 구현된 비동기 함수는 Promise 객체를 반환해야한다.&lt;br&gt;
+Promise로 구현된 비동기 함수를 호출하는 caller는 Promise 객체의 후속 처리&lt;br&gt;
+메서드를 통해 비동기 처리 결과 또는&lt;br&gt;
+에러 메시지를 전달받아 처리한다.&lt;br&gt;
+Promise 객체는 상태를 갖고있다고 했는데 이 상태에 따라 후속 처리 메서드를 체이닝 방식으로 호출한다.&lt;/p&gt;
+&lt;p&gt;then&lt;br&gt;
+then 메서드는 두 개의 콜백 함수를 인자로 전달 받는다.&lt;br&gt;
+첫번째 콜백 함수는 성공(resolve 함수가 호출된 상태)시 호출되고&lt;br&gt;
+두번째 함수는 실패(reject 함수가 호출된 상태)시 호출된다.&lt;br&gt;
+이 then 메서드는 Promise를 반환한다.&lt;/p&gt;
+&lt;p&gt;catch&lt;br&gt;
+예외(비동기 처리에서 발생한 에러와 then 메서드에서 발생한 에러)가 발생하면 호출된다.&lt;br&gt;
+이 catch 메서드는 Promise를 반환한다.&lt;/p&gt;
+&lt;p&gt;비동기 함수의 처리 결과를 가지고 다른 비동기 함수를 호출해야 하는 경우 함수의&lt;br&gt;
+호출이 중첩되어 복잡도가 높아지는 콜백 헬이 발생한다.&lt;br&gt;
+Promise는 후속 처리 메서드를 체이닝하여 여러 개의 Promise를 연결하여 사용할 수 있는데 이것으로 콜백 헬을 해결한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[1차 프로젝트 9일차]]></title><description><![CDATA[1차 프로젝트 9일 동안의 모든 것]]></description><link>https://khsi12345.github.io//posts/first_project/4</link><guid isPermaLink="false">https://khsi12345.github.io//posts/first_project/4</guid><pubDate>Wed, 04 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘은 기존에 메인 페이지에 이미지를 로컬에서 고정적으로 렌더했던것을&lt;br&gt;
 fech(REST API)를 가지고 서버와 통신해서 뷰에 렌더하는 코드로 리뉴얼을 진행했다.&lt;/p&gt;
 &lt;p&gt;아래 이미지는 서버와 통신하기 위해 fetch라는 REST API를 사용했고&lt;br&gt;
 페이지가 렌더되자마자 이미지를 뷰에 렌더시키기 위해 componentDidMount()를&lt;br&gt;
@@ -1185,30 +1323,7 @@ document.getElementsByClassName(‘class의 값’)&lt;br&gt;
 ​
 getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
 ​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
-&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
-&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
-&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
-&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
-&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
-&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
-&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
-&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
-&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
-&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
-&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
-&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
-&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
-&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
-&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
-&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
@@ -1274,7 +1389,30 @@ DOM에 setAttribute()를 사용해서&lt;br&gt;
 &lt;p&gt;이렇게 코드를 작성하니 &lt;strong&gt;중복이 없다.&lt;/strong&gt;(개발자는 중복이 귀찮고 싫잖아요? 인정하셔야 돼요!! )&lt;/p&gt;
 &lt;p&gt;로그인 페이지에서는 컨트롤할 DOM이 적으니 1~2개 중복은 괜찮지만 확장되면서 중복이 되면 유지 보수하기 힘들 것 같다.(매우)&lt;/p&gt;
 &lt;p&gt;그래서 회원가입 페이지에서는 최대한 중복을 제외하는 로직으로 코드를 작성했다.&lt;/p&gt;
-&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
+&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
+&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
+&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
+&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
+&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
+&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
+&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
+&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
+&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
+&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
+&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
+&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
+&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
+&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
+&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
+&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
 &lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
 &lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
