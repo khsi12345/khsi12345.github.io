@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 05 Sep 2019 05:06:42 GMT</lastBuildDate><item><title><![CDATA[1차 프로젝트(11일차) 카카오톡 로그인(소셜 로그인)]]></title><description><![CDATA[카카오톡 로그인에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login</guid><pubDate>Fri, 06 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘은 소셜 로그인 중에 하나인 카카오톡 로그인을 구현했다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 06 Sep 2019 00:56:48 GMT</lastBuildDate><item><title><![CDATA[카카오톡 로그인 에러 해결]]></title><description><![CDATA[카카오톡 로그인 에러 해결에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</guid><pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;카카오톡 로그인 기능을 구현하고 테스트 할때는 분명 발생한 에러없이&lt;br&gt;
+잘 동작했는데 오늘 오전에 테스트를 진행하고 있는 와중에&lt;br&gt;
+에러가 발생했다.&lt;/p&gt;
+&lt;p&gt;웹 페이지 접속하면 메인 화면인데 메인 화면에서 로그인 페이지로 이동하고&lt;br&gt;
+카카오톡 로그인을 하게되면 다시 메인 페이지로 이동한다.&lt;/p&gt;
+&lt;p&gt;그리고 로그아웃하고 로그아웃 된 상태(메인 페이지)에서 다시 로그인을 하려고하니&lt;/p&gt;
+&lt;p&gt;두둥!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Uncaught l {name: &amp;quot;KakaoError&amp;quot;, message: &amp;quot;Kakao.init: Already initialized.&amp;quot;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;The above error occurred in the &amp;lt;Login&amp;gt; component&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Uncaught Error: A cross-origin error was thrown. React doesn&amp;#39;t have access to the actual error object in development. See https://fb.me/react-crossorigin-error for more information.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 3가지 에러가 떠버렸다.&lt;/p&gt;
+&lt;p&gt;저 에러들 중에서 마지막 에러 A cross-origin error was thrown를 먼저 번역기를&lt;br&gt;
+돌려보고 그리고 구글링해봤다.&lt;br&gt;
+cors관련된?? 문제로 인한 에러 발생이고 이와 관련된 해결 방법이 구글링 결과로 나왔다.&lt;br&gt;
+근데 어제까지만해도 cors관련된 에러는 발생된적이 없었다.&lt;br&gt;
+그래서 이 문제는 아니라고 판단 다음으로 두번째 에러를 구글 번역기를 돌려보니&lt;br&gt;
+로그인 컴포넌트에 문제가 생겼다고…&lt;br&gt;
+그래?? 난 로그인 컴포넌트에서 건드린건 카카오톡 로그인 기능을 구현하기 위한 코드만 작성했을 뿐&lt;br&gt;
+위와 같이 생각을 했고 첫번째 에러를 보니 머리에 느낌표가 생겼다.&lt;br&gt;
+바로 error message를 구글링해보니 kakao.init을 계속 초기화 해서 발생한 에러니&lt;br&gt;
+한번만 호출해서 초기화하면 해결을 할 수 있을것이다. 라는 구글링 검색 결과를 참고했다.&lt;br&gt;
+그리고 코드 변경을 하니 에러가 해결됬다.&lt;/p&gt;
+&lt;p&gt;문제의 코드&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;componentDidMount() {
+    window.Kakao.init(&amp;#39;f8649f9322f32e7bc59c64a23e9ae213&amp;#39;);
+    window.Kakao.Auth.createLoginButton({
+      container: &amp;#39;#kakao_login_btn&amp;#39;,
+      success(authObj) {
+        alert(JSON.stringify(authObj));
+        // console.log(authObj);
+      },
+      fail(err) {
+        alert(JSON.stringify(err));
+      },
+    });
+    this.setState({
+      Kakao: window.Kakao,
+    });
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;해당 컴포넌트가 렌더되고 componentDidMount()가 호출될때마다&lt;br&gt;
+Kakao.init 호출…&lt;br&gt;
+Kakao.init()의 위치를 클래스 밖으로 변경했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;window.Kakao.init(&amp;#39;f8649f9322f32e7bc59c64a23e9ae213&amp;#39;);
+class Login extends React.Component&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;에러를 해결했을 때 이 뿌듯함이란 ^^&lt;/p&gt;</content:encoded></item><item><title><![CDATA[1차 프로젝트(11일차) 카카오톡 로그인(소셜 로그인)]]></title><description><![CDATA[카카오톡 로그인에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login</guid><pubDate>Fri, 06 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘은 소셜 로그인 중에 하나인 카카오톡 로그인을 구현했다.&lt;br&gt;
 먼저 카카오톡 api를 사용하기 위해 KakaoDevelopers에서 앱을 만들고&lt;br&gt;
 웹 플랫폼 선택 사이트 도메인을 등록한다.&lt;br&gt;
 여러가지 키들을 제공해주는데 Javascript 키를 사용해야한다.&lt;/p&gt;
@@ -921,7 +965,16 @@ heigh(높이)는 고정으로 줘도 되지만 주지 않는다면 width에 비�
 자식 Component에서는 변경되는 것이 없더라도 부모 Component가 렌더되면 같이 렌더된다.&lt;br&gt;
 즉 뷰에 표시할 데이터? 요소?가 변경된것이 없는데도 불필요하게 렌더되는것이다.&lt;/p&gt;
 &lt;p&gt;이를 방지하기 위해서는 shouldComponentUpdate() lifecycle 메서드를 사용해서 변경된 것이 있을때만 렌더될게 할 수 있고&lt;br&gt;
-또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
+또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
+&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
+&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
+&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;user-agent:*&quot;&gt;&lt;pre class=&quot;language-user-agent:*&quot;&gt;&lt;code class=&quot;language-user-agent:*&quot;&gt;   Allow: /
+   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
 &lt;p&gt;HyperText Markup Language.&lt;br&gt;
 Text를 Markup 하는 언어.&lt;br&gt;
 HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
@@ -939,16 +992,7 @@ HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;span&amp;gt; &amp;lt;a&amp;gt; &amp;lt;h1,2,3,4,5&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 있다.(이 외에도 더 있어요~ )&lt;/p&gt;
 &lt;p&gt;의미가 있는 태그들을 사용하는 궁극적인 목표는
-브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
-&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
-&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
-&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;user-agent:*&quot;&gt;&lt;pre class=&quot;language-user-agent:*&quot;&gt;&lt;code class=&quot;language-user-agent:*&quot;&gt;   Allow: /
-   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
+브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
 &lt;p&gt;HyperText Transfer Protocol&lt;br&gt;
 HTML 문서를 교환하기 위해 만들어진 protocol(규약, 통신)&lt;br&gt;
 즉, 웹에서 네트워크로 서버끼리 통신을 할때 어떠한 규칙(형식)으로 서로 통신을 할건지 규정해놓은 것&lt;br&gt;
@@ -1375,7 +1419,65 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+} --&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
+&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
+&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
+&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
+&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
+&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
+&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
+&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
+&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
+&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
+&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
+&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
+&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
+&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+​
+html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​
+document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
+​
+querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
+​
+그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
+.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
+​
+querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
+​
+getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementById(‘id의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​
+getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementsByClassName(‘class의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​&lt;/p&gt;
+&lt;body&gt;
+    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
+​
+getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
+​
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
 &lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
 &lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
 &lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
@@ -1398,7 +1500,72 @@ render() {
 &lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
 &lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
 &lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
+&lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
+&lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;2.textarea dom에 접근할 수 있게 됐으니 이벤트를 걸어줄 수 있게 됐다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;event option&amp;#39;, function(e) {
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이벤트가 발생할 때까지 감시하고 있어줄 addEventListener!&lt;/p&gt;
+&lt;p&gt;이벤트가 발생할때 까지 감시하고 있기는 하는데~~ 어떤 이벤트인지 알아야 하니까 1번째 인자로 이벤트 옵션을 설정해준다.&lt;/p&gt;
+&lt;p&gt;(이벤트가 발생될 때까지 감시하고 있다가 설정해준 이벤트가 발생하면 감지하고 실행한다.)&lt;/p&gt;
+&lt;p&gt;이벤트가 발생했을 때 2번째 인자로 주어지는 로직을 실행한다.(비동기)&lt;/p&gt;
+&lt;p&gt;3.textarea는 입력창이니까 사용자가 키보드를 사용할 거야, 그럼 키보드 관련 이벤트를 걸어줘야겠지?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;,function(e) {
+
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;키보드 옵션이 keyup, keydown, keypress 있는데 keyup을 설정해줬다.&lt;/p&gt;
+&lt;p&gt;keyup은 키보드를 눌렀다 땠을 때의 이벤트&lt;/p&gt;
+&lt;p&gt;4. 이제 이벤트가 발생했고, 2번째 인자로 실행될 로직을 만들어보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;, function(e) {
+
+// console.log(e)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;함수의 인자로 해당 dom 객체에서 발생한 이벤트 객체를 받아 올 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 로직은 입력한 글자의 수를 뷰에 표현&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
+
+const contents = e.target.value;
+
+//이벤트 옵션이 keyup 일 때
+
+// console.log(contents.slice(0, maxContentsOfTextArea))
+
+// e.target.value = contents.slice(0, maxContentsOfTextArea);
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 로직은 입력한 글자의 수가 최대 글자의 수와 같아져도 textarea에 계속 입력할 수 있다.(최대 글자 수를 오버해서 입력이 되는 문제 발생…)&lt;/p&gt;
+&lt;p&gt;그래서 입력한 글자의 수가 최대 글자의 수와 같아지거나, 길어질 때 최대 글자 수까지만 view에 표현하기 위한 로직이다.&lt;/p&gt;
+&lt;p&gt;위 초록색 로직으로 작성한 이유는 keyup 이벤트 때문이다.&lt;/p&gt;
+&lt;p&gt;(이미 키를 눌렀다 떼서 이벤트가 발생한 시점으로 event.preventDefault()가 먹히지 않는다.)&lt;/p&gt;
+&lt;p&gt;})&lt;/p&gt;
+&lt;p&gt;다르게도 로직을 작성해봤다. (아래 로직)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keydown&amp;#39;, function(e) {
+
+// console.log(e)
+
+if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;
+
+if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
+
+//이벤트 옵션이 keydown 일 때
+
+if(e.keyCode!== 8) {
+
+event.preventDefault();
+
+}
+
+}
+
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;keyup 이벤트 옵션을 keydown으로 변경해주었다.&lt;/p&gt;
+&lt;p&gt;keydown은 키를 누를 때 이벤트가 발생해서 event.preventDefault()가 먹힌다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
+&lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
+&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
@@ -1464,127 +1631,4 @@ DOM에 setAttribute()를 사용해서&lt;br&gt;
 &lt;p&gt;이렇게 코드를 작성하니 &lt;strong&gt;중복이 없다.&lt;/strong&gt;(개발자는 중복이 귀찮고 싫잖아요? 인정하셔야 돼요!! )&lt;/p&gt;
 &lt;p&gt;로그인 페이지에서는 컨트롤할 DOM이 적으니 1~2개 중복은 괜찮지만 확장되면서 중복이 되면 유지 보수하기 힘들 것 같다.(매우)&lt;/p&gt;
 &lt;p&gt;그래서 회원가입 페이지에서는 최대한 중복을 제외하는 로직으로 코드를 작성했다.&lt;/p&gt;
-&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
-​
-html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
-&lt;p&gt;​
-document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
-​
-querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
-​
-그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
-.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
-​
-querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
-​
-getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementById(‘id의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​
-getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementsByClassName(‘class의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​&lt;/p&gt;
-&lt;body&gt;
-    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
-​
-getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
-​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
-&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
-&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
-&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
-&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
-&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
-&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
-&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
-&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
-&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
-&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
-&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
-&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
-&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
-&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
-&lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
-&lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;2.textarea dom에 접근할 수 있게 됐으니 이벤트를 걸어줄 수 있게 됐다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;event option&amp;#39;, function(e) {
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이벤트가 발생할 때까지 감시하고 있어줄 addEventListener!&lt;/p&gt;
-&lt;p&gt;이벤트가 발생할때 까지 감시하고 있기는 하는데~~ 어떤 이벤트인지 알아야 하니까 1번째 인자로 이벤트 옵션을 설정해준다.&lt;/p&gt;
-&lt;p&gt;(이벤트가 발생될 때까지 감시하고 있다가 설정해준 이벤트가 발생하면 감지하고 실행한다.)&lt;/p&gt;
-&lt;p&gt;이벤트가 발생했을 때 2번째 인자로 주어지는 로직을 실행한다.(비동기)&lt;/p&gt;
-&lt;p&gt;3.textarea는 입력창이니까 사용자가 키보드를 사용할 거야, 그럼 키보드 관련 이벤트를 걸어줘야겠지?&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;,function(e) {
-
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;키보드 옵션이 keyup, keydown, keypress 있는데 keyup을 설정해줬다.&lt;/p&gt;
-&lt;p&gt;keyup은 키보드를 눌렀다 땠을 때의 이벤트&lt;/p&gt;
-&lt;p&gt;4. 이제 이벤트가 발생했고, 2번째 인자로 실행될 로직을 만들어보자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;, function(e) {
-
-// console.log(e)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;함수의 인자로 해당 dom 객체에서 발생한 이벤트 객체를 받아 올 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 로직은 입력한 글자의 수를 뷰에 표현&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
-
-const contents = e.target.value;
-
-//이벤트 옵션이 keyup 일 때
-
-// console.log(contents.slice(0, maxContentsOfTextArea))
-
-// e.target.value = contents.slice(0, maxContentsOfTextArea);
-
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 로직은 입력한 글자의 수가 최대 글자의 수와 같아져도 textarea에 계속 입력할 수 있다.(최대 글자 수를 오버해서 입력이 되는 문제 발생…)&lt;/p&gt;
-&lt;p&gt;그래서 입력한 글자의 수가 최대 글자의 수와 같아지거나, 길어질 때 최대 글자 수까지만 view에 표현하기 위한 로직이다.&lt;/p&gt;
-&lt;p&gt;위 초록색 로직으로 작성한 이유는 keyup 이벤트 때문이다.&lt;/p&gt;
-&lt;p&gt;(이미 키를 눌렀다 떼서 이벤트가 발생한 시점으로 event.preventDefault()가 먹히지 않는다.)&lt;/p&gt;
-&lt;p&gt;})&lt;/p&gt;
-&lt;p&gt;다르게도 로직을 작성해봤다. (아래 로직)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keydown&amp;#39;, function(e) {
-
-// console.log(e)
-
-if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;
-
-if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
-
-//이벤트 옵션이 keydown 일 때
-
-if(e.keyCode!== 8) {
-
-event.preventDefault();
-
-}
-
-}
-
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;keyup 이벤트 옵션을 keydown으로 변경해주었다.&lt;/p&gt;
-&lt;p&gt;keydown은 키를 누를 때 이벤트가 발생해서 event.preventDefault()가 먹힌다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
-&lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
-&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item></channel></rss>
