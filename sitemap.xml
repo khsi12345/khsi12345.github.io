@@ -7,8 +7,8 @@
 <url> <loc>https://khsi12345.github.io/posts/git-push/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/tweet-clone-DOM/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/tweet-clone/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/tweet-clone-textarea-event/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/tweet-clone-event/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/tweet-clone-textarea-event/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/webGame/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/react/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/react2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -17,13 +17,14 @@
 <url> <loc>https://khsi12345.github.io/posts/react/component-styling-sass-scss/error-fixed/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/HTTP/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/SEO/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/Component(&amp;PureComponent)/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/HTML/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/data_base/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/Component(&amp;PureComponent)/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/first_project/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/data_base/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/authentication_authorization/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/front-and-back-comunicate/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/first_project/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/hook</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/first_project/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/first_project/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/promise</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -52,6 +53,8 @@
 <url> <loc>https://khsi12345.github.io/tag/fetch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/front</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/frontend-and-backend</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/tag/function</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/tag/functional-component</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/git</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/git-push</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/github</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
