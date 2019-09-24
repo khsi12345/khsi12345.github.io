@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 15 Sep 2019 10:16:19 GMT</lastBuildDate><item><title><![CDATA[Hook2]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook2</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글에서는 Hook이 왜 세상에 나오게 됬는지에 대한 글이었다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 24 Sep 2019 18:42:11 GMT</lastBuildDate><item><title><![CDATA[styled-components에서 hover 사용하기]]></title><description><![CDATA[styled-components를 사용하면서 hover를 사용할때에 대한 글]]></description><link>https://khsi12345.github.io//posts/styled_components_hover</link><guid isPermaLink="false">https://khsi12345.github.io//posts/styled_components_hover</guid><pubDate>Tue, 17 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;2차 프로젝트로 Stayfolio 라는 WEB을 클론 진행을 하게됬다.&lt;br&gt;
+내가 맡은 여러가지 중 PICK 페이지를 진행하는데 PICK 페이지는 각각의 ITEM들이&lt;br&gt;
+존재하는 페이지다.&lt;br&gt;
+먼저 이 ITEM을 컴포넌트로 만들것이다.&lt;br&gt;
+ITEM을 보니 이미지가 들어가고 아이콘, 텍스트 그리고 애니메이션도 적용되어있다.&lt;/p&gt;
+&lt;p&gt;이 블로그의 주제는 애니메이션 적용에 대한 경험이다.&lt;br&gt;
+이번 프로젝트에서는 scss가 아닌 styled-components를 사용했다.&lt;br&gt;
+styled-components는 scss에 비해 css 적용하기 위한 종속관계를 그리기 힘들다.&lt;br&gt;
+scss는&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.example {
+  .test {
+
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 처럼 나타낼 수 있지만&lt;/p&gt;
+&lt;p&gt;styled-components는&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const example = styled.div``
+const test = styled.div``&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;컴포넌트 내 return 부분에서 JSX 문법으로 작성을하는데&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const CP = () =&amp;gt; {
+  return (
+    &amp;lt;example&amp;gt;
+      &amp;lt;test /&amp;gt;
+    &amp;lt;/example&amp;gt;
+  )
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위처럼 한다.&lt;/p&gt;
+&lt;p&gt;위 예시는 너무나도 간단해서 불편함을 알기 힘들지만&lt;br&gt;
+scss는 scss파일에서 각 식별자로 우선 순위를 주고 종속 관계도 나타낼 수 있고 html 요소는
+서로 동 떨어져있지만 식별자를 이용해서 스타일을 적용할 수 있다.&lt;br&gt;
+하지만 styled-components는 example ,test가 각각의 사용자 정의 태그고(html 태그 의미) html 구조에 맞게
+종속 관계를 그리다 보니 html 요소가 서로 동 떨어져 있을때&lt;br&gt;
+스타일을 연걸해서 적용할 수 없는 한계가 있었다.&lt;/p&gt;
+&lt;p&gt;나에게 닥친 문제는 이미지 요소 그리고 이미지 요소와 겹쳐지는 또 다른 요소, 그리고&lt;br&gt;
+이 둘을 묶는 상위 요소가 존재하는데 둘을 묶는 상위 요소에 hover를 주고 hover 적용될 때 이미지에 scale transition 그리고 서로 겹쳐지는 각각의 요소에 opasity 속성, background-color: rgba() 속성 등을 적용해서 시각적인 변화를 보여내려 하는데,&lt;br&gt;
+scss처럼 id 식별자나, className 식별자로 관계도를 그리고, 스타일 적용을 할 수 없다보니 styled-components에서 각각의 정의한 태그에 hover를 줬었는데..&lt;br&gt;
+제대로 작동하지 않았다.&lt;br&gt;
+그래서 조금의 JavaScript적인 생각을 해서 둘을 묶고 있는 상위 요소의 태그를&lt;br&gt;
+변수로서 사용해서 변화를 줘야하는 각 태그에다가 상위 요소 태그를 변수로 주고&lt;br&gt;
+hover를 주니 제대로 작동했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;ItemImgWrap&amp;gt;
+  &amp;lt;ItemImgContainer&amp;gt;
+    &amp;lt;ItemImg src={img} /&amp;gt;
+  &amp;lt;/ItemImgContainer&amp;gt;
+  &amp;lt;ItemTextWrap&amp;gt;
+    &amp;lt;ItemText&amp;gt;
+      {&amp;#39; &amp;#39;}
+      &amp;lt;Icon className=&amp;quot;fas fa-search&amp;quot; /&amp;gt;
+      VIEW
+    &amp;lt;/ItemText&amp;gt;
+  &amp;lt;/ItemTextWrap&amp;gt;
+&amp;lt;/ItemImgWrap&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const ItemImgWrap = styled.div`
+  position: relative;
+  overflow: hidden;
+`;
+const ItemImgContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+`;
+const ItemImg = styled.img`
+  width: 100%;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.4, 0.95);
+  ${ItemImgWrap}:hover &amp;amp; {
+    transform: scale(1.2, 1.2);
+  }
+`;
+const ItemTextWrap = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+  ${ItemImgWrap}:hover &amp;amp; {
+    opacity: 1;
+  }
+`;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 관계도를 보면 각각의 태그들은 사용자 정의 태그이다.(컴포넌트라 부름)&lt;br&gt;
+styled-components는 스타일 적용을 위 처럼 정의하다보니 종속 관계를 scss처럼&lt;br&gt;
+할 수 없다.&lt;br&gt;
+그래서 스타일 상속 및 종속은 정의 윗 부분에 있는 태그 관계도에서 이뤄진다.&lt;br&gt;
+그렇다고 스타일 종속관계를 위해.. 태그 관계도를 난장판으로 만들 수 없고 말이다..&lt;br&gt;
+그래서 ItemImg와 ItemTextWrap을 포함하고 있는 ItemImgWrap 컴포넌트를 각&lt;br&gt;
+컴포넌트에서 변수처럼 사용하고 :hover 적용했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hook은 react의 최신 기술로서 기존의 코드를 다시 작성할 필요 없이 컴포넌트들&lt;br&gt;
+안에서 Hook을 사용할 수 있으며, 이전 버전과의 호환성이 100%로 호환성을&lt;br&gt;
+깨뜨리지 않는다.&lt;/p&gt;
+&lt;p&gt;Hook은 알고 있는 react의 컨셉을 대체하지 않는다.&lt;br&gt;
+대신 props, state, context, refs 그리고 lifecycle 같은 react 개념에 좀 더 직관적인 API를 제공한다.&lt;br&gt;
+react는 컴포넌트에 재사용 가능한 행동을 붙이는 방법을 제공하지 않는다.&lt;br&gt;
+이를 해결하기 위해 render props 그리고 hoc(high order component)와 같은 패턴에 익숙할 것이다.&lt;br&gt;
+그러나 이런 패턴을 사용할 때 컴포넌트를 재구성해야하며 코드를 추적하기 어렵게 만든다.&lt;br&gt;
+요점은 컴포넌트 사이에서 상태와 관련된 로직을 재사용하기 어렵다.&lt;br&gt;
+그래서 상태 관련 로직을 공유하기 위해 좀 더 좋은 기초 요소가 필요하다.&lt;br&gt;
+그래서 Hook이 나온것!&lt;/p&gt;
+&lt;p&gt;Hook을 사용하면 컴포넌트로부터 상태 관련 로직을 추상화할 수 있고 독립적인&lt;br&gt;
+테스트와 재사용이 가능해진다.&lt;br&gt;
+Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.&lt;br&gt;
+이는 많은 컴포넌트들 혹은 커뮤니티 사이에서 Hook을 공유하기 쉽게 만들어준다.&lt;/p&gt;
+&lt;p&gt;간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야한다.&lt;br&gt;
+각 생명주기 메서드는 자주 관련 없는 로직이 섞여 있다.&lt;br&gt;
+함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은&lt;br&gt;
+단일 메서드로 결합합니다.&lt;br&gt;
+이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.&lt;br&gt;
+상태 관련 로직이 모든 공간에 있기 때문에 이러한 컴포넌트들을 작게 만드는 것은&lt;br&gt;
+불가능하고 테스트하기도 어렵다.&lt;br&gt;
+이는 많은 사람이 react를 별도의 상태 관리 라이브러리와 함께 결합해서 사용하는&lt;br&gt;
+이유 중 하나이다.&lt;br&gt;
+그러나 상태 관리 라이브러리는 종종 너무 많은 추상화를 하고 다른 파일들 사이에서&lt;br&gt;
+건너뛰기를 요구하며 컴포넌트 재사용을 더욱 어렵게 만든다.&lt;/p&gt;
+&lt;p&gt;이것을 해결하기 위해 생명주기 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는 Hook을 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있다.&lt;br&gt;
+Hook은 class없이 react 기능들을 사용하는 방법을 알려준다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook2]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook2</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글에서는 Hook이 왜 세상에 나오게 됬는지에 대한 글이었다.&lt;br&gt;
 이 글에서는 Hook의 기능에 대해 작성하고자 한다.&lt;/p&gt;
 &lt;p&gt;Hook은 class 안에서 사용할 수 없다.&lt;br&gt;
 함수형 컴포넌트에서 상태 관련 로직(state, lifecycle 등)을 사용할 수 있게 해주는&lt;br&gt;
@@ -87,34 +204,7 @@ Hook의 상태를 올바르게 유지할 수 있도록 해줍니다.&lt;/li&gt;
 =&gt;일반적인 javascript 함수에서 호출하지 마세요.&lt;br&gt;
 =&gt;react 함수 컴포넌트에서 Hook을 호출하세요.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;위 규칙들을 강제하는 eslint-plugin-react-hooks라는 ESLint 플러그인을 출시했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hook은 react의 최신 기술로서 기존의 코드를 다시 작성할 필요 없이 컴포넌트들&lt;br&gt;
-안에서 Hook을 사용할 수 있으며, 이전 버전과의 호환성이 100%로 호환성을&lt;br&gt;
-깨뜨리지 않는다.&lt;/p&gt;
-&lt;p&gt;Hook은 알고 있는 react의 컨셉을 대체하지 않는다.&lt;br&gt;
-대신 props, state, context, refs 그리고 lifecycle 같은 react 개념에 좀 더 직관적인 API를 제공한다.&lt;br&gt;
-react는 컴포넌트에 재사용 가능한 행동을 붙이는 방법을 제공하지 않는다.&lt;br&gt;
-이를 해결하기 위해 render props 그리고 hoc(high order component)와 같은 패턴에 익숙할 것이다.&lt;br&gt;
-그러나 이런 패턴을 사용할 때 컴포넌트를 재구성해야하며 코드를 추적하기 어렵게 만든다.&lt;br&gt;
-요점은 컴포넌트 사이에서 상태와 관련된 로직을 재사용하기 어렵다.&lt;br&gt;
-그래서 상태 관련 로직을 공유하기 위해 좀 더 좋은 기초 요소가 필요하다.&lt;br&gt;
-그래서 Hook이 나온것!&lt;/p&gt;
-&lt;p&gt;Hook을 사용하면 컴포넌트로부터 상태 관련 로직을 추상화할 수 있고 독립적인&lt;br&gt;
-테스트와 재사용이 가능해진다.&lt;br&gt;
-Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.&lt;br&gt;
-이는 많은 컴포넌트들 혹은 커뮤니티 사이에서 Hook을 공유하기 쉽게 만들어준다.&lt;/p&gt;
-&lt;p&gt;간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야한다.&lt;br&gt;
-각 생명주기 메서드는 자주 관련 없는 로직이 섞여 있다.&lt;br&gt;
-함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은&lt;br&gt;
-단일 메서드로 결합합니다.&lt;br&gt;
-이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.&lt;br&gt;
-상태 관련 로직이 모든 공간에 있기 때문에 이러한 컴포넌트들을 작게 만드는 것은&lt;br&gt;
-불가능하고 테스트하기도 어렵다.&lt;br&gt;
-이는 많은 사람이 react를 별도의 상태 관리 라이브러리와 함께 결합해서 사용하는&lt;br&gt;
-이유 중 하나이다.&lt;br&gt;
-그러나 상태 관리 라이브러리는 종종 너무 많은 추상화를 하고 다른 파일들 사이에서&lt;br&gt;
-건너뛰기를 요구하며 컴포넌트 재사용을 더욱 어렵게 만든다.&lt;/p&gt;
-&lt;p&gt;이것을 해결하기 위해 생명주기 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는 Hook을 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있다.&lt;br&gt;
-Hook은 class없이 react 기능들을 사용하는 방법을 알려준다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카카오톡 로그인 에러 해결]]></title><description><![CDATA[카카오톡 로그인 에러 해결에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</guid><pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;카카오톡 로그인 기능을 구현하고 테스트 할때는 분명 발생한 에러없이&lt;br&gt;
+&lt;p&gt;위 규칙들을 강제하는 eslint-plugin-react-hooks라는 ESLint 플러그인을 출시했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카카오톡 로그인 에러 해결]]></title><description><![CDATA[카카오톡 로그인 에러 해결에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</guid><pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;카카오톡 로그인 기능을 구현하고 테스트 할때는 분명 발생한 에러없이&lt;br&gt;
 잘 동작했는데 오늘 오전에 테스트를 진행하고 있는 와중에&lt;br&gt;
 에러가 발생했다.&lt;/p&gt;
 &lt;p&gt;웹 페이지 접속하면 메인 화면인데 메인 화면에서 로그인 페이지로 이동하고&lt;br&gt;
@@ -1081,7 +1171,16 @@ heigh(높이)는 고정으로 줘도 되지만 주지 않는다면 width에 비�
 자식 Component에서는 변경되는 것이 없더라도 부모 Component가 렌더되면 같이 렌더된다.&lt;br&gt;
 즉 뷰에 표시할 데이터? 요소?가 변경된것이 없는데도 불필요하게 렌더되는것이다.&lt;/p&gt;
 &lt;p&gt;이를 방지하기 위해서는 shouldComponentUpdate() lifecycle 메서드를 사용해서 변경된 것이 있을때만 렌더될게 할 수 있고&lt;br&gt;
-또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
+또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
+&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
+&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
+&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;user-agent:*&quot;&gt;&lt;pre class=&quot;language-user-agent:*&quot;&gt;&lt;code class=&quot;language-user-agent:*&quot;&gt;   Allow: /
+   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
 &lt;p&gt;HyperText Markup Language.&lt;br&gt;
 Text를 Markup 하는 언어.&lt;br&gt;
 HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
@@ -1099,16 +1198,7 @@ HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;span&amp;gt; &amp;lt;a&amp;gt; &amp;lt;h1,2,3,4,5&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 있다.(이 외에도 더 있어요~ )&lt;/p&gt;
 &lt;p&gt;의미가 있는 태그들을 사용하는 궁극적인 목표는
-브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
-&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
-&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
-&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;user-agent:*&quot;&gt;&lt;pre class=&quot;language-user-agent:*&quot;&gt;&lt;code class=&quot;language-user-agent:*&quot;&gt;   Allow: /
-   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
+브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
 &lt;p&gt;HyperText Transfer Protocol&lt;br&gt;
 HTML 문서를 교환하기 위해 만들어진 protocol(규약, 통신)&lt;br&gt;
 즉, 웹에서 네트워크로 서버끼리 통신을 할때 어떠한 규칙(형식)으로 서로 통신을 할건지 규정해놓은 것&lt;br&gt;
@@ -1535,30 +1625,7 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
-&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
-&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
-&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
-&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
-&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
-&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
-&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
-&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
-&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
-&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
-&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
-&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
-&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
-&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
-&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
-&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+} --&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
 &lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
 &lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
 &lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
@@ -1616,7 +1683,30 @@ document.getElementsByClassName(‘class의 값’)&lt;br&gt;
 ​
 getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
 ​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
+&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
+&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
+&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
+&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
+&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
+&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
+&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
+&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
+&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
+&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
+&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
+&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
+&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
+&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
+&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
