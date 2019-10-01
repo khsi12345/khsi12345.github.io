@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 29 Sep 2019 04:36:06 GMT</lastBuildDate><item><title><![CDATA[css white-wrap]]></title><description><![CDATA[white-wrap 속성에 대한 글]]></description><link>https://khsi12345.github.io//posts/css_white-wrap</link><guid isPermaLink="false">https://khsi12345.github.io//posts/css_white-wrap</guid><pubDate>Fri, 27 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;프로젝트를 진행하면서 맡게 된 Pick Detail Page.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 01 Oct 2019 06:46:40 GMT</lastBuildDate><item><title><![CDATA[DOM]]></title><description><![CDATA[DOM 에 대한 글]]></description><link>https://khsi12345.github.io//posts/DOM</link><guid isPermaLink="false">https://khsi12345.github.io//posts/DOM</guid><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;dom&quot;&gt;&lt;a href=&quot;#dom&quot; aria-label=&quot;dom permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM?&lt;/h3&gt;
+&lt;p&gt;DOM이란 Document Object Model로 HTML, XML 문서의 프로그래밍 interface이다.&lt;br&gt;
+DOM은 문서의 구조화된 표현을 제공하며 프로그래밍 언어가 DOM 구조에 접근할 수 있는 방법을 제공해준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ex) document.getElementById()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;웹 페이지는 일종의 문서인데, 웹 브라우저를 통해 그 내용이 해석되어 웹 브라우저 화면에 나타나거나 HTML 소스 자체로 나타나기도 한다.&lt;/p&gt;
+&lt;p&gt;javascript와 같은 스크립팅 언어를 이용해 DOM을 수정할 수 있다.&lt;/p&gt;
+&lt;p&gt;Document와 window object는 DOM 프로그래밍에서 가장 자주 사용하는 object이다.&lt;br&gt;
+window object는 브라우저와 같다고 할 수 있으며 document object는 root document 자체라고 할 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;web브라우저이-html을-해석하는-순서&quot;&gt;&lt;a href=&quot;#web%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%B4-html%EC%9D%84-%ED%95%B4%EC%84%9D%ED%95%98%EB%8A%94-%EC%88%9C%EC%84%9C&quot; aria-label=&quot;web브라우저이 html을 해석하는 순서 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Web(브라우저)이 HTML을 해석하는 순서&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;HTML 데이터를 파싱한다.&lt;/li&gt;
+&lt;li&gt;파싱한 결과로 DOM Tree 구조를 생성한다.&lt;/li&gt;
+&lt;li&gt;파싱 중 CSS 링크를 만나면 Style Roule에 의해 CSS 파일을 요청 받고 CSS 파일을 읽어 CSS Object Model을 생성한다.&lt;/li&gt;
+&lt;li&gt;DOM Tree와 CSSOM을 이용해 Render Tree를 생성한다.&lt;/li&gt;
+&lt;li&gt;Render Tree 구조와 각 노드들의 위치를 계산하여 브라우저 화면을 그린다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;가상-dom&quot;&gt;&lt;a href=&quot;#%EA%B0%80%EC%83%81-dom&quot; aria-label=&quot;가상 dom permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;가상 DOM?&lt;/h3&gt;
+&lt;p&gt;DOM과 다른 가상에 만들어진 또 다른 DOM으로 DOM을 직접 수정하지 않고 간소화된 DOM을 따로 보관하여 실제 DOM에 적용하기 전에 바뀐 부분이 있는지 확인하여 수정을 하게 된다. (DOM은 실제로 존재하는 반면, 가상DOM은 메모리에 존재하는 추상적DOM이다.)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[css white-wrap]]></title><description><![CDATA[white-wrap 속성에 대한 글]]></description><link>https://khsi12345.github.io//posts/css_white-wrap</link><guid isPermaLink="false">https://khsi12345.github.io//posts/css_white-wrap</guid><pubDate>Fri, 27 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;프로젝트를 진행하면서 맡게 된 Pick Detail Page.&lt;br&gt;
 해당 페이지에는 stay(숙소 개념)의 대한 설명을 text로 표현한 부분이 있는데,&lt;br&gt;
 이 text 데이터를 backend로 받고 front에서 화면에 렌더해보니 문장들이 다 이어져서&lt;br&gt;
 화면에 렌더된다.&lt;/p&gt;
@@ -148,34 +165,7 @@ styled-components는 스타일 적용을 위 처럼 정의하다보니 종속 �
 그래서 스타일 상속 및 종속은 정의 윗 부분에 있는 태그 관계도에서 이뤄진다.&lt;br&gt;
 그렇다고 스타일 종속관계를 위해.. 태그 관계도를 난장판으로 만들 수 없고 말이다..&lt;br&gt;
 그래서 ItemImg와 ItemTextWrap을 포함하고 있는 ItemImgWrap 컴포넌트를 각&lt;br&gt;
-컴포넌트에서 변수처럼 사용하고 :hover 적용했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hook은 react의 최신 기술로서 기존의 코드를 다시 작성할 필요 없이 컴포넌트들&lt;br&gt;
-안에서 Hook을 사용할 수 있으며, 이전 버전과의 호환성이 100%로 호환성을&lt;br&gt;
-깨뜨리지 않는다.&lt;/p&gt;
-&lt;p&gt;Hook은 알고 있는 react의 컨셉을 대체하지 않는다.&lt;br&gt;
-대신 props, state, context, refs 그리고 lifecycle 같은 react 개념에 좀 더 직관적인 API를 제공한다.&lt;br&gt;
-react는 컴포넌트에 재사용 가능한 행동을 붙이는 방법을 제공하지 않는다.&lt;br&gt;
-이를 해결하기 위해 render props 그리고 hoc(high order component)와 같은 패턴에 익숙할 것이다.&lt;br&gt;
-그러나 이런 패턴을 사용할 때 컴포넌트를 재구성해야하며 코드를 추적하기 어렵게 만든다.&lt;br&gt;
-요점은 컴포넌트 사이에서 상태와 관련된 로직을 재사용하기 어렵다.&lt;br&gt;
-그래서 상태 관련 로직을 공유하기 위해 좀 더 좋은 기초 요소가 필요하다.&lt;br&gt;
-그래서 Hook이 나온것!&lt;/p&gt;
-&lt;p&gt;Hook을 사용하면 컴포넌트로부터 상태 관련 로직을 추상화할 수 있고 독립적인&lt;br&gt;
-테스트와 재사용이 가능해진다.&lt;br&gt;
-Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.&lt;br&gt;
-이는 많은 컴포넌트들 혹은 커뮤니티 사이에서 Hook을 공유하기 쉽게 만들어준다.&lt;/p&gt;
-&lt;p&gt;간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야한다.&lt;br&gt;
-각 생명주기 메서드는 자주 관련 없는 로직이 섞여 있다.&lt;br&gt;
-함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은&lt;br&gt;
-단일 메서드로 결합합니다.&lt;br&gt;
-이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.&lt;br&gt;
-상태 관련 로직이 모든 공간에 있기 때문에 이러한 컴포넌트들을 작게 만드는 것은&lt;br&gt;
-불가능하고 테스트하기도 어렵다.&lt;br&gt;
-이는 많은 사람이 react를 별도의 상태 관리 라이브러리와 함께 결합해서 사용하는&lt;br&gt;
-이유 중 하나이다.&lt;br&gt;
-그러나 상태 관리 라이브러리는 종종 너무 많은 추상화를 하고 다른 파일들 사이에서&lt;br&gt;
-건너뛰기를 요구하며 컴포넌트 재사용을 더욱 어렵게 만든다.&lt;/p&gt;
-&lt;p&gt;이것을 해결하기 위해 생명주기 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는 Hook을 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있다.&lt;br&gt;
-Hook은 class없이 react 기능들을 사용하는 방법을 알려준다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook2]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook2</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글에서는 Hook이 왜 세상에 나오게 됬는지에 대한 글이었다.&lt;br&gt;
+컴포넌트에서 변수처럼 사용하고 :hover 적용했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook2]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook2</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글에서는 Hook이 왜 세상에 나오게 됬는지에 대한 글이었다.&lt;br&gt;
 이 글에서는 Hook의 기능에 대해 작성하고자 한다.&lt;/p&gt;
 &lt;p&gt;Hook은 class 안에서 사용할 수 없다.&lt;br&gt;
 함수형 컴포넌트에서 상태 관련 로직(state, lifecycle 등)을 사용할 수 있게 해주는&lt;br&gt;
@@ -264,7 +254,34 @@ Hook의 상태를 올바르게 유지할 수 있도록 해줍니다.&lt;/li&gt;
 =&gt;일반적인 javascript 함수에서 호출하지 마세요.&lt;br&gt;
 =&gt;react 함수 컴포넌트에서 Hook을 호출하세요.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;위 규칙들을 강제하는 eslint-plugin-react-hooks라는 ESLint 플러그인을 출시했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카카오톡 로그인 에러 해결]]></title><description><![CDATA[카카오톡 로그인 에러 해결에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</guid><pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;카카오톡 로그인 기능을 구현하고 테스트 할때는 분명 발생한 에러없이&lt;br&gt;
+&lt;p&gt;위 규칙들을 강제하는 eslint-plugin-react-hooks라는 ESLint 플러그인을 출시했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hook은 react의 최신 기술로서 기존의 코드를 다시 작성할 필요 없이 컴포넌트들&lt;br&gt;
+안에서 Hook을 사용할 수 있으며, 이전 버전과의 호환성이 100%로 호환성을&lt;br&gt;
+깨뜨리지 않는다.&lt;/p&gt;
+&lt;p&gt;Hook은 알고 있는 react의 컨셉을 대체하지 않는다.&lt;br&gt;
+대신 props, state, context, refs 그리고 lifecycle 같은 react 개념에 좀 더 직관적인 API를 제공한다.&lt;br&gt;
+react는 컴포넌트에 재사용 가능한 행동을 붙이는 방법을 제공하지 않는다.&lt;br&gt;
+이를 해결하기 위해 render props 그리고 hoc(high order component)와 같은 패턴에 익숙할 것이다.&lt;br&gt;
+그러나 이런 패턴을 사용할 때 컴포넌트를 재구성해야하며 코드를 추적하기 어렵게 만든다.&lt;br&gt;
+요점은 컴포넌트 사이에서 상태와 관련된 로직을 재사용하기 어렵다.&lt;br&gt;
+그래서 상태 관련 로직을 공유하기 위해 좀 더 좋은 기초 요소가 필요하다.&lt;br&gt;
+그래서 Hook이 나온것!&lt;/p&gt;
+&lt;p&gt;Hook을 사용하면 컴포넌트로부터 상태 관련 로직을 추상화할 수 있고 독립적인&lt;br&gt;
+테스트와 재사용이 가능해진다.&lt;br&gt;
+Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.&lt;br&gt;
+이는 많은 컴포넌트들 혹은 커뮤니티 사이에서 Hook을 공유하기 쉽게 만들어준다.&lt;/p&gt;
+&lt;p&gt;간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야한다.&lt;br&gt;
+각 생명주기 메서드는 자주 관련 없는 로직이 섞여 있다.&lt;br&gt;
+함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은&lt;br&gt;
+단일 메서드로 결합합니다.&lt;br&gt;
+이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.&lt;br&gt;
+상태 관련 로직이 모든 공간에 있기 때문에 이러한 컴포넌트들을 작게 만드는 것은&lt;br&gt;
+불가능하고 테스트하기도 어렵다.&lt;br&gt;
+이는 많은 사람이 react를 별도의 상태 관리 라이브러리와 함께 결합해서 사용하는&lt;br&gt;
+이유 중 하나이다.&lt;br&gt;
+그러나 상태 관리 라이브러리는 종종 너무 많은 추상화를 하고 다른 파일들 사이에서&lt;br&gt;
+건너뛰기를 요구하며 컴포넌트 재사용을 더욱 어렵게 만든다.&lt;/p&gt;
+&lt;p&gt;이것을 해결하기 위해 생명주기 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는 Hook을 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있다.&lt;br&gt;
+Hook은 class없이 react 기능들을 사용하는 방법을 알려준다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카카오톡 로그인 에러 해결]]></title><description><![CDATA[카카오톡 로그인 에러 해결에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</guid><pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;카카오톡 로그인 기능을 구현하고 테스트 할때는 분명 발생한 에러없이&lt;br&gt;
 잘 동작했는데 오늘 오전에 테스트를 진행하고 있는 와중에&lt;br&gt;
 에러가 발생했다.&lt;/p&gt;
 &lt;p&gt;웹 페이지 접속하면 메인 화면인데 메인 화면에서 로그인 페이지로 이동하고&lt;br&gt;
@@ -1685,7 +1702,30 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
+&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
+&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
+&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
+&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
+&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
+&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
+&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
+&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
+&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
+&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
+&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
+&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
+&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
+&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
+&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
 &lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
 &lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
 &lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
@@ -1710,128 +1750,7 @@ render() {
 &lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
-​
-html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
-&lt;p&gt;​
-document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
-​
-querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
-​
-그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
-.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
-​
-querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
-​
-getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementById(‘id의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​
-getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementsByClassName(‘class의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​&lt;/p&gt;
-&lt;body&gt;
-    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
-​
-getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
-​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
-&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
-&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
-&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
-&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
-&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
-&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
-&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
-&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
-&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
-&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
-&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
-&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
-&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
-&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
-&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
-&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
-&lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
-&lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;2.textarea dom에 접근할 수 있게 됐으니 이벤트를 걸어줄 수 있게 됐다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;event option&amp;#39;, function(e) {
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이벤트가 발생할 때까지 감시하고 있어줄 addEventListener!&lt;/p&gt;
-&lt;p&gt;이벤트가 발생할때 까지 감시하고 있기는 하는데~~ 어떤 이벤트인지 알아야 하니까 1번째 인자로 이벤트 옵션을 설정해준다.&lt;/p&gt;
-&lt;p&gt;(이벤트가 발생될 때까지 감시하고 있다가 설정해준 이벤트가 발생하면 감지하고 실행한다.)&lt;/p&gt;
-&lt;p&gt;이벤트가 발생했을 때 2번째 인자로 주어지는 로직을 실행한다.(비동기)&lt;/p&gt;
-&lt;p&gt;3.textarea는 입력창이니까 사용자가 키보드를 사용할 거야, 그럼 키보드 관련 이벤트를 걸어줘야겠지?&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;,function(e) {
-
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;키보드 옵션이 keyup, keydown, keypress 있는데 keyup을 설정해줬다.&lt;/p&gt;
-&lt;p&gt;keyup은 키보드를 눌렀다 땠을 때의 이벤트&lt;/p&gt;
-&lt;p&gt;4. 이제 이벤트가 발생했고, 2번째 인자로 실행될 로직을 만들어보자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;, function(e) {
-
-// console.log(e)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;함수의 인자로 해당 dom 객체에서 발생한 이벤트 객체를 받아 올 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 로직은 입력한 글자의 수를 뷰에 표현&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
-
-const contents = e.target.value;
-
-//이벤트 옵션이 keyup 일 때
-
-// console.log(contents.slice(0, maxContentsOfTextArea))
-
-// e.target.value = contents.slice(0, maxContentsOfTextArea);
-
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 로직은 입력한 글자의 수가 최대 글자의 수와 같아져도 textarea에 계속 입력할 수 있다.(최대 글자 수를 오버해서 입력이 되는 문제 발생…)&lt;/p&gt;
-&lt;p&gt;그래서 입력한 글자의 수가 최대 글자의 수와 같아지거나, 길어질 때 최대 글자 수까지만 view에 표현하기 위한 로직이다.&lt;/p&gt;
-&lt;p&gt;위 초록색 로직으로 작성한 이유는 keyup 이벤트 때문이다.&lt;/p&gt;
-&lt;p&gt;(이미 키를 눌렀다 떼서 이벤트가 발생한 시점으로 event.preventDefault()가 먹히지 않는다.)&lt;/p&gt;
-&lt;p&gt;})&lt;/p&gt;
-&lt;p&gt;다르게도 로직을 작성해봤다. (아래 로직)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keydown&amp;#39;, function(e) {
-
-// console.log(e)
-
-if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;
-
-if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
-
-//이벤트 옵션이 keydown 일 때
-
-if(e.keyCode!== 8) {
-
-event.preventDefault();
-
-}
-
-}
-
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;keyup 이벤트 옵션을 keydown으로 변경해주었다.&lt;/p&gt;
-&lt;p&gt;keydown은 키를 누를 때 이벤트가 발생해서 event.preventDefault()가 먹힌다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
-&lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
-&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
@@ -1897,4 +1816,102 @@ DOM에 setAttribute()를 사용해서&lt;br&gt;
 &lt;p&gt;이렇게 코드를 작성하니 &lt;strong&gt;중복이 없다.&lt;/strong&gt;(개발자는 중복이 귀찮고 싫잖아요? 인정하셔야 돼요!! )&lt;/p&gt;
 &lt;p&gt;로그인 페이지에서는 컨트롤할 DOM이 적으니 1~2개 중복은 괜찮지만 확장되면서 중복이 되면 유지 보수하기 힘들 것 같다.(매우)&lt;/p&gt;
 &lt;p&gt;그래서 회원가입 페이지에서는 최대한 중복을 제외하는 로직으로 코드를 작성했다.&lt;/p&gt;
-&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+​
+html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​
+document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
+​
+querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
+​
+그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
+.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
+​
+querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
+​
+getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementById(‘id의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​
+getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementsByClassName(‘class의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​&lt;/p&gt;
+&lt;body&gt;
+    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
+​
+getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
+​
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
+&lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
+&lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;2.textarea dom에 접근할 수 있게 됐으니 이벤트를 걸어줄 수 있게 됐다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;event option&amp;#39;, function(e) {
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이벤트가 발생할 때까지 감시하고 있어줄 addEventListener!&lt;/p&gt;
+&lt;p&gt;이벤트가 발생할때 까지 감시하고 있기는 하는데~~ 어떤 이벤트인지 알아야 하니까 1번째 인자로 이벤트 옵션을 설정해준다.&lt;/p&gt;
+&lt;p&gt;(이벤트가 발생될 때까지 감시하고 있다가 설정해준 이벤트가 발생하면 감지하고 실행한다.)&lt;/p&gt;
+&lt;p&gt;이벤트가 발생했을 때 2번째 인자로 주어지는 로직을 실행한다.(비동기)&lt;/p&gt;
+&lt;p&gt;3.textarea는 입력창이니까 사용자가 키보드를 사용할 거야, 그럼 키보드 관련 이벤트를 걸어줘야겠지?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;,function(e) {
+
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;키보드 옵션이 keyup, keydown, keypress 있는데 keyup을 설정해줬다.&lt;/p&gt;
+&lt;p&gt;keyup은 키보드를 눌렀다 땠을 때의 이벤트&lt;/p&gt;
+&lt;p&gt;4. 이제 이벤트가 발생했고, 2번째 인자로 실행될 로직을 만들어보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keyup&amp;#39;, function(e) {
+
+// console.log(e)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;함수의 인자로 해당 dom 객체에서 발생한 이벤트 객체를 받아 올 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 로직은 입력한 글자의 수를 뷰에 표현&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
+
+const contents = e.target.value;
+
+//이벤트 옵션이 keyup 일 때
+
+// console.log(contents.slice(0, maxContentsOfTextArea))
+
+// e.target.value = contents.slice(0, maxContentsOfTextArea);
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 로직은 입력한 글자의 수가 최대 글자의 수와 같아져도 textarea에 계속 입력할 수 있다.(최대 글자 수를 오버해서 입력이 되는 문제 발생…)&lt;/p&gt;
+&lt;p&gt;그래서 입력한 글자의 수가 최대 글자의 수와 같아지거나, 길어질 때 최대 글자 수까지만 view에 표현하기 위한 로직이다.&lt;/p&gt;
+&lt;p&gt;위 초록색 로직으로 작성한 이유는 keyup 이벤트 때문이다.&lt;/p&gt;
+&lt;p&gt;(이미 키를 눌렀다 떼서 이벤트가 발생한 시점으로 event.preventDefault()가 먹히지 않는다.)&lt;/p&gt;
+&lt;p&gt;})&lt;/p&gt;
+&lt;p&gt;다르게도 로직을 작성해봤다. (아래 로직)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;textArea.addEventListener(&amp;#39;keydown&amp;#39;, function(e) {
+
+// console.log(e)
+
+if(e.target.value.length &amp;lt;= maxContentsOfTextArea) curContents.innerHTML = e.target.value.length;
+
+if(e.target.value.length &amp;gt;= maxContentsOfTextArea) {
+
+//이벤트 옵션이 keydown 일 때
+
+if(e.keyCode!== 8) {
+
+event.preventDefault();
+
+}
+
+}
+
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;keyup 이벤트 옵션을 keydown으로 변경해주었다.&lt;/p&gt;
+&lt;p&gt;keydown은 키를 누를 때 이벤트가 발생해서 event.preventDefault()가 먹힌다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
+&lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
+&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item></channel></rss>
