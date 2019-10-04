@@ -1,4 +1,279 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 01 Oct 2019 06:46:40 GMT</lastBuildDate><item><title><![CDATA[DOM]]></title><description><![CDATA[DOM 에 대한 글]]></description><link>https://khsi12345.github.io//posts/DOM</link><guid isPermaLink="false">https://khsi12345.github.io//posts/DOM</guid><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;dom&quot;&gt;&lt;a href=&quot;#dom&quot; aria-label=&quot;dom permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM?&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 04 Oct 2019 12:17:07 GMT</lastBuildDate><item><title><![CDATA[문제해결1]]></title><description><![CDATA[이미 짜여진 코드의 버그를 발견, 해결하는 과정에 대한 글]]></description><link>https://khsi12345.github.io//posts/problem_solution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/problem_solution</guid><pubDate>Fri, 04 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;기업협업을 진행하게되면서 맡은 어드민 페이지(대시보드)&lt;br&gt;
+페이지에 사이드 메뉴 리스트가 있는데 아이콘과 텍스트로 이뤄져있다.&lt;br&gt;
+텍스트를 클릭하면 해당 메뉴에 관련된 페이지로 전환이 잘되는데&lt;br&gt;
+아이콘을 클릭하면 관련없는 페이지로 전환이 되는 문제가 있었다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8c4230ebf7feabfa6b77dcffc30c670e/412b5/menuList_project.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.761732851985556%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABlElEQVQoz5WSPWsUQRjH90P4HdL4KWzt/ACpBLERBBtJYSGCBhTUwjQSCEaSAxUhJCgxgjYiGixSBMMld15ye0HJzb7Mzszu7P58Zi+GAxt9hj/DvP1fZiaqfUOoDy/2uDyzzLWZDlfOrXL9/CtuXlhj7uIGc5fecnt2i/mrH3l44xMLt76weO8bzx/v8PLpLusrXTZf93i/cUCUZxl1U2O1Y33pgM6zHlubMWuL+3SW+3z++guTW/LUoDOLzico9CkKh5mCEOY0Qlg6z6MHXe4u/GD1zYj783vcedLj3faY/6koTRJR1NR1w/eeYrd/wk9l6A4y9uMcJW5EsV1vApq/EcpkHq0qImctxph2snSFxEv/yckfMu/rdtzfSeluJ0TTG8qyoqo81ljUiUKNExKVkKpJX2gt65XsK88Ig5m6lisrrbyFOJy27ZzD2XC5BcfxMcPBEYf9AfHRkPhwyGg4mpCPVUvaRj1NF5wGsTPC0EJ8KwjE4bHCD0iTlCzNBNLLuNAFWpyGFN57ETctUTgTRH4Dg7xTQSMzhdoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/8c4230ebf7feabfa6b77dcffc30c670e/01472/menuList_project.webp 240w,
+/static/8c4230ebf7feabfa6b77dcffc30c670e/222bd/menuList_project.webp 480w,
+/static/8c4230ebf7feabfa6b77dcffc30c670e/620b9/menuList_project.webp 960w,
+/static/8c4230ebf7feabfa6b77dcffc30c670e/4eac5/menuList_project.webp 1385w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/8c4230ebf7feabfa6b77dcffc30c670e/0783d/menuList_project.png 240w,
+/static/8c4230ebf7feabfa6b77dcffc30c670e/782f4/menuList_project.png 480w,
+/static/8c4230ebf7feabfa6b77dcffc30c670e/f570d/menuList_project.png 960w,
+/static/8c4230ebf7feabfa6b77dcffc30c670e/412b5/menuList_project.png 1385w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/8c4230ebf7feabfa6b77dcffc30c670e/f570d/menuList_project.png&quot;
+          alt=&quot;admin-page&quot;
+          title=&quot;admin-page&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+어드민 페이지인데 기본으로 Project 메뉴가 뜬다.&lt;/p&gt;
+&lt;p&gt;메뉴 리스트에서 Project의 아이콘을 클릭했는데 엉뚱한 페이지가 뜬다.&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/373c460afca6d62fa25264313d7d91c0/412b5/menuList_project2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 23.898916967509027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA9UlEQVQY062Ou0oDQRSG5x1srax8CZ/AF0hjlUYQBDutUgh26QQFK9MFtTCIIAERtLGwSGFhI7FY4oXsmN3N7GUunzO7jUJKf/jmZ845/OeIqtQEDY5HbCz32Fw5o73UZ2v1gp21Abvr13RaQw7ad3S3Hzjce+Rk/4led0T/6JnL0xduzl+5vRpzP3xDvE8mSCmR8YzPKCYaf/AVSZKpIokV6XfeMGvIEk9aMA9kBWpe1uTKuyoQWZphjKmvLMqcvFAY11wNDq0r/1oWy3es+VMRchoTQp1zPtj6AT/kPSzR2lBVlXdd/xfxu2etRYRCwPmg/9APyZZziuVBC+8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/373c460afca6d62fa25264313d7d91c0/01472/menuList_project2.webp 240w,
+/static/373c460afca6d62fa25264313d7d91c0/222bd/menuList_project2.webp 480w,
+/static/373c460afca6d62fa25264313d7d91c0/620b9/menuList_project2.webp 960w,
+/static/373c460afca6d62fa25264313d7d91c0/4eac5/menuList_project2.webp 1385w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/373c460afca6d62fa25264313d7d91c0/0783d/menuList_project2.png 240w,
+/static/373c460afca6d62fa25264313d7d91c0/782f4/menuList_project2.png 480w,
+/static/373c460afca6d62fa25264313d7d91c0/f570d/menuList_project2.png 960w,
+/static/373c460afca6d62fa25264313d7d91c0/412b5/menuList_project2.png 1385w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/373c460afca6d62fa25264313d7d91c0/f570d/menuList_project2.png&quot;
+          alt=&quot;admin-page&quot;
+          title=&quot;admin-page&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;아래는 메뉴 리스트의 코드이다.&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 914px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/29e2109ca35ab8e144e49066d2aef19d/7d205/menuList_project4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 78.00875273522976%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACdElEQVQ4y1VU6XqjMAzscwRC8G1jCDnbtE27x/u/k3Y00LT7Q59tGUua0YgnOxYxMYqPRVzMEhIsJvF5EIuzWsA+DCPvbcgSh4k+nwb6Yt3DH2W73cqT21eJt6vk2wseVbHOLxaS9C6I8RGP0hIMewMfk4VIn95pMuvDEtCPVdKfd0l/7+KnKrvdDtbJrtvCOuk6PfdYl323Ww3nbdsiSCtt2zCY+p5sBdTTLH2JrCCNB8kxSPVWgncSx1nydADESqgJ8NJ0lN7YJVC7BGwZHAH980ny/VWG04VclDpJBKdJgyCAS1XKfGZQNY/AeX+kT79PSFgOZ37fkcMRhL9eJb29gI+4woT1BtYvkLHSVui69sbAZ1hpby1XBrQI4i7IjEpN8Lj0YvCxBY89Hhvr2Ag+hBk0TE25/oLaNs0CXzkM15OkX2/i54ldGw4XGYZBxpIJPYLT8XxbIO9PhFtPz4A7sUomQVJW2GmF8yjhfJQMHkIZJUKH3nvxyh/4Mj6RqwhphFIpJ90rdyoXbZImiXVeIHtwGD9u0OJFevDUNCuM1SiLFdJ/XW0a3qlcfhoDhvdncmhDYDU5JRkgm2R7ijxDJlqVClqrZHVYtWFfiR4cusOekFXxCifhYUTgXAbC11FT/jSg6lBlozA1sQuJE+NT4XtCDmeQ/fsu9fMTmSfOsXOODy3mmxzq7KIijhzET67RFJ1l3WsCXVfZBMJ1V6jfWWk2G3LT/OCtbTbfhrN+o7b4msdKyCoXbYqHFrXsssrmgFEcU5AxenZdJ2M4XllNQVe/5OPWnwKHgU1BQJPiMux6sQ7+Y2Ie9v1T4P7H+REQ9g91Qsle0U6T7QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/29e2109ca35ab8e144e49066d2aef19d/01472/menuList_project4.webp 240w,
+/static/29e2109ca35ab8e144e49066d2aef19d/222bd/menuList_project4.webp 480w,
+/static/29e2109ca35ab8e144e49066d2aef19d/6e3e2/menuList_project4.webp 914w&quot;
+          sizes=&quot;(max-width: 914px) 100vw, 914px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/29e2109ca35ab8e144e49066d2aef19d/0783d/menuList_project4.png 240w,
+/static/29e2109ca35ab8e144e49066d2aef19d/782f4/menuList_project4.png 480w,
+/static/29e2109ca35ab8e144e49066d2aef19d/7d205/menuList_project4.png 914w&quot;
+          sizes=&quot;(max-width: 914px) 100vw, 914px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/29e2109ca35ab8e144e49066d2aef19d/7d205/menuList_project4.png&quot;
+          alt=&quot;admin-page&quot;
+          title=&quot;admin-page&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;아래는 메뉴를 클릭했을 때 실행되는 함수 코드이다.&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 630px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/27591442f0fbf1b258ba86541546a04e/b2a12/menuList_project3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 30.317460317460316%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABL0lEQVQY01WR3XKDIBCF8x5VAfnxBxVBQU0yacZML9r3f5/TjclFe/HNYRfmsBxOUpYwRkFrhcpoGNJSCAghIU2NUmoUBQdnHHmWv8jfZH/0vT5ZWyMtDmGypAN8aNC7Ctb1GJYNTd9BVhpKC/Ayh5AFKSHyf1pqDsYKnARNw1UF1XVo/AibEvo1oh0bmKZCG6g3DehigNsWIqKPE9yaiJnqdPSrrnoZKimhvYdZN7RTxO2xY9m/0U0r+vmMcN3hLzvm2xfWzx1S11Cmpcu6QzWpri04FxQNGUoyVH2AcSNicrjfIz19hg0JnszcekUgs+XxAzt6mm7DkM5ofUTdNJRtgSz7OMwOQ60U2OHO6CMofP6E0fiUCcXBqH7uH2cYo7wkBMFFSbx6ORkd0Kf8AqutsJu176dwAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/27591442f0fbf1b258ba86541546a04e/01472/menuList_project3.webp 240w,
+/static/27591442f0fbf1b258ba86541546a04e/222bd/menuList_project3.webp 480w,
+/static/27591442f0fbf1b258ba86541546a04e/eae19/menuList_project3.webp 630w&quot;
+          sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/27591442f0fbf1b258ba86541546a04e/0783d/menuList_project3.png 240w,
+/static/27591442f0fbf1b258ba86541546a04e/782f4/menuList_project3.png 480w,
+/static/27591442f0fbf1b258ba86541546a04e/b2a12/menuList_project3.png 630w&quot;
+          sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/27591442f0fbf1b258ba86541546a04e/b2a12/menuList_project3.png&quot;
+          alt=&quot;admin-page&quot;
+          title=&quot;admin-page&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;해당 메뉴를 클릭하면 메뉴가 가지고 있는 text 값으로 비교해서 메뉴가 가지고 있는 값과 조건에 걸어둔 값이 같을 때 관련된 페이지로 전환되게 코드가 작성되어 있었다.&lt;br&gt;
+(이미지 첨부x)&lt;/p&gt;
+&lt;p&gt;메뉴의 텍스트를 클릭했을 때는 console.log()에서 텍스트 값이 잘 나왔지만&lt;br&gt;
+아이콘을 클릭했을 때는 undefined가 출력된다.&lt;br&gt;
+이유는 값이 없는 프로퍼티에 접근했기 때문이다.&lt;br&gt;
+event 객체의 currentTarget(클릭했을 때의 대상)의 outerText(텍스트 값)로&lt;br&gt;
+접근하니 console.log()가 텍스트 클릭했을때와 똑같이 나온다.&lt;/p&gt;
+&lt;p&gt;아래는 아이콘을 클릭했을 때 관련된 페이지로 전환이 잘된다.&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0be31b0b9bfb4f3e2f3287200f299669/412b5/menuList_project6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.711191335740075%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABiUlEQVQoz5WRP2sUQRjG93Ok8ANYxu9ga6dt2hRWwSaIFl4VUGxio2kkMadikiIYPOHEFIKFmEJJoXeBmNzeertL9s/c7uzM7i8zs15QEMSBh/fPvO/zPu+Md2NujcXLz7k1v83NSy9ZurLD8tVd7lzb4+71Hp2FPiuL+zxc+sCj2x950vnE0/sHdFe/sLV2yO6zb/S2hrx/fcx+7whvdOrz/SBmY3XA3tsxvVcnbD4+4k0/IEtLZFFRTg2sLRSy/A1SUf2C8yuFB4rDryn3VgZ0+yHr3WM6D4a8eDeh0jX/ezwhBIWZNvwREieCJJcE8ZRsKqnrmqZp/gl7gmGBSIzCNllTiBytlLlq/pg4a/hbTmttULueweeYNJJ2ZYyShrJsFWVpRvgzZBJMiCaRQUgURogsR+QCVakLYiklyoho+Vsxng0skchzNzFNEgI/wD8ZMTII/DHjkc9ZfEaWpNgnmq1aFqX5iMqRl4V0/d7s0gaWWCvtpjqY4ta2sXZo61ytW1lf+NaeA4RsU218hfVfAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/0be31b0b9bfb4f3e2f3287200f299669/01472/menuList_project6.webp 240w,
+/static/0be31b0b9bfb4f3e2f3287200f299669/222bd/menuList_project6.webp 480w,
+/static/0be31b0b9bfb4f3e2f3287200f299669/620b9/menuList_project6.webp 960w,
+/static/0be31b0b9bfb4f3e2f3287200f299669/4eac5/menuList_project6.webp 1385w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/0be31b0b9bfb4f3e2f3287200f299669/0783d/menuList_project6.png 240w,
+/static/0be31b0b9bfb4f3e2f3287200f299669/782f4/menuList_project6.png 480w,
+/static/0be31b0b9bfb4f3e2f3287200f299669/f570d/menuList_project6.png 960w,
+/static/0be31b0b9bfb4f3e2f3287200f299669/412b5/menuList_project6.png 1385w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/0be31b0b9bfb4f3e2f3287200f299669/f570d/menuList_project6.png&quot;
+          alt=&quot;admin-page&quot;
+          title=&quot;admin-page&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[getInitialProps]]></title><description><![CDATA[getInitialProps 에 대한 글]]></description><link>https://khsi12345.github.io//posts/getInitialProps</link><guid isPermaLink="false">https://khsi12345.github.io//posts/getInitialProps</guid><pubDate>Wed, 02 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;NextJs에서 SSR(서버 사이드 렌더링)을 가능하게 하는 것이 바로 getInitialProps에 있다.&lt;br&gt;
+NextJS에서 모든 스크립트 코드는 NodeJs(서버)와 브라우저(클라이언트) 양쪽 모두에서&lt;br&gt;
+수행되지만 getInitialProps 함수는 서버나 클라이언트 중 한군데서만 실행된다.&lt;/p&gt;
+&lt;p&gt;getInitialProps의 SSR 절차&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;getInitialProps의 호출&lt;br&gt;
+URL 주소를 이용해 직접 특정 페이지에 접근하면 NodeJs 환경에서 getInitialProps가 호출된다.&lt;br&gt;
+브라우저(클라이언트)에서 SPA로 페이지 이동하는 경우 브라우저 환경에서 getInitialProps가&lt;br&gt;
+호출된다.&lt;/li&gt;
+&lt;li&gt;getInitialProps가 plain object를 리턴하면 해당 객체가 그대로 class의 constructor의 props로 전달되거나 함수형일 경우 매개변수로 을 수 있다.&lt;/li&gt;
+&lt;li&gt;서버에서 렌더링 된 html이 그대로 브라우저로 내려온다.&lt;/li&gt;
+&lt;li&gt;브라우저에서는 constructor에서 props를 통해 전달받은 데이터를 이용해 추가적인 서버&lt;br&gt;
+요청없이 화면을 똑같이 다시 한번 그린다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ex)class 경우&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;
+
+export default class extends React.Component {
+  static async getInitialProps({ req }) {
+    const userAgent = req ? req.headers[&amp;#39;user-agent&amp;#39;] : navigator.userAgent
+    return { userAgent }
+  }
+
+  render() {
+    return (
+      &amp;lt;div&amp;gt;
+        Hello World {this.props.userAgent}
+      &amp;lt;/div&amp;gt;
+    )
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ex)함수형 경우&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const Page = ({ stars }) =&amp;gt;
+  &amp;lt;div&amp;gt;
+    Next stars: {stars}
+  &amp;lt;/div&amp;gt;
+
+Page.getInitialProps = async ({ req }) =&amp;gt; {
+  const res = await fetch(&amp;#39;https://api.github.com/repos/zeit/next.js&amp;#39;)
+  const json = await res.json()
+  return { stars: json.stargazers_count }
+}
+
+export default Page&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;getInitialProps에서 사용할 수 있는 속성&lt;/p&gt;
+&lt;p&gt;pathname: path section of URL&lt;br&gt;
+query: query string section of URL parsed as an object&lt;br&gt;
+asPath: String of the actual path shows in the browser&lt;br&gt;
+req: HTTP request object(server only)&lt;br&gt;
+res: HTTP response object(server only)&lt;br&gt;
+jsonPageRes: Fetch Response object(client only)&lt;br&gt;
+err: Error object if any error is encountered during the rendering&lt;/p&gt;
+&lt;p&gt;주의사항&lt;br&gt;
+getInitialProps는 pages 폴더 안 파일들에서만 사용할 수 있고 자식 컴포넌트들에서는 사용할 수 없다.&lt;br&gt;
+getInitialProps가 서버측에서 수행될 때만 필요한 모듈들을 클라이언트 쪽에서 불필요하게 로드되지 않도록 주의한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DOM]]></title><description><![CDATA[DOM 에 대한 글]]></description><link>https://khsi12345.github.io//posts/DOM</link><guid isPermaLink="false">https://khsi12345.github.io//posts/DOM</guid><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;dom&quot;&gt;&lt;a href=&quot;#dom&quot; aria-label=&quot;dom permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM?&lt;/h3&gt;
 &lt;p&gt;DOM이란 Document Object Model로 HTML, XML 문서의 프로그래밍 interface이다.&lt;br&gt;
 DOM은 문서의 구조화된 표현을 제공하며 프로그래밍 언어가 DOM 구조에 접근할 수 있는 방법을 제공해준다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ex) document.getElementById()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -165,7 +440,34 @@ styled-components는 스타일 적용을 위 처럼 정의하다보니 종속 �
 그래서 스타일 상속 및 종속은 정의 윗 부분에 있는 태그 관계도에서 이뤄진다.&lt;br&gt;
 그렇다고 스타일 종속관계를 위해.. 태그 관계도를 난장판으로 만들 수 없고 말이다..&lt;br&gt;
 그래서 ItemImg와 ItemTextWrap을 포함하고 있는 ItemImgWrap 컴포넌트를 각&lt;br&gt;
-컴포넌트에서 변수처럼 사용하고 :hover 적용했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook2]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook2</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글에서는 Hook이 왜 세상에 나오게 됬는지에 대한 글이었다.&lt;br&gt;
+컴포넌트에서 변수처럼 사용하고 :hover 적용했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hook은 react의 최신 기술로서 기존의 코드를 다시 작성할 필요 없이 컴포넌트들&lt;br&gt;
+안에서 Hook을 사용할 수 있으며, 이전 버전과의 호환성이 100%로 호환성을&lt;br&gt;
+깨뜨리지 않는다.&lt;/p&gt;
+&lt;p&gt;Hook은 알고 있는 react의 컨셉을 대체하지 않는다.&lt;br&gt;
+대신 props, state, context, refs 그리고 lifecycle 같은 react 개념에 좀 더 직관적인 API를 제공한다.&lt;br&gt;
+react는 컴포넌트에 재사용 가능한 행동을 붙이는 방법을 제공하지 않는다.&lt;br&gt;
+이를 해결하기 위해 render props 그리고 hoc(high order component)와 같은 패턴에 익숙할 것이다.&lt;br&gt;
+그러나 이런 패턴을 사용할 때 컴포넌트를 재구성해야하며 코드를 추적하기 어렵게 만든다.&lt;br&gt;
+요점은 컴포넌트 사이에서 상태와 관련된 로직을 재사용하기 어렵다.&lt;br&gt;
+그래서 상태 관련 로직을 공유하기 위해 좀 더 좋은 기초 요소가 필요하다.&lt;br&gt;
+그래서 Hook이 나온것!&lt;/p&gt;
+&lt;p&gt;Hook을 사용하면 컴포넌트로부터 상태 관련 로직을 추상화할 수 있고 독립적인&lt;br&gt;
+테스트와 재사용이 가능해진다.&lt;br&gt;
+Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.&lt;br&gt;
+이는 많은 컴포넌트들 혹은 커뮤니티 사이에서 Hook을 공유하기 쉽게 만들어준다.&lt;/p&gt;
+&lt;p&gt;간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야한다.&lt;br&gt;
+각 생명주기 메서드는 자주 관련 없는 로직이 섞여 있다.&lt;br&gt;
+함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은&lt;br&gt;
+단일 메서드로 결합합니다.&lt;br&gt;
+이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.&lt;br&gt;
+상태 관련 로직이 모든 공간에 있기 때문에 이러한 컴포넌트들을 작게 만드는 것은&lt;br&gt;
+불가능하고 테스트하기도 어렵다.&lt;br&gt;
+이는 많은 사람이 react를 별도의 상태 관리 라이브러리와 함께 결합해서 사용하는&lt;br&gt;
+이유 중 하나이다.&lt;br&gt;
+그러나 상태 관리 라이브러리는 종종 너무 많은 추상화를 하고 다른 파일들 사이에서&lt;br&gt;
+건너뛰기를 요구하며 컴포넌트 재사용을 더욱 어렵게 만든다.&lt;/p&gt;
+&lt;p&gt;이것을 해결하기 위해 생명주기 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는 Hook을 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있다.&lt;br&gt;
+Hook은 class없이 react 기능들을 사용하는 방법을 알려준다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook2]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook2</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook2</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글에서는 Hook이 왜 세상에 나오게 됬는지에 대한 글이었다.&lt;br&gt;
 이 글에서는 Hook의 기능에 대해 작성하고자 한다.&lt;/p&gt;
 &lt;p&gt;Hook은 class 안에서 사용할 수 없다.&lt;br&gt;
 함수형 컴포넌트에서 상태 관련 로직(state, lifecycle 등)을 사용할 수 있게 해주는&lt;br&gt;
@@ -254,34 +556,7 @@ Hook의 상태를 올바르게 유지할 수 있도록 해줍니다.&lt;/li&gt;
 =&gt;일반적인 javascript 함수에서 호출하지 마세요.&lt;br&gt;
 =&gt;react 함수 컴포넌트에서 Hook을 호출하세요.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;위 규칙들을 강제하는 eslint-plugin-react-hooks라는 ESLint 플러그인을 출시했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hook]]></title><description><![CDATA[Hook에 대한 글]]></description><link>https://khsi12345.github.io//posts/hook</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hook</guid><pubDate>Sat, 14 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hook은 react의 최신 기술로서 기존의 코드를 다시 작성할 필요 없이 컴포넌트들&lt;br&gt;
-안에서 Hook을 사용할 수 있으며, 이전 버전과의 호환성이 100%로 호환성을&lt;br&gt;
-깨뜨리지 않는다.&lt;/p&gt;
-&lt;p&gt;Hook은 알고 있는 react의 컨셉을 대체하지 않는다.&lt;br&gt;
-대신 props, state, context, refs 그리고 lifecycle 같은 react 개념에 좀 더 직관적인 API를 제공한다.&lt;br&gt;
-react는 컴포넌트에 재사용 가능한 행동을 붙이는 방법을 제공하지 않는다.&lt;br&gt;
-이를 해결하기 위해 render props 그리고 hoc(high order component)와 같은 패턴에 익숙할 것이다.&lt;br&gt;
-그러나 이런 패턴을 사용할 때 컴포넌트를 재구성해야하며 코드를 추적하기 어렵게 만든다.&lt;br&gt;
-요점은 컴포넌트 사이에서 상태와 관련된 로직을 재사용하기 어렵다.&lt;br&gt;
-그래서 상태 관련 로직을 공유하기 위해 좀 더 좋은 기초 요소가 필요하다.&lt;br&gt;
-그래서 Hook이 나온것!&lt;/p&gt;
-&lt;p&gt;Hook을 사용하면 컴포넌트로부터 상태 관련 로직을 추상화할 수 있고 독립적인&lt;br&gt;
-테스트와 재사용이 가능해진다.&lt;br&gt;
-Hook은 계층 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.&lt;br&gt;
-이는 많은 컴포넌트들 혹은 커뮤니티 사이에서 Hook을 공유하기 쉽게 만들어준다.&lt;/p&gt;
-&lt;p&gt;간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야한다.&lt;br&gt;
-각 생명주기 메서드는 자주 관련 없는 로직이 섞여 있다.&lt;br&gt;
-함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은&lt;br&gt;
-단일 메서드로 결합합니다.&lt;br&gt;
-이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.&lt;br&gt;
-상태 관련 로직이 모든 공간에 있기 때문에 이러한 컴포넌트들을 작게 만드는 것은&lt;br&gt;
-불가능하고 테스트하기도 어렵다.&lt;br&gt;
-이는 많은 사람이 react를 별도의 상태 관리 라이브러리와 함께 결합해서 사용하는&lt;br&gt;
-이유 중 하나이다.&lt;br&gt;
-그러나 상태 관리 라이브러리는 종종 너무 많은 추상화를 하고 다른 파일들 사이에서&lt;br&gt;
-건너뛰기를 요구하며 컴포넌트 재사용을 더욱 어렵게 만든다.&lt;/p&gt;
-&lt;p&gt;이것을 해결하기 위해 생명주기 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는 Hook을 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있다.&lt;br&gt;
-Hook은 class없이 react 기능들을 사용하는 방법을 알려준다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카카오톡 로그인 에러 해결]]></title><description><![CDATA[카카오톡 로그인 에러 해결에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</guid><pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;카카오톡 로그인 기능을 구현하고 테스트 할때는 분명 발생한 에러없이&lt;br&gt;
+&lt;p&gt;위 규칙들을 강제하는 eslint-plugin-react-hooks라는 ESLint 플러그인을 출시했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카카오톡 로그인 에러 해결]]></title><description><![CDATA[카카오톡 로그인 에러 해결에 대한 글]]></description><link>https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</link><guid isPermaLink="false">https://khsi12345.github.io//posts/kakaotalk_login/Error_resolution</guid><pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;카카오톡 로그인 기능을 구현하고 테스트 할때는 분명 발생한 에러없이&lt;br&gt;
 잘 동작했는데 오늘 오전에 테스트를 진행하고 있는 와중에&lt;br&gt;
 에러가 발생했다.&lt;/p&gt;
 &lt;p&gt;웹 페이지 접속하면 메인 화면인데 메인 화면에서 로그인 페이지로 이동하고&lt;br&gt;
@@ -1702,7 +1977,40 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+​
+html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​
+document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
+​
+querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
+​
+그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
+.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
+​
+querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
+​
+getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementById(‘id의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​
+getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
+​
+document.getElementsByClassName(‘class의 값’)&lt;br&gt;
+​
+&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
+​&lt;/p&gt;
+&lt;body&gt;
+    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
+​
+getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
+​
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
 &lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
 &lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
 &lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
@@ -1816,40 +2124,7 @@ DOM에 setAttribute()를 사용해서&lt;br&gt;
 &lt;p&gt;이렇게 코드를 작성하니 &lt;strong&gt;중복이 없다.&lt;/strong&gt;(개발자는 중복이 귀찮고 싫잖아요? 인정하셔야 돼요!! )&lt;/p&gt;
 &lt;p&gt;로그인 페이지에서는 컨트롤할 DOM이 적으니 1~2개 중복은 괜찮지만 확장되면서 중복이 되면 유지 보수하기 힘들 것 같다.(매우)&lt;/p&gt;
 &lt;p&gt;그래서 회원가입 페이지에서는 최대한 중복을 제외하는 로직으로 코드를 작성했다.&lt;/p&gt;
-&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
-​
-html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
-&lt;p&gt;​
-document라는 html의 루트에 접근해서 document가 가지고 있는 메서드를 사용했다.&lt;br&gt;
-​
-querySelector(type: string)를 풀어보면 “선택자를 물어본다”라고 생각할 수 있겠다.
-​
-그리고 string 타입으로 선택자를 작성해주면 된다.&lt;br&gt;
-.으로 시작한것은 class 선택자, #으로 시작하는 것은 id 선택자이다.&lt;br&gt;
-​
-querySelector() 외에도 getElementById, getElementsByClassName, getElementsByTagName 도 있다.&lt;br&gt;
-​
-getElementById는 풀어보면 html 요소에 id 속성이 있고 속성의 값이 있을 때 id값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementById(‘id의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! id는 문서 내에서 유일해야 한다.(유일한 값, 하나밖에 없어야 한다.) 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​
-getElementsByClassName는 풀어보면 html 요소에 class 속성이 있고 속성의 값이 있을 때 class값으로 해당 요소의 DOM에 접근할 수 있다.&lt;br&gt;
-​
-document.getElementsByClassName(‘class의 값’)&lt;br&gt;
-​
-&lt;strong&gt;! class는 동일한 값이 중복 가능하고, 복수 개의 값을 설정할 수 있다. 부정의 NOT 아니에요~&lt;/strong&gt;&lt;br&gt;
-​&lt;/p&gt;
-&lt;body&gt;
-    &lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #e5e5e5&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#010101;font-family:Consolas, &apos;Liberation Mono&apos;, Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;duple&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#010101&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color:#066de2&quot;&gt;input&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#0a9989&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color:#df5000&quot;&gt;&quot;inputName&amp;nbsp;inputEle&quot;&lt;/span&gt;&lt;span style=&quot;color:#0a9989&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#010101&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;p&gt;querySelector()는 id, class를 구분해서 querySelector()에게 넘겨줘야 하고
-​
-getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
-​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
+&lt;p&gt;피드백 언제나 환영합니다 ~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
 &lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
 &lt;p&gt;1. textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let  textArea  \=  document.querySelector(&amp;#39;.textBox&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
