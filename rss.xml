@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 17 Oct 2019 00:48:14 GMT</lastBuildDate><item><title><![CDATA[null과 undefined의 차이]]></title><description><![CDATA[null과 undefined 차이에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/null_and_undefined_difference</link><guid isPermaLink="false">https://khsi12345.github.io//posts/null_and_undefined_difference</guid><pubDate>Wed, 16 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;null&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 18 Oct 2019 11:42:00 GMT</lastBuildDate><item><title><![CDATA[javascript 변수 키워드들]]></title><description><![CDATA[javascript 변수 키워드 공통점과 차이에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/javascript_variable_keyword</link><guid isPermaLink="false">https://khsi12345.github.io//posts/javascript_variable_keyword</guid><pubDate>Thu, 17 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;javascript 변수 기본 키워드 var&lt;br&gt;
+변수 유효 범위(스코프)는 함수 레벨이다.(지역 변수)&lt;br&gt;
+함수 레벨 스코프 외에서 var 키워드를 사용하면 전역 변수다.&lt;br&gt;
+중복 선언 허용한다.(의도하지 않은 오류 발생)&lt;br&gt;
+변수 호이스팅(변수 선언문 이전에 변수 참조가 가능하다.)&lt;/p&gt;
+&lt;p&gt;es6부터 지원되는 변수 키워드 let, const&lt;br&gt;
+let과 const&lt;br&gt;
+변수 유혀 범위(스코프)는 함수 레벨 스코프가 아닌 블록 레벨 스코프( { } )이다.&lt;br&gt;
+호이스팅은 되지만 안일어나는 것처럼 동작한다.&lt;br&gt;
+중복 선언 불가능하다.&lt;/p&gt;
+&lt;p&gt;let과 const 차이&lt;br&gt;
+let은 값 재할당이 가능하지만 const는 불가능하다.&lt;br&gt;
+let은 변수 선언 단계와 초기화 단계가 분리되어 진행된다.&lt;br&gt;
+const는 변수 선언 단계와 초기화 단계가 한번에 진행된다.&lt;br&gt;
+const는 값이 객체인 경우 객체의 내용은 변경할 수 있다.(참조값을 변경하지 않는다.)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[null과 undefined의 차이]]></title><description><![CDATA[null과 undefined 차이에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/null_and_undefined_difference</link><guid isPermaLink="false">https://khsi12345.github.io//posts/null_and_undefined_difference</guid><pubDate>Wed, 16 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;null&lt;br&gt;
 비어있거나 존재하지 않는 값.&lt;br&gt;
 개발자가 명시적으로 값으로 지정한다.&lt;br&gt;
 null의 데이터 타입은 object이다.&lt;/p&gt;
@@ -1863,7 +1877,66 @@ B라는 scss 파일에서 A라는 scss 파일에 존재하고 있는 mixin을&lt
 에러부터 잘 파악하자!! 이다.&lt;br&gt;
 이후 해결과정에서도 해결이 안되면 새로운 환경을 만들어서 적용해보자!! 이다.&lt;br&gt;
 그리고 에러 내용이 무엇을 찾을 수 없다던가, 접근을 할 수 없다던가, 이런 종류라면&lt;br&gt;
-경로, import시켜주는거 또는 디렉토리 구조, 디렉토리, 파일 존재 여부 를 확인해보자!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React component styling(SASS / SCSS)]]></title><description><![CDATA[sass / scss 공부 및 적용]]></description><link>https://khsi12345.github.io//posts/react/component-styling-sass-scss/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/component-styling-sass-scss/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react-component-styling-중-sassscss&quot;&gt;&lt;a href=&quot;#react-component-styling-%EC%A4%91-sassscss&quot; aria-label=&quot;react component styling 중 sassscss permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React Component Styling 중 Sass(Scss)&lt;/h2&gt;
+경로, import시켜주는거 또는 디렉토리 구조, 디렉토리, 파일 존재 여부 를 확인해보자!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing2]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react3/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react3/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react에서-event-data를-사용해보며&quot;&gt;&lt;a href=&quot;#react%EC%97%90%EC%84%9C-event-data%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0&quot; aria-label=&quot;react에서 event data를 사용해보며 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;react에서 event, data를 사용해보며&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInputEmail = (e) =&amp;gt; {
+    this.setState({
+      email: e.target.value,
+    });
+  };
+
+  handleInputPw = (e) =&amp;gt; {
+    this.setState({
+      pw: e.target.value,
+    });
+  };
+
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    placeholder=&amp;quot;Phone, email, or username&amp;quot;
+    className=&amp;quot;inputEmail&amp;quot;
+    onChange={this.handleInputEmail}
+    /&amp;gt;
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    placeholder=&amp;quot;Password&amp;quot;
+    className=&amp;quot;inputPw&amp;quot;
+    onChange={this.handleInputPw}
+    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 이벤트 핸들러가 같은 동작을 할 경우 처음엔 각각의 input 요소&lt;br&gt;
+그리고 state인 email과 pw로 인해 1개의 이벤트 핸들러에서는 email state를,&lt;br&gt;
+다른 1개의 이벤트 핸들러에서는 pw state를 다뤘다.&lt;br&gt;
+하지만 갱신해줘야하는 데이터(입력요소의 값)를 받을 대상이 다를 뿐이지 결국에는&lt;br&gt;
+데이터를 가지고 갱신하는 일은 같은 것이다.&lt;/p&gt;
+&lt;p&gt;위 코드를 이렇게 수정할 수 있겠다.&lt;br&gt;
+2개의 이벤트 핸들러를 1개로 줄이고 각각의 input 요소에서 사용할 수 있게한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInput = (e) =&amp;gt; {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    name=&amp;quot;email&amp;quot;
+    placeholder=&amp;quot;Phone, email, or username&amp;quot;
+    className=&amp;quot;inputEmail&amp;quot;
+    onChange={this.handleInput}
+    /&amp;gt;
+&amp;lt;input
+    type=&amp;quot;text&amp;quot;
+    name=&amp;quot;pw
+    placeholder=&amp;quot;Password&amp;quot;
+    className=&amp;quot;inputPw&amp;quot;
+    onChange={this.handleInput}
+    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;어떻게 이런게 가능한 것일까??&lt;br&gt;
+이벤트 핸들러는 이벤트 객체를 받을 수 있는데 그 이벤트 객체는 이벤트를 일으킨&lt;br&gt;
+요소다.&lt;br&gt;
+즉 해당 요소에서 이벤트가 발생하면 &lt;code class=&quot;language-text&quot;&gt;[e.target.name]&lt;/code&gt;은 name을 email 또는&lt;br&gt;
+pw 구분한다.&lt;br&gt;
+name이 email인 요소면 &lt;code class=&quot;language-text&quot;&gt;email: e.target.value&lt;/code&gt;가 되는것이고&lt;br&gt;
+name이 pw인 요소면 &lt;code class=&quot;language-text&quot;&gt;pw:e.gartget.value&lt;/code&gt;가 되는것이다.&lt;/p&gt;
+&lt;p&gt;중복을 줄일 수 있는 정말 좋은 방법이다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React component styling(SASS / SCSS)]]></title><description><![CDATA[sass / scss 공부 및 적용]]></description><link>https://khsi12345.github.io//posts/react/component-styling-sass-scss/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/component-styling-sass-scss/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react-component-styling-중-sassscss&quot;&gt;&lt;a href=&quot;#react-component-styling-%EC%A4%91-sassscss&quot; aria-label=&quot;react component styling 중 sassscss permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React Component Styling 중 Sass(Scss)&lt;/h2&gt;
 &lt;p&gt;sass(scss)는 Syntactically Awesome Style Sheets의 약자로 문법적으로 어~섬한 스타일 시트다.&lt;br&gt;
 sass(scss)는 복잡한 작업을 쉽게 해주고 코드의 재활용성과 가독성을 up시켜주며 유지보수를 쉽게 해준다.&lt;br&gt;
 CSS pre-processor로 CSS 전처리기이다.&lt;br&gt;
@@ -1961,66 +2034,7 @@ css처럼 {}로 선택자의 유효범위를 구분하며 ;도 사용한다.&lt;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;변수&lt;br&gt;
 사용하고자 하는 변수명 앞에 $ 키워드 사용&lt;/p&gt;
-&lt;p&gt;내용 추가 및 보완 예정&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing2]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react3/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react3/</guid><pubDate>Sun, 18 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react에서-event-data를-사용해보며&quot;&gt;&lt;a href=&quot;#react%EC%97%90%EC%84%9C-event-data%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0&quot; aria-label=&quot;react에서 event data를 사용해보며 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;react에서 event, data를 사용해보며&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInputEmail = (e) =&amp;gt; {
-    this.setState({
-      email: e.target.value,
-    });
-  };
-
-  handleInputPw = (e) =&amp;gt; {
-    this.setState({
-      pw: e.target.value,
-    });
-  };
-
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    placeholder=&amp;quot;Phone, email, or username&amp;quot;
-    className=&amp;quot;inputEmail&amp;quot;
-    onChange={this.handleInputEmail}
-    /&amp;gt;
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    placeholder=&amp;quot;Password&amp;quot;
-    className=&amp;quot;inputPw&amp;quot;
-    onChange={this.handleInputPw}
-    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 이벤트 핸들러가 같은 동작을 할 경우 처음엔 각각의 input 요소&lt;br&gt;
-그리고 state인 email과 pw로 인해 1개의 이벤트 핸들러에서는 email state를,&lt;br&gt;
-다른 1개의 이벤트 핸들러에서는 pw state를 다뤘다.&lt;br&gt;
-하지만 갱신해줘야하는 데이터(입력요소의 값)를 받을 대상이 다를 뿐이지 결국에는&lt;br&gt;
-데이터를 가지고 갱신하는 일은 같은 것이다.&lt;/p&gt;
-&lt;p&gt;위 코드를 이렇게 수정할 수 있겠다.&lt;br&gt;
-2개의 이벤트 핸들러를 1개로 줄이고 각각의 input 요소에서 사용할 수 있게한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;handleInput = (e) =&amp;gt; {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  };
-
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    name=&amp;quot;email&amp;quot;
-    placeholder=&amp;quot;Phone, email, or username&amp;quot;
-    className=&amp;quot;inputEmail&amp;quot;
-    onChange={this.handleInput}
-    /&amp;gt;
-&amp;lt;input
-    type=&amp;quot;text&amp;quot;
-    name=&amp;quot;pw
-    placeholder=&amp;quot;Password&amp;quot;
-    className=&amp;quot;inputPw&amp;quot;
-    onChange={this.handleInput}
-    /&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;어떻게 이런게 가능한 것일까??&lt;br&gt;
-이벤트 핸들러는 이벤트 객체를 받을 수 있는데 그 이벤트 객체는 이벤트를 일으킨&lt;br&gt;
-요소다.&lt;br&gt;
-즉 해당 요소에서 이벤트가 발생하면 &lt;code class=&quot;language-text&quot;&gt;[e.target.name]&lt;/code&gt;은 name을 email 또는&lt;br&gt;
-pw 구분한다.&lt;br&gt;
-name이 email인 요소면 &lt;code class=&quot;language-text&quot;&gt;email: e.target.value&lt;/code&gt;가 되는것이고&lt;br&gt;
-name이 pw인 요소면 &lt;code class=&quot;language-text&quot;&gt;pw:e.gartget.value&lt;/code&gt;가 되는것이다.&lt;/p&gt;
-&lt;p&gt;중복을 줄일 수 있는 정말 좋은 방법이다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react2/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react2/</guid><pubDate>Sat, 17 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;miniter에 react를 적용하게 됐다.&lt;/p&gt;
+&lt;p&gt;내용 추가 및 보완 예정&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT ing]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react2/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react2/</guid><pubDate>Sat, 17 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;miniter에 react를 적용하게 됐다.&lt;/p&gt;
 &lt;h3 id=&quot;cracrate-react-app으로-react-환경을-구성했다&quot;&gt;&lt;a href=&quot;#cracrate-react-app%EC%9C%BC%EB%A1%9C-react-%ED%99%98%EA%B2%BD%EC%9D%84-%EA%B5%AC%EC%84%B1%ED%96%88%EB%8B%A4&quot; aria-label=&quot;cracrate react app으로 react 환경을 구성했다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CRA(crate-react-app)으로 react 환경을 구성했다.&lt;/h3&gt;
 &lt;h3 id=&quot;앞으로-혼자-개발-할-것이-아니기-때문에-eslint와-prettier로-코딩-환경을-구성했다&quot;&gt;&lt;a href=&quot;#%EC%95%9E%EC%9C%BC%EB%A1%9C-%ED%98%BC%EC%9E%90-%EA%B0%9C%EB%B0%9C-%ED%95%A0-%EA%B2%83%EC%9D%B4-%EC%95%84%EB%8B%88%EA%B8%B0-%EB%95%8C%EB%AC%B8%EC%97%90-eslint%EC%99%80-prettier%EB%A1%9C-%EC%BD%94%EB%94%A9-%ED%99%98%EA%B2%BD%EC%9D%84-%EA%B5%AC%EC%84%B1%ED%96%88%EB%8B%A4&quot; aria-label=&quot;앞으로 혼자 개발 할 것이 아니기 때문에 eslint와 prettier로 코딩 환경을 구성했다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;앞으로 혼자 개발 할 것이 아니기 때문에 eslint와 prettier로 코딩 환경을 구성했다.&lt;/h3&gt;
 &lt;h4 id=&quot;eslint란&quot;&gt;&lt;a href=&quot;#eslint%EB%9E%80&quot; aria-label=&quot;eslint란 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;eslint란??&lt;/h4&gt;
