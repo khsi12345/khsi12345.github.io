@@ -3,8 +3,8 @@
 <url> <loc>https://khsi12345.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/DOM</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/DOM</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/Progressive_Web_App</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/nextJs_esLint_and_prettier</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/highcharts</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -42,8 +42,8 @@
 <url> <loc>https://khsi12345.github.io/posts/first_project/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/promise</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/first_project/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/posts/kakaotalk_login</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/posts/kakaotalk_login/Error_resolution</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/posts/kakaotalk_login</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/app</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/array-method</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/component</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -66,8 +66,8 @@
 <url> <loc>https://khsi12345.github.io/tag/bundler</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/chart-libray</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/class</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/tag/codding</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://khsi12345.github.io/tag/codding-bootcamp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/tag/coding</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://khsi12345.github.io/tag/coding-bootcamp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/const</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://khsi12345.github.io/tag/css/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
