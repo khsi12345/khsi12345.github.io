@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 24 Oct 2019 01:39:33 GMT</lastBuildDate><item><title><![CDATA[Wecode 3기 후기]]></title><description><![CDATA[wecode 3기 후기 글 작성]]></description><link>https://khsi12345.github.io//posts/wecode_3th_review</link><guid isPermaLink="false">https://khsi12345.github.io//posts/wecode_3th_review</guid><pubDate>Wed, 23 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;wecode-3기-후기&quot;&gt;&lt;a href=&quot;#wecode-3%EA%B8%B0-%ED%9B%84%EA%B8%B0&quot; aria-label=&quot;wecode 3기 후기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wecode 3기 후기&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 27 Oct 2019 07:12:26 GMT</lastBuildDate><item><title><![CDATA[next.js에서 절대경로 설정하기]]></title><description><![CDATA[절대 경로 설정하는 글 작성]]></description><link>https://khsi12345.github.io//posts/path_settings</link><guid isPermaLink="false">https://khsi12345.github.io//posts/path_settings</guid><pubDate>Sun, 27 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;package.json 파일에서&lt;br&gt;
+script 부분을&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
+    &amp;quot;dev&amp;quot;: &amp;quot;NODE_PATH=. next dev&amp;quot;,
+    &amp;quot;build&amp;quot;: &amp;quot;NODE_PATH=. next build&amp;quot;,
+    &amp;quot;start&amp;quot;: &amp;quot;next start&amp;quot;
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 바꿔주기.&lt;br&gt;
+NODE&lt;em&gt;PATH는 모듈 로드할 경우 모듈이 위치한 경로를 말하는데…&lt;br&gt;
+CRA 경우 모든 파일들이 src 디렉토리 내부에 존재하기 때문에&lt;br&gt;
+NODE&lt;/em&gt;PATH=src로 설정해주면 모듈들 경로를 작성할 때 모듈이 위치한 디렉토리에&lt;br&gt;
+접근하기만 하면된다.&lt;/p&gt;
+&lt;p&gt;Next.js 경우에는 components 디렉토리, pages 디렉토리가 있는데 이 2개의 디렉토리를 내부에 두고 있는 부모 디렉토리가 없기 때문에 각각의 디렉토리에 접근해야 한다.&lt;br&gt;
+NODE_PATH=.로 설정해주면 모듈들 경로를 자겅할 때 모듈이 위치한 디렉토리에&lt;br&gt;
+접근하기만 하면된다.&lt;/p&gt;
+&lt;p&gt;위에서 NODE_PATH를 설정해주기 전까지는 ./ 또는 ../ 같은 상대 경로를 사용하여&lt;br&gt;
+필요한 모듈이 위치해있는 곳까지 접근했어야 했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const withSass = require(&amp;#39;@zeit/next-sass&amp;#39;);
+const withCSS = require(&amp;#39;@zeit/next-css&amp;#39;);
+
+module.exports = withCSS(
+  withSass({
+    target: &amp;#39;server&amp;#39;,
+    webpack(config, options) {
+      config.module.rules.push(
+        {
+          test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+          use: {
+            loader: &amp;#39;url-loader&amp;#39;,
+            options: {
+              limit: 100000,
+            },
+          },
+        },
+        // (config.resolve.modules = [...config.resolve.modules, &amp;#39;./src&amp;#39;]),
+      );
+      return config;
+    },
+    =======================
+    이 부분
+    plugins: [
+      &amp;#39;module-resolver&amp;#39;,
+      {
+        alias: {
+          &amp;#39;~/*&amp;#39;: &amp;#39;.&amp;#39;,
+        },
+      },
+    ],
+    ========================
+  }),
+);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;기존 next.config.js에 위 코드에 나와있는 이 부분을 추가하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 3기 후기]]></title><description><![CDATA[wecode 3기 후기 글 작성]]></description><link>https://khsi12345.github.io//posts/wecode_3th_review</link><guid isPermaLink="false">https://khsi12345.github.io//posts/wecode_3th_review</guid><pubDate>Wed, 23 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;wecode-3기-후기&quot;&gt;&lt;a href=&quot;#wecode-3%EA%B8%B0-%ED%9B%84%EA%B8%B0&quot; aria-label=&quot;wecode 3기 후기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wecode 3기 후기&lt;/h1&gt;
 &lt;p&gt;뜨아… 벌써 wecode 3기가 이틀 남았다.&lt;br&gt;
 퇴사 일정 때문에 1주차를 못나왔던게 너무너무 아쉬움으로 남는다.(퇴직금 받겠다고!!)&lt;br&gt;
 그래도 퇴직하고 바로 저녁에 위코드로 출근!! 바로 밤샘 불코딩~ 스타트!!!&lt;br&gt;
@@ -2429,7 +2480,30 @@ render() {
 &lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
+&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
+&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
+&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
+&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
+&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
+&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
+&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
+&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
+&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
+&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
+&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
+&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
+&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
+&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
+&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법
 ​
 html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/media/dom.png&quot; alt=&quot;DOMIMG&quot;&gt;&lt;/p&gt;
@@ -2462,30 +2536,7 @@ document.getElementsByClassName(‘class의 값’)&lt;br&gt;
 ​
 getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
 ​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
-&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에 버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
-&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
-&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
-&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
-&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가 정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
-&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
-&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
-&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
-&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
-&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
-&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
-&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
-&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
-&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
-&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
-&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는 속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
