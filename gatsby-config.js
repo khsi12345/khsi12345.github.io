@@ -129,6 +129,10 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: { trackingId: 'UA-151038941-1' },
+    },
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-netlify-cms',
