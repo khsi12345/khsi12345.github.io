@@ -3,10 +3,15 @@ title: "About me"
 template: "page"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+WEB FRONT-END DEVELOPER
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+항상 겸손하고 배우자는 자세로 세상에서 가장 작은 사람 이라는 모토를 모방한다는 의미에서 블로그의 이름이 세상 가장 작은 사람입니다.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+개발하는것을 재밌어하며 개발로서 많은 사람들에게 좋은 경험을 제공하고싶은게 개발자를 하는 이유입니다.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+프론트 개발을하고 결과물을 봤을때 성취감은 이루 말할 수 없습니다.
+
+이렇게 무언가에 집중해본적도 없으며, 공부해본적도 없지만  
+개발을 할때는 엄청난 집중력을 가지게되며 개발을 하고싶어 스스로 공부를 하게 되는 아~ 주~ 좋은 (말 안해도 뭔지 알죠?)
+
+앞으로도 쭉~ 성장하고 싶은 세상에서 가장 작은 개발자 입니다. ^ \_ ^
