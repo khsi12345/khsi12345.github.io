@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 31 Oct 2019 07:31:45 GMT</lastBuildDate><item><title><![CDATA[DOC TYPE]]></title><description><![CDATA[DOC TYPE에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/doc_type</link><guid isPermaLink="false">https://khsi12345.github.io//posts/doc_type</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;doc-type--브라우저에게-웹-페이지의-문서-종류를-알려주는-선언문을-정의하는-것이다&quot;&gt;&lt;a href=&quot;#doc-type--%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EA%B2%8C-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9D%98-%EB%AC%B8%EC%84%9C-%EC%A2%85%EB%A5%98%EB%A5%BC-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%84%A0%EC%96%B8%EB%AC%B8%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;doc type  브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOC TYPE : 브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다.&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 31 Oct 2019 12:24:34 GMT</lastBuildDate><item><title><![CDATA[Hoisting]]></title><description><![CDATA[hoisting에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/hoisting</link><guid isPermaLink="false">https://khsi12345.github.io//posts/hoisting</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;hoisting-&quot;&gt;&lt;a href=&quot;#hoisting-&quot; aria-label=&quot;hoisting  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hoisting ??&lt;/h2&gt;
+&lt;p&gt;자바스크립트에서 변수, 함수를 선언한 위치보다 그 이전에서 참조 가능한것을 말한다.&lt;/p&gt;
+&lt;p&gt;hoisting을 알려면 실행 컨텍스트에 대해서 알아야 하는데 실행 컨텍스트에 대해서는 따로 글을 작성했으니 해당 글을 보고 오는 것을 추천한다.&lt;/p&gt;
+&lt;p&gt;실행 컨텍스트의 Variable Object 생성 및 초기화에서&lt;br&gt;
+개발자가 코드를 작성하면 변수나 함수는 실행 컨텍스트 내부에 Variable Objtect에 프로퍼티로 등록된다.&lt;br&gt;
+이 단계가 변수 선언 단계이다.&lt;/p&gt;
+&lt;p&gt;그리고는 메모리에 영역을 확보하고 undefined로 값을 할당한다.&lt;br&gt;
+이 단계가 변수 초기화 단계이다.&lt;/p&gt;
+&lt;p&gt;이후 마지막으로 개발자가 할당한 값을 넣는다.&lt;br&gt;
+이 단계가 변수 할당 단계이다.&lt;/p&gt;
+&lt;p&gt;var 키워드를 사용했을 때&lt;br&gt;
+런타임 실행 전 변수는 초기화 단계까지 실행되기 때문에 실제 값이 아닌 undefined가 출력되고 표현식 이전에도 참조가 가능한것이다.&lt;/p&gt;
+&lt;p&gt;let, const 키워드를 사용했을 때&lt;br&gt;
+런타임 실행 전 변수는 초기화 단계까지 가지 못하고 그 전 단계인 사각지대에 머무르게된다.&lt;br&gt;
+따라서 표현식 이전에 참조를 하게 되면 레퍼런스 에러가 출력된다.&lt;br&gt;
+그리고 런타임 실행시 초기화 단계와 할당 단계가 실행된다.&lt;/p&gt;
+&lt;p&gt;함수는 함수 선언식일 때&lt;br&gt;
+Variable Object의 프로퍼티로 함수명이 등록되고 함수 본체가 프로퍼티의 값으로 할당된다.&lt;br&gt;
+따라서 함수를 선언한 위치보다 이전에서 함수를 호출하게되면 error가 발생하지 않는다.&lt;br&gt;
+이를 함수 hoisting 이라고 한다.&lt;/p&gt;
+&lt;p&gt;함수 표현식일 때&lt;br&gt;
+변수에 함수를 할당하는 함수 표현식에는 Variable Object의 프로퍼티에 변수명이 등록되고 변수 hoisting 처럼 undefined가 프로퍼티의 값으로 등록된다.&lt;br&gt;
+이후 함수 본체가 프로퍼티의 값으로 할당된다.&lt;br&gt;
+따라서 함수 표현식은 변수 hoisting이 일어난다.&lt;/p&gt;
+&lt;p&gt;위에 작성한것처럼 Variable Object가 생성되고 초기화 되는 과정에서 변수명이나 함수명이 프로퍼티로 등록되기 때문에&lt;br&gt;
+hoisting이 가능한 것이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AJAX]]></title><description><![CDATA[AJAX에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/ajax</link><guid isPermaLink="false">https://khsi12345.github.io//posts/ajax</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트를 이용해서 비동기적으로 서버와 브라우저가 데이터를 교환할 수 있는 통신방식.&lt;br&gt;
+서버로부터 웹 페이지가 반환되면 화면 전체를 갱신 하는데 페이지 일부만 갱신하고도 동일한 효과를 볼 수 있도록 하는 것.
+페이지 전체를 rendering 할 필요가 없고 갱신이 필요한 일부만 갱신하면 되므로 빠른 성능과 부드러운 사용자 경험의 이점이 있다.&lt;/p&gt;
+&lt;p&gt;브라우저는 XMLHttpRequest 객체를 이용하여 Ajax 요청을 생성하고 전송한다.&lt;br&gt;
+서버가 브라우저의 요청에 대해 응답을 반환하면 같은 XMLHttpRequest 객체가 결과를 처리한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// XMLHttpRequest 객체의 생성&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; xhr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 비동기 방식으로 Request를 오픈한다&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;method&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Request를 전송한다&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드는 브라우저와 서버가 통신 하기위해 ajax 요청을 생성하고 전송하는 것.&lt;/p&gt;
+&lt;p&gt;send의 인수로 서버로 전송할 데이터를 줄 수 있는데&lt;br&gt;
+method가 GET이면 send의 인수는 무시되고, POST면 request body에 담아 전송할 인수를 전달할 수 있다.&lt;/p&gt;
+&lt;p&gt;setRequestHeader 메소드는 HTTP Request Header의 값을 설정하는데, 반드시 open 메소드 호출 이후에 호출한다.&lt;br&gt;
+자주 사용하는 Request Header는 Content-type과 Accept가 있다.&lt;/p&gt;
+&lt;p&gt;Content-type은 Request body에 담아 전송할 데이터의 MIME-type의 정보를 표현한다.&lt;/p&gt;
+&lt;p&gt;MIME-type는 다음 3가지가 있다.&lt;br&gt;
+text : text/plain, text/html, text/css, text/javascript&lt;br&gt;
+Application : application/json, application/x-www-form-urlencode&lt;br&gt;
+File : multipart/formed-data&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// json으로 전송하는 경우&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;POST&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/users&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 클라이언트가 서버로 전송할 데이터의 MIME-type 지정: json&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setRequestHeader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Content-type&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; title&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;JavaScript&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; author&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Park&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; price&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5000&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Accept는 HTTP 클라이언트가 서버에 요청할 때 서버가 센드백할 데이터의 MIME-type으로 설정한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 서버가 센드백할 데이터의 MIME-type 지정: json&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setRequestHeader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Accept&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// XMLHttpRequest 객체의 생성&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; xhr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 비동기 방식으로 Request를 오픈한다&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;data/test.json&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Request를 전송한다&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// XMLHttpRequest.readyState 프로퍼티가 변경(이벤트 발생)될 때마다 콜백함수(이벤트 핸들러)를 호출한다.&lt;/span&gt;
+xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onreadystatechange&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// 이 함수는 Response가 클라이언트에 도달하면 호출된다.&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// readyStates는 XMLHttpRequest의 상태(state)를 반환&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// readyState: 4 =&gt; DONE(서버 응답 완료)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;readyState &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; XMLHttpRequest&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;DONE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// status는 response 상태 코드를 반환 : 200 =&gt; 정상 응답&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;status &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;responseText&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Error!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;XMLHttpRequest의 readyState가 4인 경우, 서버 응답이 완료된 상태이므로 이후 XMLHttpRequest.status가 200(정상 응답)임을 확인하고 정상인 경우, XMLHttpRequest.responseText를 취득한다.&lt;br&gt;
+XMLHttpRequest.responseText에는 서버가 전송한 데이터가 담겨 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DOC TYPE]]></title><description><![CDATA[DOC TYPE에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/doc_type</link><guid isPermaLink="false">https://khsi12345.github.io//posts/doc_type</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;doc-type--브라우저에게-웹-페이지의-문서-종류를-알려주는-선언문을-정의하는-것이다&quot;&gt;&lt;a href=&quot;#doc-type--%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EA%B2%8C-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9D%98-%EB%AC%B8%EC%84%9C-%EC%A2%85%EB%A5%98%EB%A5%BC-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%84%A0%EC%96%B8%EB%AC%B8%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;doc type  브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOC TYPE : 브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다.&lt;/h2&gt;
 &lt;h3 id=&quot;왜-문서의-타입을-선언하는가&quot;&gt;&lt;a href=&quot;#%EC%99%9C-%EB%AC%B8%EC%84%9C%EC%9D%98-%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%EC%96%B8%ED%95%98%EB%8A%94%EA%B0%80&quot; aria-label=&quot;왜 문서의 타입을 선언하는가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;왜 문서의 타입을 선언하는가??&lt;/h3&gt;
 &lt;p&gt;브라우저에게 이 문서의 종류를 알려주며 유효성 검증의 기준이 되기 때문이다.&lt;br&gt;
 브라우저가 문서를 parsing해서 화면에 올바르게 출력하도록 도와주기 때문이다.&lt;br&gt;
@@ -95,63 +176,7 @@ defer는 문서의 순서가 중요하다.&lt;br&gt;
 &lt;p&gt;async는 script가 독립적이다.&lt;br&gt;
 async는 문서의 순서가 중요하지 않다.&lt;br&gt;
 (async script가 여러개면 먼저 로드된것부터 실행된다. 다른 async script를 기다리거나 기다리게 하지 않는다.)&lt;br&gt;
-독립적인 script에 사용된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AJAX]]></title><description><![CDATA[AJAX에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/ajax</link><guid isPermaLink="false">https://khsi12345.github.io//posts/ajax</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트를 이용해서 비동기적으로 서버와 브라우저가 데이터를 교환할 수 있는 통신방식.&lt;br&gt;
-서버로부터 웹 페이지가 반환되면 화면 전체를 갱신 하는데 페이지 일부만 갱신하고도 동일한 효과를 볼 수 있도록 하는 것.
-페이지 전체를 rendering 할 필요가 없고 갱신이 필요한 일부만 갱신하면 되므로 빠른 성능과 부드러운 사용자 경험의 이점이 있다.&lt;/p&gt;
-&lt;p&gt;브라우저는 XMLHttpRequest 객체를 이용하여 Ajax 요청을 생성하고 전송한다.&lt;br&gt;
-서버가 브라우저의 요청에 대해 응답을 반환하면 같은 XMLHttpRequest 객체가 결과를 처리한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// XMLHttpRequest 객체의 생성&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; xhr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// 비동기 방식으로 Request를 오픈한다&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;method&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// Request를 전송한다&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 코드는 브라우저와 서버가 통신 하기위해 ajax 요청을 생성하고 전송하는 것.&lt;/p&gt;
-&lt;p&gt;send의 인수로 서버로 전송할 데이터를 줄 수 있는데&lt;br&gt;
-method가 GET이면 send의 인수는 무시되고, POST면 request body에 담아 전송할 인수를 전달할 수 있다.&lt;/p&gt;
-&lt;p&gt;setRequestHeader 메소드는 HTTP Request Header의 값을 설정하는데, 반드시 open 메소드 호출 이후에 호출한다.&lt;br&gt;
-자주 사용하는 Request Header는 Content-type과 Accept가 있다.&lt;/p&gt;
-&lt;p&gt;Content-type은 Request body에 담아 전송할 데이터의 MIME-type의 정보를 표현한다.&lt;/p&gt;
-&lt;p&gt;MIME-type는 다음 3가지가 있다.&lt;br&gt;
-text : text/plain, text/html, text/css, text/javascript&lt;br&gt;
-Application : application/json, application/x-www-form-urlencode&lt;br&gt;
-File : multipart/formed-data&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// json으로 전송하는 경우&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;POST&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/users&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// 클라이언트가 서버로 전송할 데이터의 MIME-type 지정: json&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setRequestHeader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Content-type&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; title&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;JavaScript&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; author&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Park&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; price&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5000&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Accept는 HTTP 클라이언트가 서버에 요청할 때 서버가 센드백할 데이터의 MIME-type으로 설정한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 서버가 센드백할 데이터의 MIME-type 지정: json&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setRequestHeader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Accept&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// XMLHttpRequest 객체의 생성&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; xhr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// 비동기 방식으로 Request를 오픈한다&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;data/test.json&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// Request를 전송한다&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// XMLHttpRequest.readyState 프로퍼티가 변경(이벤트 발생)될 때마다 콜백함수(이벤트 핸들러)를 호출한다.&lt;/span&gt;
-xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onreadystatechange&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;// 이 함수는 Response가 클라이언트에 도달하면 호출된다.&lt;/span&gt;
-
-  &lt;span class=&quot;token comment&quot;&gt;// readyStates는 XMLHttpRequest의 상태(state)를 반환&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;// readyState: 4 =&gt; DONE(서버 응답 완료)&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;readyState &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; XMLHttpRequest&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;DONE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;token comment&quot;&gt;// status는 response 상태 코드를 반환 : 200 =&gt; 정상 응답&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;status &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;responseText&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Error!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;XMLHttpRequest의 readyState가 4인 경우, 서버 응답이 완료된 상태이므로 이후 XMLHttpRequest.status가 200(정상 응답)임을 확인하고 정상인 경우, XMLHttpRequest.responseText를 취득한다.&lt;br&gt;
-XMLHttpRequest.responseText에는 서버가 전송한 데이터가 담겨 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[실행 컨텍스트]]></title><description><![CDATA[실행 컨텍스트에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/execution_context</link><guid isPermaLink="false">https://khsi12345.github.io//posts/execution_context</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;실행-컨텍스트&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;실행 컨텍스트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행 컨텍스트&lt;/h2&gt;
+독립적인 script에 사용된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[실행 컨텍스트]]></title><description><![CDATA[실행 컨텍스트에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/execution_context</link><guid isPermaLink="false">https://khsi12345.github.io//posts/execution_context</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;실행-컨텍스트&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;실행 컨텍스트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행 컨텍스트&lt;/h2&gt;
 &lt;p&gt;scope, hoisting, this, function, closure 등의 동작원리를 담고 있는 자바스크립트의 핵심 원리.&lt;br&gt;
 실행 가능한 코드를 형상화하고 구분하는 추상적인 개념이라고 정의.&lt;br&gt;
 실행 가능한 코드가 실행되기 위해 필요한 환경.&lt;/p&gt;
@@ -2426,44 +2451,7 @@ import는 다른 컴포넌트를 해당 컴포넌트에서 사용할 수 있게 
 해당 컴포넌트에서 유지해야 할 데이터가 아니라면 props(부모로 부터 받는 데이터)를 받아 사용한다.&lt;br&gt;
 react에서는 DOM에 직접적으로 접근하지 않는다.&lt;br&gt;
 ex)document.getSelector() / DOM.addEventlistener() / DOM의 프로퍼티 접근 등등&lt;br&gt;
-react에서는 style을 인라인 방식으로 주지 않고 항상 별도의 style 파일에서 정의하고 selector을 이용해서 style을 적용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[webGame 진행하면서]]></title><description><![CDATA[웹 게임을 진행하면서 쓰는 글.]]></description><link>https://khsi12345.github.io//posts/webGame/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/webGame/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Enemy&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;eP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;eP&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enemyPosition &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; eP&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enemycreate&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;token function&quot;&gt;enemyCreate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;enemyUnderMove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; enemys &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Enemy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;enemyPositionY&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;load&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-     enemys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enemyCreate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-     enemys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enemyUnderMove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-     &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;enemys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enemyCreate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;enemys&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;문제의 코드!!&lt;br&gt;
-이벤트 안에서 setInterval 함수를 사용했다.&lt;br&gt;
-그리고 Enemy 클래스의 인스턴스를 만들고 인스턴스로 클래스의 메서드를 호출했다.&lt;br&gt;
-정상적으로 작동하는지 확인하기 위해 console.log()로 의심이 되는 데이터들을 찍어보았다.&lt;br&gt;
-그 결과는 NaN이 출력이 된다.&lt;/p&gt;
-&lt;p&gt;무슨 문제가 발생한것인지 해결하기 위해 내 코드를 계속 보고 수정도 해보고 했지만 해결하지 못하고 있던 와중..&lt;br&gt;
-돌리고 있는 로직은 계산 부분이고 계산은 enemyCreate 함수 안에 작성되어있다.&lt;br&gt;
-근데 이 돌리고 있는 부분이 문제가 발생한거로 인지를 하고 enemyCreate 함수가 호출되는 지점을 확인했다.&lt;/p&gt;
-&lt;p&gt;setInterval 함수 안에서 호출되었고, Enemy 클래스 생성자를 호출해 새로운 인스턴스를 생성한 enemys로 enemyCreate 함수를 호출했다.&lt;/p&gt;
-&lt;p&gt;왠지 이 부분이 문제인듯 하다.&lt;br&gt;
-구글에서 setInterval을 MDN에서 보니 this의 문제점이 보였다.&lt;br&gt;
-setInterval은 setInterval에 전달되는 함수는 호출된 함수에 대한 this 키워드가 전역(window)으로 자동 설정된다고 한다.&lt;br&gt;
-즉, 내 코드에서는 this가 enemys(Enemy 클래스의 인스턴스, 즉 Enemy 클래스에서의 this는 enemys를 가리킨다.)다&lt;br&gt;
-라고 한것이지만, 무시되고 this가 전역(window)으로 강제 된것이다.&lt;br&gt;
-이 문제의 해결방법은 함수를 ES6의 Errow Function으로 하거나, enemys.enemyCreate.bind(enemys)처럼 this를&lt;br&gt;
-바인딩 시켜주는 방법이 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;react&quot;&gt;&lt;a href=&quot;#react&quot; aria-label=&quot;react permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REACT&lt;/h1&gt;
+react에서는 style을 인라인 방식으로 주지 않고 항상 별도의 style 파일에서 정의하고 selector을 이용해서 style을 적용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[REACT]]></title><description><![CDATA[REACT를 배움, 공부.]]></description><link>https://khsi12345.github.io//posts/react/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/react/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;react&quot;&gt;&lt;a href=&quot;#react&quot; aria-label=&quot;react permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REACT&lt;/h1&gt;
 &lt;p&gt;라이프 사이클 순서&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;willmount&lt;/li&gt;
@@ -2575,7 +2563,69 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+} --&gt;</content:encoded></item><item><title><![CDATA[webGame 진행하면서]]></title><description><![CDATA[웹 게임을 진행하면서 쓰는 글.]]></description><link>https://khsi12345.github.io//posts/webGame/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/webGame/</guid><pubDate>Tue, 13 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Enemy&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;eP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;eP&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enemyPosition &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; eP&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enemycreate&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;enemyCreate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;enemyUnderMove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; enemys &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Enemy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;enemyPositionY&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;load&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     enemys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enemyCreate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+     enemys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enemyUnderMove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;enemys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enemyCreate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;enemys&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;문제의 코드!!&lt;br&gt;
+이벤트 안에서 setInterval 함수를 사용했다.&lt;br&gt;
+그리고 Enemy 클래스의 인스턴스를 만들고 인스턴스로 클래스의 메서드를 호출했다.&lt;br&gt;
+정상적으로 작동하는지 확인하기 위해 console.log()로 의심이 되는 데이터들을 찍어보았다.&lt;br&gt;
+그 결과는 NaN이 출력이 된다.&lt;/p&gt;
+&lt;p&gt;무슨 문제가 발생한것인지 해결하기 위해 내 코드를 계속 보고 수정도 해보고 했지만 해결하지 못하고 있던 와중..&lt;br&gt;
+돌리고 있는 로직은 계산 부분이고 계산은 enemyCreate 함수 안에 작성되어있다.&lt;br&gt;
+근데 이 돌리고 있는 부분이 문제가 발생한거로 인지를 하고 enemyCreate 함수가 호출되는 지점을 확인했다.&lt;/p&gt;
+&lt;p&gt;setInterval 함수 안에서 호출되었고, Enemy 클래스 생성자를 호출해 새로운 인스턴스를 생성한 enemys로 enemyCreate 함수를 호출했다.&lt;/p&gt;
+&lt;p&gt;왠지 이 부분이 문제인듯 하다.&lt;br&gt;
+구글에서 setInterval을 MDN에서 보니 this의 문제점이 보였다.&lt;br&gt;
+setInterval은 setInterval에 전달되는 함수는 호출된 함수에 대한 this 키워드가 전역(window)으로 자동 설정된다고 한다.&lt;br&gt;
+즉, 내 코드에서는 this가 enemys(Enemy 클래스의 인스턴스, 즉 Enemy 클래스에서의 this는 enemys를 가리킨다.)다&lt;br&gt;
+라고 한것이지만, 무시되고 this가 전역(window)으로 강제 된것이다.&lt;br&gt;
+이 문제의 해결방법은 함수를 ES6의 Errow Function으로 하거나, enemys.enemyCreate.bind(enemys)처럼 this를&lt;br&gt;
+바인딩 시켜주는 방법이 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
+&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
+&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
+&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
+&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
+&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
+&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
+&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
+&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
+&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
+&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
+&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
+&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
+&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
 &lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
 &lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면&lt;br&gt;
 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
@@ -2634,32 +2684,7 @@ document.getElementsByClassName(‘class의 값’)&lt;br&gt;
 ​
 getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
 ​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
-&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
-&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
-&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
-&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
-&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
-&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
-&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
-&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
-&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
-&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
-&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
-&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
-&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
-&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
 &lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/li&gt;
