@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Oct 2019 14:23:46 GMT</lastBuildDate><item><title><![CDATA[DOC TYPE]]></title><description><![CDATA[DOC TYPE에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/doc_type</link><guid isPermaLink="false">https://khsi12345.github.io//posts/doc_type</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;doc-type--브라우저에게-웹-페이지의-문서-종류를-알려주는-선언문을-정의하는-것이다&quot;&gt;&lt;a href=&quot;#doc-type--%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EA%B2%8C-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9D%98-%EB%AC%B8%EC%84%9C-%EC%A2%85%EB%A5%98%EB%A5%BC-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%84%A0%EC%96%B8%EB%AC%B8%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;doc type  브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOC TYPE : 브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다.&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 31 Oct 2019 07:31:45 GMT</lastBuildDate><item><title><![CDATA[DOC TYPE]]></title><description><![CDATA[DOC TYPE에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/doc_type</link><guid isPermaLink="false">https://khsi12345.github.io//posts/doc_type</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;doc-type--브라우저에게-웹-페이지의-문서-종류를-알려주는-선언문을-정의하는-것이다&quot;&gt;&lt;a href=&quot;#doc-type--%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EA%B2%8C-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9D%98-%EB%AC%B8%EC%84%9C-%EC%A2%85%EB%A5%98%EB%A5%BC-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%84%A0%EC%96%B8%EB%AC%B8%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;doc type  브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOC TYPE : 브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다.&lt;/h2&gt;
 &lt;h3 id=&quot;왜-문서의-타입을-선언하는가&quot;&gt;&lt;a href=&quot;#%EC%99%9C-%EB%AC%B8%EC%84%9C%EC%9D%98-%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%EC%96%B8%ED%95%98%EB%8A%94%EA%B0%80&quot; aria-label=&quot;왜 문서의 타입을 선언하는가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;왜 문서의 타입을 선언하는가??&lt;/h3&gt;
 &lt;p&gt;브라우저에게 이 문서의 종류를 알려주며 유효성 검증의 기준이 되기 때문이다.&lt;br&gt;
 브라우저가 문서를 parsing해서 화면에 올바르게 출력하도록 도와주기 때문이다.&lt;br&gt;
@@ -19,7 +19,83 @@ HTML tag를 사용할 때 close tag를 작성해주는 문법이 XHTML, close ta
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;XHTML
 &amp;lt; img src=&amp;quot;&amp;quot; alt=&amp;quot;example&amp;quot; /&amp;gt;
 HTML
-&amp;lt; img src=&amp;quot;&amp;quot; alt=&amp;quot;example&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[AJAX]]></title><description><![CDATA[AJAX에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/ajax</link><guid isPermaLink="false">https://khsi12345.github.io//posts/ajax</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트를 이용해서 비동기적으로 서버와 브라우저가 데이터를 교환할 수 있는 통신방식.&lt;br&gt;
+&amp;lt; img src=&amp;quot;&amp;quot; alt=&amp;quot;example&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Vue로 프로젝트 생성하기]]></title><description><![CDATA[vue로 프로젝트를 생성하는 글 작성]]></description><link>https://khsi12345.github.io//posts/vue_project_start</link><guid isPermaLink="false">https://khsi12345.github.io//posts/vue_project_start</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;vue를 시작하기 위해 Vue CLI 웹에서 나온 가이드에 따라
+npm install -g @vue/cli 또는 yarn global add @vue/cli로 vue cli를 설치한다.&lt;/p&gt;
+&lt;p&gt;다음 &lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 프로젝트를 생성한다.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;&amp;lt;project&amp;gt;&lt;/code&gt;에는 프로젝트 이름을 작성하면된다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 실행하면&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 319px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.63636363636363%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABUklEQVQ4y+1S207CQBBtFFRQX0iIsQjY0m7vFwq0FChNSC9ARcWIxv//kONSI15CY2Limw8nM2dm98zMzjK9hger7qB76cKqmRi0A9iU91gX5rkE6aAB+fBqZ/UTDkaF39nvYDb+PR69O7yEGyRSiMxK8DR9Rqqn8KloSibIjBi3doobK4V9SqAfF4syrjhC2I0R9xP4UoBQ8LHqTrAkMhKiIhF9LJQhNoMRMtWBV+egnPKFooytTGFyHvRrF444hl5T4bEdrA2ChUQwuNAwZgnmgoiII4hEmm86MKmQXtnT4VIOsbYiPNAuEzFASjsMW0NkeowlxYwWGrN9OvIcCy1CJARYGTPYZ8L+keVSC3KpmUOhvkZH0Y7a1G/mUMttqJRvF5LHym/ni5bDGFUeZrWT40u1Lf8Uy/PV9xxfvJQdyd/kI1H0LX4C85tL/4J/K/gKme5sx8OAd4MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/01472/vue_cli.webp 240w,
+/static/c75b6a3f4bc34a434e6a422cb730a603/e1b1d/vue_cli.webp 319w&quot;
+          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/0783d/vue_cli.png 240w,
+/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png 319w&quot;
+          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
+          alt=&quot;vue_cli_img&quot;
+          title=&quot;vue_cli_img&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;가 뜬다.&lt;/p&gt;
+&lt;p&gt;default는 webpack에 babel, eslint가 기본으로 같이 설치되는 것이고, Manually select features는 vue에서&lt;br&gt;
+제공해주는 cli 중 개발자가 선택해서 선택한 features를 프로젝트 생성할때 기본으로 같이 설치되는 것이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[html에서 script 태그의 위치]]></title><description><![CDATA[html에서 script 태그 위치에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/script-tag_in_html</link><guid isPermaLink="false">https://khsi12345.github.io//posts/script-tag_in_html</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;html에서 script 태그는 어느 위치에서나 사용할 수 있다.&lt;br&gt;
+하지만 브라우저가 parsing 할 때 html을 DOM 트리로 만들고, css를 CSOM 트리로 만드는데 이때 script 태그를 만나게되면 script parsing이 끝날때까지 html과 css의 parsing이 멈추게 된다.&lt;br&gt;
+이를 freezing 현상이라 한다.(병목 현상)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;script 태그가 위 코드처럼 body 태그 이전에 위치하면 script 태그가 parsing 되는 동안 화면에 아무것도 렌더링이 안될 수 있다.&lt;br&gt;
+또한 html의 parsing이 끝나지 않아 DOM이 완성되지 않았기 때문에 DOM API를 호출할 수 없으며(호출해도 에러 발생) 특정 DOM에 접근 할 수 없다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    //.............................
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;script 태그가 위 코드처럼 body 태그에서 body 태그가 닫히기 전에 위치하면 DOM과 CSOM 트리가 완성된 이후이기&lt;br&gt;
+때문에 DOM에 접근 가능하고 DOM API도 호출할 수 있다.&lt;/p&gt;
+&lt;p&gt;이처럼 script 태그의 위치는 브라우저 rendering에 영향을 준다.&lt;/p&gt;
+&lt;p&gt;즉, script 태그가 DOM, CSOM이 완성되기 전에 parsing되면 웹 페이지 로딩 속도가 느려지게 되고 성능 또한 떨어뜨리는 결과를 낸다.&lt;/p&gt;
+&lt;p&gt;이를 해결하기 위해 script 태그에 async와 defer라는 속성을 주는 방법이 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;defer&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;defer는 브라우저가 작업을 계속하고 백그라운드에서 script를 로드하고 DOM이 로드 될때 script를 실행한다.&lt;br&gt;
+defer는 문서의 순서가 중요하다.&lt;br&gt;
+전체 DOM이 필요한 script에 사용되며 실행 순서가 중요하다.&lt;/p&gt;
+&lt;p&gt;async는 script가 독립적이다.&lt;br&gt;
+async는 문서의 순서가 중요하지 않다.&lt;br&gt;
+(async script가 여러개면 먼저 로드된것부터 실행된다. 다른 async script를 기다리거나 기다리게 하지 않는다.)&lt;br&gt;
+독립적인 script에 사용된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AJAX]]></title><description><![CDATA[AJAX에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/ajax</link><guid isPermaLink="false">https://khsi12345.github.io//posts/ajax</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바스크립트를 이용해서 비동기적으로 서버와 브라우저가 데이터를 교환할 수 있는 통신방식.&lt;br&gt;
 서버로부터 웹 페이지가 반환되면 화면 전체를 갱신 하는데 페이지 일부만 갱신하고도 동일한 효과를 볼 수 있도록 하는 것.
 페이지 전체를 rendering 할 필요가 없고 갱신이 필요한 일부만 갱신하면 되므로 빠른 성능과 부드러운 사용자 경험의 이점이 있다.&lt;/p&gt;
 &lt;p&gt;브라우저는 XMLHttpRequest 객체를 이용하여 Ajax 요청을 생성하고 전송한다.&lt;br&gt;
@@ -75,83 +151,7 @@ xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;XMLHttpRequest의 readyState가 4인 경우, 서버 응답이 완료된 상태이므로 이후 XMLHttpRequest.status가 200(정상 응답)임을 확인하고 정상인 경우, XMLHttpRequest.responseText를 취득한다.&lt;br&gt;
-XMLHttpRequest.responseText에는 서버가 전송한 데이터가 담겨 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[html에서 script 태그의 위치]]></title><description><![CDATA[html에서 script 태그 위치에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/script-tag_in_html</link><guid isPermaLink="false">https://khsi12345.github.io//posts/script-tag_in_html</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;html에서 script 태그는 어느 위치에서나 사용할 수 있다.&lt;br&gt;
-하지만 브라우저가 parsing 할 때 html을 DOM 트리로 만들고, css를 CSOM 트리로 만드는데 이때 script 태그를 만나게되면 script parsing이 끝날때까지 html과 css의 parsing이 멈추게 된다.&lt;br&gt;
-이를 freezing 현상이라 한다.(병목 현상)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;script 태그가 위 코드처럼 body 태그 이전에 위치하면 script 태그가 parsing 되는 동안 화면에 아무것도 렌더링이 안될 수 있다.&lt;br&gt;
-또한 html의 parsing이 끝나지 않아 DOM이 완성되지 않았기 때문에 DOM API를 호출할 수 없으며(호출해도 에러 발생) 특정 DOM에 접근 할 수 없다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    //.............................
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;script 태그가 위 코드처럼 body 태그에서 body 태그가 닫히기 전에 위치하면 DOM과 CSOM 트리가 완성된 이후이기&lt;br&gt;
-때문에 DOM에 접근 가능하고 DOM API도 호출할 수 있다.&lt;/p&gt;
-&lt;p&gt;이처럼 script 태그의 위치는 브라우저 rendering에 영향을 준다.&lt;/p&gt;
-&lt;p&gt;즉, script 태그가 DOM, CSOM이 완성되기 전에 parsing되면 웹 페이지 로딩 속도가 느려지게 되고 성능 또한 떨어뜨리는 결과를 낸다.&lt;/p&gt;
-&lt;p&gt;이를 해결하기 위해 script 태그에 async와 defer라는 속성을 주는 방법이 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;defer&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;defer는 브라우저가 작업을 계속하고 백그라운드에서 script를 로드하고 DOM이 로드 될때 script를 실행한다.&lt;br&gt;
-defer는 문서의 순서가 중요하다.&lt;br&gt;
-전체 DOM이 필요한 script에 사용되며 실행 순서가 중요하다.&lt;/p&gt;
-&lt;p&gt;async는 script가 독립적이다.&lt;br&gt;
-async는 문서의 순서가 중요하지 않다.&lt;br&gt;
-(async script가 여러개면 먼저 로드된것부터 실행된다. 다른 async script를 기다리거나 기다리게 하지 않는다.)&lt;br&gt;
-독립적인 script에 사용된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Vue로 프로젝트 생성하기]]></title><description><![CDATA[vue로 프로젝트를 생성하는 글 작성]]></description><link>https://khsi12345.github.io//posts/vue_project_start</link><guid isPermaLink="false">https://khsi12345.github.io//posts/vue_project_start</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;vue를 시작하기 위해 Vue CLI 웹에서 나온 가이드에 따라
-npm install -g @vue/cli 또는 yarn global add @vue/cli로 vue cli를 설치한다.&lt;/p&gt;
-&lt;p&gt;다음 &lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 프로젝트를 생성한다.&lt;br&gt;
-&lt;code class=&quot;language-text&quot;&gt;&amp;lt;project&amp;gt;&lt;/code&gt;에는 프로젝트 이름을 작성하면된다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 실행하면&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 319px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 63.63636363636363%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABUklEQVQ4y+1S207CQBBtFFRQX0iIsQjY0m7vFwq0FChNSC9ARcWIxv//kONSI15CY2Limw8nM2dm98zMzjK9hger7qB76cKqmRi0A9iU91gX5rkE6aAB+fBqZ/UTDkaF39nvYDb+PR69O7yEGyRSiMxK8DR9Rqqn8KloSibIjBi3doobK4V9SqAfF4syrjhC2I0R9xP4UoBQ8LHqTrAkMhKiIhF9LJQhNoMRMtWBV+egnPKFooytTGFyHvRrF444hl5T4bEdrA2ChUQwuNAwZgnmgoiII4hEmm86MKmQXtnT4VIOsbYiPNAuEzFASjsMW0NkeowlxYwWGrN9OvIcCy1CJARYGTPYZ8L+keVSC3KpmUOhvkZH0Y7a1G/mUMttqJRvF5LHym/ni5bDGFUeZrWT40u1Lf8Uy/PV9xxfvJQdyd/kI1H0LX4C85tL/4J/K/gKme5sx8OAd4MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-        &lt;source
-          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/01472/vue_cli.webp 240w,
-/static/c75b6a3f4bc34a434e6a422cb730a603/e1b1d/vue_cli.webp 319w&quot;
-          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
-          type=&quot;image/webp&quot;
-        /&gt;
-        &lt;source
-          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/0783d/vue_cli.png 240w,
-/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png 319w&quot;
-          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
-          type=&quot;image/png&quot;
-        /&gt;
-        &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
-          alt=&quot;vue_cli_img&quot;
-          title=&quot;vue_cli_img&quot;
-          loading=&quot;lazy&quot;
-        /&gt;
-      &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;가 뜬다.&lt;/p&gt;
-&lt;p&gt;default는 webpack에 babel, eslint가 기본으로 같이 설치되는 것이고, Manually select features는 vue에서&lt;br&gt;
-제공해주는 cli 중 개발자가 선택해서 선택한 features를 프로젝트 생성할때 기본으로 같이 설치되는 것이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[실행 컨텍스트]]></title><description><![CDATA[실행 컨텍스트에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/execution_context</link><guid isPermaLink="false">https://khsi12345.github.io//posts/execution_context</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;실행-컨텍스트&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;실행 컨텍스트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행 컨텍스트&lt;/h2&gt;
+XMLHttpRequest.responseText에는 서버가 전송한 데이터가 담겨 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[실행 컨텍스트]]></title><description><![CDATA[실행 컨텍스트에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/execution_context</link><guid isPermaLink="false">https://khsi12345.github.io//posts/execution_context</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;실행-컨텍스트&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;실행 컨텍스트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행 컨텍스트&lt;/h2&gt;
 &lt;p&gt;scope, hoisting, this, function, closure 등의 동작원리를 담고 있는 자바스크립트의 핵심 원리.&lt;br&gt;
 실행 가능한 코드를 형상화하고 구분하는 추상적인 개념이라고 정의.&lt;br&gt;
 실행 가능한 코드가 실행되기 위해 필요한 환경.&lt;/p&gt;
@@ -2137,7 +2137,17 @@ heigh(높이)는 고정으로 줘도 되지만 주지 않는다면 width에 비�
 기본적으로는 위와 같은 흐름인데 만약 Component들이 종속관계(부모, 자식)로 복잡하게 구성되어있다면&lt;br&gt;
 자식 Component에서는 변경되는 것이 없더라도 부모 Component가 렌더되면 같이 렌더된다.&lt;br&gt;
 즉 뷰에 표시할 데이터? 요소?가 변경된것이 없는데도 불필요하게 렌더되는것이다.&lt;/p&gt;
-&lt;p&gt;이를 방지하기 위해서는 shouldComponentUpdate() lifecycle 메서드를 사용해서 변경된 것이 있을때만 렌더될게 할 수 있고 또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
+&lt;p&gt;이를 방지하기 위해서는 shouldComponentUpdate() lifecycle 메서드를 사용해서 변경된 것이 있을때만 렌더될게 할 수 있고 또는 PureComponent를 extends하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
+&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
+&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
+&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;User-agent: *
+   Allow: /
+   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sementic HTML(의미론적 HTML)]]></title><description><![CDATA[Sementix HTML 요소들에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTML/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTML/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; aria-label=&quot;html permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML&lt;/h1&gt;
 &lt;p&gt;HyperText Markup Language.&lt;br&gt;
 Text를 Markup 하는 언어.&lt;br&gt;
 HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
@@ -2155,17 +2165,7 @@ HTML === 웹 브라우저가 유일하게 읽을 수 있는 문서.&lt;br&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 있다.(이 외에도 더 있어요~ )&lt;/p&gt;
 &lt;p&gt;의미가 있는 태그들을 사용하는 궁극적인 목표는
-브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SEO(검색최적화)]]></title><description><![CDATA[SEO(검색 최적화)에 대한 내용]]></description><link>https://khsi12345.github.io//posts/SEO/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/SEO/</guid><pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;세계의 누군가가 어떤 키워드로 검색했을때 1페이지에 잘 뜨게 하려면&lt;/p&gt;
-&lt;p&gt;HTML을 컴퓨터가 이해할 수 있도록 만든다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;에 페이지 정보를 최대한 자세하게 작성한다.&lt;/li&gt;
-&lt;li&gt;react에서는 helmet이라는 것을 이용해서 잘 노출될 수 있게 할 수 있다.&lt;/li&gt;
-&lt;li&gt;구글 검색 엔진이 크롤링을 하는데 내가 만든 사이트를 크롤링 할 수 있게 robots.txt를 만들고&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;User-agent: *
-   Allow: /
-   Sitemap: url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;그리고 이전 블로그에서 작성했던 HTML의 의미있는 태그들을 꼭 사용한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
+브라우저가 컨텐츠의 성격, 의미를 알게하는 것도 있지만, SEO(검색최적화)의 효율 높이기 위한것도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTP]]></title><description><![CDATA[HTTP, HTTP 메서드, HTTP STATUS에 대한 내용]]></description><link>https://khsi12345.github.io//posts/HTTP/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/HTTP/</guid><pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; aria-label=&quot;http permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h2&gt;
 &lt;p&gt;HyperText Transfer Protocol&lt;br&gt;
 HTML 문서를 교환하기 위해 만들어진 protocol(규약, 통신)&lt;br&gt;
 즉, 웹에서 네트워크로 서버끼리 통신을 할때 어떠한 규칙(형식)으로 서로 통신을 할건지 규정해놓은 것&lt;br&gt;
@@ -2575,32 +2575,7 @@ componentWillUnmount() {
 }
 render() {
 
-} --&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
-&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
-&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
-&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
-&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
-&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
-&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
-&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
-&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
-&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
-&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
-&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
-&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
-&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
-&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+} --&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
 &lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
 &lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면&lt;br&gt;
 트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
@@ -2659,7 +2634,32 @@ document.getElementsByClassName(‘class의 값’)&lt;br&gt;
 ​
 getElementById(), getElementsByClassName()는 무조건 id, 무조건 class 정해져 있기 때문에 정해진 선택자로
 ​
-getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
+getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git push 문제 해결]]></title><description><![CDATA[git push 문제 발생에 대해 해결 한 글.]]></description><link>https://khsi12345.github.io//posts/git-push/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/git-push/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;상황&lt;/p&gt;
+&lt;p&gt;내 노트북(로컬)에서 폴더가 존재했고 폴더 안에 html, css, js 파일이 존재했다.&lt;/p&gt;
+&lt;p&gt;VSCODE로 작업을 어느정도 하고 github에 올리고 싶어서 github repo를 생성했다.&lt;/p&gt;
+&lt;p&gt;github repo와 연결하고 싶은 폴더를 터미널로 열어서 맨 처음 git init을 해줬다.(git 생성. 이제 이 폴더에 git 환경의 조성됨.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점은 아님&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 어느 블로그들을 보면서 add, commit을 하고&lt;/p&gt;
+&lt;p&gt;git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;! github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push를 하는데 에러가 발생한다…&lt;/p&gt;
+&lt;p&gt;현재 내 로컬과 github repo(remote)이 일치하지 않는단다… 그러면서 일치시켜주기 위해 git pull을 하라고 힌트를 준다.(github repo(remote)에 있는 것을 내 로컬로 가져오는 것)&lt;/p&gt;
+&lt;p&gt;이후 push를 했지만 그래도 에러가 동일하게 발생했다.&lt;/p&gt;
+&lt;p&gt;혼자 끙끙 앓다가 해결을 못해 친구에게 sos&lt;/p&gt;
+&lt;p&gt;친구가 push 할 때 -f를 사용해 보라고 했다. (git push origin master -f)&lt;/p&gt;
+&lt;p&gt;근데 사용해 보라고 하면서 같이 하는 말: &lt;strong&gt;이건 혼자 작업할 때만 써 절대 협업할땐 사용하지 마 github repo(remote)를 내 로컬에 맞추는 거라고..&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 push하니 에러 발생 없이 잘 되었다.&lt;/p&gt;
+&lt;p&gt;하지만 이렇게 해결하는 게 아니고 뭔가 근본적으로 해결하고 싶었다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;위에서 해결된 이유를 보니 github repo(remote)와 내 로컬이 다르지 않기 때문에 성공한 것이었다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;그럼 계속 에러가 발생하는 이유는 다르기 때문인 것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그래서 다시 맨 처음으로 돌아갔다.&lt;/p&gt;
+&lt;p&gt;repo를 생성했는데 생성하면서 라이센스를 MIT로 설정했었다.(에러 날 때의 상황에서도 repo 생성할 때는 READEME.md 파일 생성할 때도 있었고 안 할 때도 있었다. 하지만 라이센스는 계속 MIT로 설정해주고 있었다.)&lt;/p&gt;
+&lt;p&gt;흠 생각해보니 애초에 repo 생성 직후 시점부터 내 로컬과 맞지 않았던 상황이었다.&lt;/p&gt;
+&lt;p&gt;그래서 git init으로 로컬에 다시 git을 생성하고 add commit 은 pass 했다.&lt;/p&gt;
+&lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 textarea 최대 글자 수 제한 이벤트]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-textarea-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-textarea-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;작성을 텍스트 위주로 해서 전체 코드를 &lt;a href=&quot;https://github.com/khsi12345/miniter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/khsi12345/miniter&lt;/a&gt; 에서 확인해주세요~&lt;/p&gt;
 &lt;p&gt;전체적인 코드와 글을 같이 보면 좋습니다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;textarea 요소 dom 객체에 접근하기 위해서 js 파일에서 document.querySelector(’. textBox’)를&lt;/li&gt;
