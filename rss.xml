@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 04 Nov 2019 03:17:56 GMT</lastBuildDate><item><title><![CDATA[양성호 닷컴 만들기(포트폴리오) 초기환경 설정]]></title><description><![CDATA[양성호 닷컴 만들기 초기환경 세팅에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/seonghoYang</link><guid isPermaLink="false">https://khsi12345.github.io//posts/seonghoYang</guid><pubDate>Sun, 03 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인 포트폴리오 웹을 하나 만들기로 했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[세상 가장 작은 사람의 개발 이야기]]></title><description><![CDATA[세상 가장 작은 사람의 개발 이야기]]></description><link>https://khsi12345.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 06 Nov 2019 11:50:00 GMT</lastBuildDate><item><title><![CDATA[TypeScript]]></title><description><![CDATA[typescript에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/typescript</link><guid isPermaLink="false">https://khsi12345.github.io//posts/typescript</guid><pubDate>Wed, 06 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;typescript란-&quot;&gt;&lt;a href=&quot;#typescript%EB%9E%80-&quot; aria-label=&quot;typescript란  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TypeScript란 ??&lt;/h2&gt;
+&lt;p&gt;javascript의 superset인 정적 타입 프로그래밍 언어이다.&lt;/p&gt;
+&lt;h3 id=&quot;typescript의-장점&quot;&gt;&lt;a href=&quot;#typescript%EC%9D%98-%EC%9E%A5%EC%A0%90&quot; aria-label=&quot;typescript의 장점 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TypeScript의 장점&lt;/h3&gt;
+&lt;p&gt;컴파일 언어로 코드 수준에서 타입을 검사하여 오류를 잡아낼 수 있다.&lt;br&gt;
+코드의 가독성을 높이고 디버깅을 쉽게 해준다.&lt;br&gt;
+큰 규모의 프로젝트에서 복잡성을 최소화 해준다.&lt;br&gt;
+javascript의 최신 문법을 그대로 사용할 수 있으면서, babel과 같은 별도의 트랜스파일러를 사용하지 않아도 된다.&lt;br&gt;
+IDE를 포함한 다양한 도구의 지원을 받을 수 있다.(코드 어시스트, 리팩토리 등)&lt;/p&gt;
+&lt;h4 id=&quot;변수-타입-선언&quot;&gt;&lt;a href=&quot;#%EB%B3%80%EC%88%98-%ED%83%80%EC%9E%85-%EC%84%A0%EC%96%B8&quot; aria-label=&quot;변수 타입 선언 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;변수 타입 선언&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; vari&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+vari &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12345&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;문자-숫자-리터럴-타입&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%9E%90-%EC%88%AB%EC%9E%90-%EB%A6%AC%ED%84%B0%EB%9F%B4-%ED%83%80%EC%9E%85&quot; aria-label=&quot;문자 숫자 리터럴 타입 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문자, 숫자 리터럴 타입&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 각 숫자가 타입 자체다.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; str&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;개발자&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;건물주&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//각 단어가 타입 자체다.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;any-타입&quot;&gt;&lt;a href=&quot;#any-%ED%83%80%EC%9E%85&quot; aria-label=&quot;any 타입 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;any 타입&lt;/h4&gt;
+&lt;p&gt;모든 종류의 값을 허용하는 타입.&lt;br&gt;
+남발하면 typescript를 사용하는 의미가 퇴색된다.(최소한의 사용)&lt;/p&gt;
+&lt;h4 id=&quot;void-never-타입&quot;&gt;&lt;a href=&quot;#void-never-%ED%83%80%EC%9E%85&quot; aria-label=&quot;void never 타입 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;void, never 타입&lt;/h4&gt;
+&lt;p&gt;void는 아무 값도 반환하지 않고 종료되는 함수의 반환 타입.&lt;br&gt;
+never는 예외가 발생해서 비정상적으로 종료되거나 무한 루프로 종료되지 않는 함수의 반환 타입.&lt;/p&gt;
+&lt;h4 id=&quot;함수-타입&quot;&gt;&lt;a href=&quot;#%ED%95%A8%EC%88%98-%ED%83%80%EC%9E%85&quot; aria-label=&quot;함수 타입 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;함수 타입&lt;/h4&gt;
+&lt;p&gt;매개변수 타입과 반환 타입이 필요하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드에서 ()괄호 안에 name과 age는 매개변수이고, :의 오른쪽은 매개변수의 타입이다.&lt;br&gt;
+()괄호의 오른쪽 :의 오른쪽은 함수 반환 타입이다.&lt;/p&gt;
+&lt;h4 id=&quot;선택-매개변수-속성&quot;&gt;&lt;a href=&quot;#%EC%84%A0%ED%83%9D-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-%EC%86%8D%EC%84%B1&quot; aria-label=&quot;선택 매개변수 속성 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;선택 매개변수, 속성&lt;/h4&gt;
+&lt;p&gt;반드시 입력하지 않아도 된다.&lt;br&gt;
+매개변수나 속성 오른쪽에 ?를 입력하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; adress&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  gender&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;인터페이스&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4&quot; aria-label=&quot;인터페이스 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인터페이스&lt;/h4&gt;
+&lt;p&gt;다양한 타입들을 정의하는 데 사용한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//인터페이스로 객체 타입 정의&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  gender&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//인터페이스로 함수 타입 정의&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Func&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; location&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;KR&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Person 인터페이스의 모든 속성 타입을 만족해야 한다.(아니면 에러 발생)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[양성호 닷컴 만들기(포트폴리오) 초기환경 설정]]></title><description><![CDATA[양성호 닷컴 만들기 초기환경 세팅에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/seonghoYang</link><guid isPermaLink="false">https://khsi12345.github.io//posts/seonghoYang</guid><pubDate>Sun, 03 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개인 포트폴리오 웹을 하나 만들기로 했다.&lt;/p&gt;
 &lt;p&gt;사용 스킬은 next.js / sass / typescript 이다.&lt;/p&gt;
 &lt;p&gt;먼저 npx create-next-app으로 프로젝트를 생성한다.&lt;br&gt;
 명령어에서 app이라는 자리에 프로젝트 이름을 작성해도 되지만 app으로 실행해도 이후 프로젝트 이름을 뭐로 할건지&lt;br&gt;
@@ -270,52 +317,7 @@ xhr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;XMLHttpRequest의 readyState가 4인 경우, 서버 응답이 완료된 상태이므로 이후 XMLHttpRequest.status가 200(정상 응답)임을 확인하고 정상인 경우, XMLHttpRequest.responseText를 취득한다.&lt;br&gt;
-XMLHttpRequest.responseText에는 서버가 전송한 데이터가 담겨 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Vue로 프로젝트 생성하기]]></title><description><![CDATA[vue로 프로젝트를 생성하는 글 작성]]></description><link>https://khsi12345.github.io//posts/vue_project_start</link><guid isPermaLink="false">https://khsi12345.github.io//posts/vue_project_start</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;vue를 시작하기 위해 Vue CLI 웹에서 나온 가이드에 따라
-npm install -g @vue/cli 또는 yarn global add @vue/cli로 vue cli를 설치한다.&lt;/p&gt;
-&lt;p&gt;다음 &lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 프로젝트를 생성한다.&lt;br&gt;
-&lt;code class=&quot;language-text&quot;&gt;&amp;lt;project&amp;gt;&lt;/code&gt;에는 프로젝트 이름을 작성하면된다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 실행하면&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 319px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 63.63636363636363%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABUklEQVQ4y+1S207CQBBtFFRQX0iIsQjY0m7vFwq0FChNSC9ARcWIxv//kONSI15CY2Limw8nM2dm98zMzjK9hger7qB76cKqmRi0A9iU91gX5rkE6aAB+fBqZ/UTDkaF39nvYDb+PR69O7yEGyRSiMxK8DR9Rqqn8KloSibIjBi3doobK4V9SqAfF4syrjhC2I0R9xP4UoBQ8LHqTrAkMhKiIhF9LJQhNoMRMtWBV+egnPKFooytTGFyHvRrF444hl5T4bEdrA2ChUQwuNAwZgnmgoiII4hEmm86MKmQXtnT4VIOsbYiPNAuEzFASjsMW0NkeowlxYwWGrN9OvIcCy1CJARYGTPYZ8L+keVSC3KpmUOhvkZH0Y7a1G/mUMttqJRvF5LHym/ni5bDGFUeZrWT40u1Lf8Uy/PV9xxfvJQdyd/kI1H0LX4C85tL/4J/K/gKme5sx8OAd4MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-        &lt;source
-          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/01472/vue_cli.webp 240w,
-/static/c75b6a3f4bc34a434e6a422cb730a603/e1b1d/vue_cli.webp 319w&quot;
-          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
-          type=&quot;image/webp&quot;
-        /&gt;
-        &lt;source
-          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/0783d/vue_cli.png 240w,
-/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png 319w&quot;
-          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
-          type=&quot;image/png&quot;
-        /&gt;
-        &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
-          alt=&quot;vue_cli_img&quot;
-          title=&quot;vue_cli_img&quot;
-          loading=&quot;lazy&quot;
-        /&gt;
-      &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;가 뜬다.&lt;/p&gt;
-&lt;p&gt;default는 webpack에 babel, eslint가 기본으로 같이 설치되는 것이고, Manually select features는 vue에서&lt;br&gt;
-제공해주는 cli 중 개발자가 선택해서 선택한 features를 프로젝트 생성할때 기본으로 같이 설치되는 것이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DOC TYPE]]></title><description><![CDATA[DOC TYPE에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/doc_type</link><guid isPermaLink="false">https://khsi12345.github.io//posts/doc_type</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;doc-type--브라우저에게-웹-페이지의-문서-종류를-알려주는-선언문을-정의하는-것이다&quot;&gt;&lt;a href=&quot;#doc-type--%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EA%B2%8C-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9D%98-%EB%AC%B8%EC%84%9C-%EC%A2%85%EB%A5%98%EB%A5%BC-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%84%A0%EC%96%B8%EB%AC%B8%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;doc type  브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOC TYPE : 브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다.&lt;/h2&gt;
+XMLHttpRequest.responseText에는 서버가 전송한 데이터가 담겨 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DOC TYPE]]></title><description><![CDATA[DOC TYPE에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/doc_type</link><guid isPermaLink="false">https://khsi12345.github.io//posts/doc_type</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;doc-type--브라우저에게-웹-페이지의-문서-종류를-알려주는-선언문을-정의하는-것이다&quot;&gt;&lt;a href=&quot;#doc-type--%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EA%B2%8C-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9D%98-%EB%AC%B8%EC%84%9C-%EC%A2%85%EB%A5%98%EB%A5%BC-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%84%A0%EC%96%B8%EB%AC%B8%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;doc type  브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOC TYPE : 브라우저에게 웹 페이지의 문서 종류를 알려주는 선언문을 정의하는 것이다.&lt;/h2&gt;
 &lt;h3 id=&quot;왜-문서의-타입을-선언하는가&quot;&gt;&lt;a href=&quot;#%EC%99%9C-%EB%AC%B8%EC%84%9C%EC%9D%98-%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%EC%96%B8%ED%95%98%EB%8A%94%EA%B0%80&quot; aria-label=&quot;왜 문서의 타입을 선언하는가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;왜 문서의 타입을 선언하는가??&lt;/h3&gt;
 &lt;p&gt;브라우저에게 이 문서의 종류를 알려주며 유효성 검증의 기준이 되기 때문이다.&lt;br&gt;
 브라우저가 문서를 parsing해서 화면에 올바르게 출력하도록 도와주기 때문이다.&lt;br&gt;
@@ -367,7 +369,52 @@ defer는 문서의 순서가 중요하다.&lt;br&gt;
 &lt;p&gt;async는 script가 독립적이다.&lt;br&gt;
 async는 문서의 순서가 중요하지 않다.&lt;br&gt;
 (async script가 여러개면 먼저 로드된것부터 실행된다. 다른 async script를 기다리거나 기다리게 하지 않는다.)&lt;br&gt;
-독립적인 script에 사용된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[실행 컨텍스트]]></title><description><![CDATA[실행 컨텍스트에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/execution_context</link><guid isPermaLink="false">https://khsi12345.github.io//posts/execution_context</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;실행-컨텍스트&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;실행 컨텍스트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행 컨텍스트&lt;/h2&gt;
+독립적인 script에 사용된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Vue로 프로젝트 생성하기]]></title><description><![CDATA[vue로 프로젝트를 생성하는 글 작성]]></description><link>https://khsi12345.github.io//posts/vue_project_start</link><guid isPermaLink="false">https://khsi12345.github.io//posts/vue_project_start</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;vue를 시작하기 위해 Vue CLI 웹에서 나온 가이드에 따라
+npm install -g @vue/cli 또는 yarn global add @vue/cli로 vue cli를 설치한다.&lt;/p&gt;
+&lt;p&gt;다음 &lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 프로젝트를 생성한다.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;&amp;lt;project&amp;gt;&lt;/code&gt;에는 프로젝트 이름을 작성하면된다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;vue create &amp;lt;project&amp;gt;&lt;/code&gt; 명령어로 실행하면&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 319px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.63636363636363%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABUklEQVQ4y+1S207CQBBtFFRQX0iIsQjY0m7vFwq0FChNSC9ARcWIxv//kONSI15CY2Limw8nM2dm98zMzjK9hger7qB76cKqmRi0A9iU91gX5rkE6aAB+fBqZ/UTDkaF39nvYDb+PR69O7yEGyRSiMxK8DR9Rqqn8KloSibIjBi3doobK4V9SqAfF4syrjhC2I0R9xP4UoBQ8LHqTrAkMhKiIhF9LJQhNoMRMtWBV+egnPKFooytTGFyHvRrF444hl5T4bEdrA2ChUQwuNAwZgnmgoiII4hEmm86MKmQXtnT4VIOsbYiPNAuEzFASjsMW0NkeowlxYwWGrN9OvIcCy1CJARYGTPYZ8L+keVSC3KpmUOhvkZH0Y7a1G/mUMttqJRvF5LHym/ni5bDGFUeZrWT40u1Lf8Uy/PV9xxfvJQdyd/kI1H0LX4C85tL/4J/K/gKme5sx8OAd4MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/01472/vue_cli.webp 240w,
+/static/c75b6a3f4bc34a434e6a422cb730a603/e1b1d/vue_cli.webp 319w&quot;
+          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/0783d/vue_cli.png 240w,
+/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png 319w&quot;
+          sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/c75b6a3f4bc34a434e6a422cb730a603/55973/vue_cli.png&quot;
+          alt=&quot;vue_cli_img&quot;
+          title=&quot;vue_cli_img&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;가 뜬다.&lt;/p&gt;
+&lt;p&gt;default는 webpack에 babel, eslint가 기본으로 같이 설치되는 것이고, Manually select features는 vue에서&lt;br&gt;
+제공해주는 cli 중 개발자가 선택해서 선택한 features를 프로젝트 생성할때 기본으로 같이 설치되는 것이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[실행 컨텍스트]]></title><description><![CDATA[실행 컨텍스트에 대한 글 작성]]></description><link>https://khsi12345.github.io//posts/execution_context</link><guid isPermaLink="false">https://khsi12345.github.io//posts/execution_context</guid><pubDate>Wed, 30 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;실행-컨텍스트&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;실행 컨텍스트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행 컨텍스트&lt;/h2&gt;
 &lt;p&gt;scope, hoisting, this, function, closure 등의 동작원리를 담고 있는 자바스크립트의 핵심 원리.&lt;br&gt;
 실행 가능한 코드를 형상화하고 구분하는 추상적인 개념이라고 정의.&lt;br&gt;
 실행 가능한 코드가 실행되기 위해 필요한 환경.&lt;/p&gt;
@@ -2816,7 +2863,34 @@ render() {
 &lt;p&gt;대신 바로  git과 github를 연결했다. (git remote add origin(굳이 origin이 아니더라도 다른 단어로 해도 됨) repo주소(url))&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;!github repo와 git이 연결된 시점&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;그리고 이 문제의 근본적인 원인을 해결하기 위해 바로 pull을 해줬다.&lt;/p&gt;
-&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법&lt;br&gt;
+&lt;p&gt;그리고 add, commit, push를 하니 아무 문제도 발생하지 않았다.(성공~~~)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
+&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
+&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면&lt;br&gt;
+트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에&lt;br&gt;
+버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
+&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
+&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
+&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
+&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가&lt;br&gt;
+정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
+&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
+&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
+&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
+&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
+&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
+&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
+&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
+&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
+&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
+&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
+&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
+&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
+&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는&lt;br&gt;
+속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
+&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 DOM을 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-DOM/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-DOM/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JS 파일에서 HTML DOM에 접근하는 방법&lt;br&gt;
 ​
 html에 태그, class, id 등 선택자를 설정하고 JS에서 사용한다.(어떻게?? 글을 쭉 읽어봅시다 ~ )&lt;br&gt;
 ​
@@ -2909,34 +2983,7 @@ getElementById(), getElementsByClassName()에게 넘겨줘야 한다.&lt;/p&gt;<
 &lt;p&gt;&lt;strong&gt;하지만 문자를 입력하면 최대 글자 수를 오버해서 계속 입력이 된다…(해결하려고 삽질을 했지만 결국 실패)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;또 다른 문제 입력한 문자의 수와 뷰에 표시되는 숫자가 다르다…(이것도 실패)&lt;/p&gt;
 &lt;p&gt;백스페이스 키가 먹히지 않는다.&lt;/p&gt;
-&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론을 진행하면서]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트위터 클론을 하기 위해 메인 뷰를 html로 먼저 구조화했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 html 은 노멀 플로우로서 요소들의 흐름은 위에서 아래이다.&lt;/p&gt;
-&lt;p&gt;위에서 기본적으로 html 요소는 노멀 플로우로 흐름이 위에서 아래로 흐른다고 했는데, 위 이미지에서 왼쪽 부분을 보면&lt;br&gt;
-트윗 내용들이 위에서 아래로(순차적으로) 내려오는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;반면, 어떤 요소는 왼쪽에 위치해 있고, 어떤 요소는 오른쪽에 위치해 있으며, 텍스트를 입력할 수 있는 요소와 그 밑에&lt;br&gt;
-버튼은 왠지 같이 묵여있는거 같아 보이는데 버튼이 오른쪽 끝 즈음에 위치해있다.&lt;/p&gt;
-&lt;p&gt;아래 이미지는 html과 css로 직접 따라 만들어본 메인 뷰이다.&lt;/p&gt;
-&lt;p&gt;똑같이 만들지는 못했지만 css를 적용해서 요소들을 왼쪽, 오른쪽으로 배치해보았다.&lt;/p&gt;
-&lt;p&gt;div 태그는 block 박스 모델로 div 태그로 마크한 요소가 위치한 라인 width를 다 차지한다.&lt;/p&gt;
-&lt;p&gt;span 태그는 inline 박스 모델로 span 태그로 마크한 요소가 위치한 곳에서 내용(content)의 크기에 따라 요소의 크기가&lt;br&gt;
-정해진다.(내용의 크기 === 요소의 크기)&lt;/p&gt;
-&lt;p&gt;input 태그는 type 속성이 있는데 type 속성 중 button 값을 적용했다.&lt;/p&gt;
-&lt;p&gt;ul은 리스트 항목(각각의 리스트)을 포함하여 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;자식 요소로 li를 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;li 태그는 개발자 도구에서 확인해보면 display 속성이 block 박스 모델로 보이지는 않는다. 하지만 li 태그로 마크한 요소를 랜더 해보면 block 박스 모델처럼 요소가 위치한 라인 width 전체를 차지한다.&lt;/p&gt;
-&lt;p&gt;그리고 li는 리스트 항목(각각의 리스트)을 나타낼 때 사용한다.&lt;/p&gt;
-&lt;p&gt;부모 요소로 ol, ul을 포함할 수 있다.&lt;/p&gt;
-&lt;p&gt;css는 각 요소들에 class를 지정, class 값을 선택자로 사용해 style을 변경 및 적용했다.&lt;/p&gt;
-&lt;p&gt;요소들의 노멀 플로우 흐름에서 벗어나 보내고 싶은 위치로 보낼 때 position, float을 사용했다.&lt;/p&gt;
-&lt;p&gt;position은 값으로 relrative, absolute, static, fixed 가 있다.&lt;/p&gt;
-&lt;p&gt;relative는 요소가 위치한 기준으로 position relrative를 가지고 있는 요소를 부모로 가지고 있는 요소는 위치의 기준점을 잡을 때 부모 요소를 기준으로 잡게 된다.&lt;/p&gt;
-&lt;p&gt;absoulte는 가장 가까이 있는 요소의 position 값을 기준으로, static은 위치 지정 안 하고, fixed는 요소가 위치에 고정&lt;/p&gt;
-&lt;p&gt;float은 값으로 left, right를 줄 수 있다.&lt;/p&gt;
-&lt;p&gt;float은 이미지를 노멀 플로우에서 벗어나게해서 레이아웃에서 붕 뜨게 보이게 한 뒤 위치를 지정해주고 그 나머지 여백을 텍스트로 감싸주기 위한 목적으로 만들어진 이유다.&lt;/p&gt;
-&lt;p&gt;이미지와 텍스트로 조화를 이룬 뷰 페이지로 뉴스? 뉴스 기사? 등등등 에서 유용하게 사용하겠다.&lt;/p&gt;
-&lt;p&gt;position: relrative, absolute, fixed   / float: left, right는 top, right, bottom, left 등 위치를 조정할 수 있는&lt;br&gt;
-속성을 사용해서 요소의 위치를 디테일하게 다룰 수 있다.&lt;/p&gt;
-&lt;p&gt;잘못된 내용 및 오타, 보완해야 할 내용은 댓글로 달아주시면 수정하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
+&lt;p&gt;그래서 if 조건문으로 백스페이스는 예외 적용을 해주었다.(잘 먹힌다..)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[트위터 클론 중 event 사용하며]]></title><description><![CDATA[트위터 클론을 진행에 대한 글.]]></description><link>https://khsi12345.github.io//posts/tweet-clone-event/</link><guid isPermaLink="false">https://khsi12345.github.io//posts/tweet-clone-event/</guid><pubDate>Mon, 12 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;로그인 페이지&lt;/p&gt;
 &lt;p&gt;이벤트를 걸어주려면 해당 DOM에 접근을 해야 한다.&lt;/p&gt;
 &lt;p&gt;document.querySelector()로 접근을 했다.&lt;/p&gt;
 &lt;p&gt;그리고 접근한 DOM에 이벤트를 걸어줬다.&lt;/p&gt;
